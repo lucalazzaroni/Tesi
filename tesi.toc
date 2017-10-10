@@ -1,0 +1,8 @@
+\select@language {italian}
+\select@language {italian}
+\contentsline {chapter}{\numberline {1}Pendolo su carrello}{7}
+\contentsline {section}{\numberline {1.1}Modello del motore}{7}
+\contentsline {chapter}{\numberline {2}Pendolo su carrello}{9}
+\contentsline {section}{\numberline {2.1}Equazioni e linearizzazione del modello}{9}
+\contentsline {chapter}{\numberline {3}Pendolo inverso su carrello}{13}
+\contentsline {section}{\numberline {3.1}Equazioni e linearizzazione del modello}{13}

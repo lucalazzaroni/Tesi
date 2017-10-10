@@ -1,0 +1,68 @@
+% !TeX spellcheck = <none>
+\documentclass[a4paper,12pt,twoside,openright]{book}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[english,italian]{babel}
+%\usepackage[latin1]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{ fancyhdr }
+\newenvironment{abstract}
+{\cleardoublepage
+	\thispagestyle{empty}
+	\null \vfill\begin{center}
+		\bfseries \abstractname \end{center}}
+{\vfill\null}
+
+
+
+\begin{document}
+\thispagestyle{empty}
+\begin{center}
+	Francesco Tornatore\\
+	Luca Lazzaroni
+\end{center}
+
+\null\vspace{\stretch {1}}
+
+\begin{center}
+	\begin{Huge}
+		\textsc{Progetto "model-based"\\
+			 del controllo di robot Lego\\
+			 in ambiente Simulink\\}
+	\end{Huge}
+\end{center}
+\begin{center}
+	Tesi di Laurea Triennale
+\end{center}
+
+\vspace{\stretch {2}}\null
+\null
+\vfill
+\begin{center}
+	Università degli Studi di Genova\\
+	Ottobre 2017
+\end{center}
+\clearpage
+
+
+\begin{flushright}
+	\null\vspace{\stretch {1}}
+	...DEDICA...
+	\vspace{\stretch {2}}\null
+\end{flushright}
+
+\begin{abstract}
+	\begin{center}
+		... versione del sommario in italiano ...
+	\end{center}
+\end{abstract}
+
+
+\tableofcontents
+
+\include{modelloMotore}
+\include{PendoloNormale}
+\include{PendoloInverso}
+
+\end{document}
