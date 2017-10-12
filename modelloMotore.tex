@@ -3,7 +3,7 @@
 \section{Modello del motore}
 Il motore del LEGO MINDSTORM EV3 è dotato di un encoder in grado di contarne i giri, valore assunto come uscita del sistema.
 I valori di ingresso possibili sono invece compresi tra -100 e +100 e corrispondono alla potenza.
-Al fine di modellare nel modo più preciso possibile abbiamo applicato un albero motore dotato di pesi in modo tale da incrementare il momento d'inerzia $I$ e, di conseguenza, diminuire l'accelerazione angolare $\alpha$ in accordo con la seconda legge di Newton in forma angolare $\tau = Ialpha$ dove $\tau$ indica il momento della forza o, più semplicemente, la coppia del motore: valore caratteristico del motore.
+Al fine di modellare nel modo più preciso possibile abbiamo applicato un albero motore dotato di pesi in modo tale da incrementare il momento d'inerzia $I$ e, di conseguenza, diminuire l'accelerazione angolare $\alpha$ in accordo con la seconda legge di Newton in forma angolare $\tau = I\alpha$ dove $\tau$ indica il momento della forza o, più semplicemente, la coppia del motore: valore caratteristico del motore.
 In questo modo il tempo di assestamento del sistema $t_a$, direttamente proporzionale a $\alpha$, è sensibilmente più lungo ed è dunque possibile trovare una funzione di trasferimento rappresenti il motore più fedelmente.
 \begin{center}
 	\includegraphics[scale=0.15]{megainerzia.png}
