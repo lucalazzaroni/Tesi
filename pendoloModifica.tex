@@ -1,37 +1,39 @@
-\chapter{Modifica}
-\section{Equazioni e linearizzazione del modello}
+\chapter{Pendolo su carrello}
+\section{Modello e relative Equazioni}
+
 \begin{center}
-	\includegraphics[scale=0.6]{pendolo.png}
+	\includegraphics[scale=0.75]{pendolo.png}\\
+	{\small  Modello del pendolo su carrello}\\
 \end{center}
-Modello del pendolo su carrello realizzato con LEGO MINDSTORM EV3\\\\
-\textbf{Bilanciamento forse sull'asta}\\
-Asse x:
-\begin{equation}
+\textbf{Bilanciamento forze sull'asta}\\
+Asse X:
+\begin{equation}\notag
 m\ddot{x}_m=H
 \end{equation}
-Asse y:
-\begin{equation}
+Asse Y:
+\begin{equation}\notag
 m\ddot{y}_m=V-mg
 \end{equation}
-Avendo:\\
-\begin{equation}
+Dove $H$ e $V$ sono le reazioni vincolari (orizzontale e verticale) a cui e sottoposta la massa $m$ per il fatto di essere bloccata all'estremità dell'asta.\\ 
+Essendo:\\
+\begin{equation}\notag
 x_m = x_M+l_a\sin(\theta) \quad \Rightarrow \quad \ddot{x}_m=\ddot{x}_M-l_a\sin(\theta)\dot{\theta}^2+l_a\cos(\theta)\ddot{\theta}
 \end{equation}
-\begin{equation}
-y_m=y_F-l_a\cos(\theta) \quad \Rightarrow \quad \ddot{y}_m=l_a(\ddot{\theta}\sin(\theta)+\dot{\theta}^2\cos(\theta))
+\begin{equation}\notag
+y_m=y_M-l_a\cos(\theta) \quad \Rightarrow \quad \ddot{y}_m=l_a\sin(\theta)\ddot{\theta}+l_a\cos(\theta)\dot{\theta}^2
 \end{equation}
 Si ottiene:
-\begin{equation}\label{H}
+\begin{equation}\label{Hv}
 H=m\ddot{x}_M-ml_a\sin(\theta)\dot{\theta}^2+ml_a\cos(\theta)\ddot{\theta}
 \end{equation}
-\begin{equation}\label{V}
+\begin{equation}\label{Vv}
 V=mg+ml_a\cos(\theta)\dot{\theta}^2+ml_a\sin(\theta)\ddot{\theta}
 \end{equation}
 \textbf{Bilanciamento forze sul carrello}
-\begin{equation}
+\begin{equation}\notag
 M\ddot{x}_M=u-H
 \end{equation}
-sostituendo la \ref{H} si ha:
+sostituendo la \ref{Hv} si ha:
 $$
 M\ddot{x}_M=u-m\ddot{x}_M+ml_a\sin(\theta)\dot{\theta}^2-ml_a\cos(\theta)\ddot{\theta}
 $$
@@ -42,9 +44,9 @@ $$
 \begin{equation}
 I_m\ddot{\theta}=l_aV\sin(\theta)+l_aH\cos(\theta)
 \end{equation}
-sostituendo la \ref{H} e la \ref{V}:
+sostituendo la \ref{Hv} e la \ref{Vv}:
 $$
-I_m\dot{\theta}=l_a\sin(\theta)[mg+ml_a\cos(\theta)\dot{\theta}^2+ml_a\sin(\theta)\ddot{\theta}]+l_a\cos(\theta)[m\ddot{x}_M-ml_a\sin(\theta)\dot{\theta}^2+ml_a\cos(\theta)\ddot{\theta}]=
+I_m\ddot{\theta}=l_a\sin(\theta)[mg+ml_a\cos(\theta)\dot{\theta}^2+ml_a\sin(\theta)\ddot{\theta}]+l_a\cos(\theta)[m\ddot{x}_M-ml_a\sin(\theta)\dot{\theta}^2+ml_a\cos(\theta)\ddot{\theta}]=
 $$
 $$
 =mgl_a\sin(\theta)+ml_a^2\sin(\theta)\cos(\theta)\dot{\theta}^2+ml_a^2\sin^2(\theta)\ddot{\theta}+ml_a\ddot{x}_M\cos(\theta)-ml_a^2\cos(\theta)\sin(\theta)\dot{\theta}^2$$
@@ -54,7 +56,7 @@ $$
 \begin{equation} \label{momInThetaP}
 =ml_a(g\sin(\theta)+l_a\ddot{\theta}+\ddot{x}_M\cos(\theta))
 \end{equation}
-Essendo il momento d'inerzia prodotto dall'asta molto piccolo, per semplicità decidiamo di trascurarlo.
+Essendo il momento d'inerzia dell'asta molto inferiore rispetto a quello della massa $m$ attacata al pendolo, possiamo per semplicità trascurarlo, per cui poniamo $I_m=0$. Vedremo poi nel paragrafo \ref{Im} che i risultati senza approssimazione saranno praticamente gli stessi.\\
 Il sistema che deriva dalla \ref{FCarr} e dalla \ref{momInThetaP} è dunque il seguente:
 \\\\
 $\begin{cases}
@@ -62,62 +64,118 @@ $$(M+m)\ddot{x}_M+ml_a\cos(\theta)\ddot{\theta}=u+ml_a\dot{\theta}^2\sin(\theta)
 $$g\sin(\theta)+l_a\ddot{\theta}+\ddot{x}_M\cos(\theta)=0$$\\
 \end{cases}
 $
-\\\\\\
-Assegno le variabili di stato:\\\\
+\\\\
+Dalla prima equazione del sistema 
+$$
+(M+m)(\frac{-g\sin(\theta)-l_a\ddot{\theta}}{\cos(\theta)})+ml_a\cos(\theta)\ddot{\theta}=u+ml_a\dot{\theta}^2\sin(\theta)
+$$
+$$
+\ddot{\theta}(ml_a\cos(\theta)-\frac{l_a(M+m)}{\cos(\theta)}=u+ml_a\dot{\theta}^2\sin(\theta)+\frac{g\sin(\theta)(M+m)}{\cos(\theta)}
+$$
+$$
+\ddot{\theta}=\frac{[u+ml_a\dot{\theta}^2\sin(\theta)+\displaystyle\frac{g\sin(\theta)(M+m)}{\cos(\theta)}]\cos(\theta)}{ml_a\cos^2(\theta)-l_a(M+m)} \Rightarrow$$\\
+\begin{equation}\label{theta2punti}
+\ddot{\theta}=\frac{u\cos(\theta)+ml_a\dot{\theta}^2\sin(\theta)\cos(\theta)+g\sin(\theta)(M+m)}{-l_a(m\sin^2(\theta)+M)}
+\end{equation}\\
+Dalla seconda equazione del sistema
+$$
+\ddot{x}_M=\frac{-g\sin(\theta)-l_a\ddot{\theta}}{\cos(\theta)}
+$$
+e sostituendo ora la \ref{theta2punti}  
+$$
+\ddot{x}_M=\frac{-g\sin(\theta)-\displaystyle\frac{ul_a\cos(\theta)+ml^2_a\dot{\theta}^2\sin(\theta)\cos(\theta)+gl_a\sin(\theta)(M+m)}{-l_a(m\sin^2(\theta)+M)}}{\cos(\theta)}=
+$$
+$$
+=\frac{g\sin(\theta)[-l_a(m\sin^2(\theta)+M)]+ul_a\cos(\theta)+ml^2_a\dot{\theta}^2\sin(\theta)\cos(\theta)+gl_a\sin(\theta)(M+m)}{l_a\cos(\theta)(m\sin^2(\theta)+M)}=
+$$
+$$
+=\frac{-gm\sin^3(\theta)-gM\sin(\theta)+u\cos(\theta)+ml_a\dot{\theta}^2\sin(\theta)\cos(\theta)+gM\sin(\theta)+gm\sin(\theta)}{\cos(\theta)(m\sin^2(\theta)+M)}
+$$
+$$
+=\frac{u+ml_a\dot{\theta}^2\sin(\theta)+gm\cos(\theta)\sin(\theta)}{m\sin^2(\theta)+M}
+$$\\
+Assegnamo le variabili di stato e definiamo le uscite desiderate:\\\\
 $\begin{cases}
-$$x_1 = x_M$$ \\
-$$x_2=\dot{x}_M$$\\
-$$x_3=\theta$$\\
-$$x_4=\dot{\theta}$$\\
+$$x_1 \stackrel{\Delta}{=} x_M$$ \\
+$$x_2\stackrel{\Delta}{=}\dot{x}_M$$\\
+$$x_3\stackrel{\Delta}{=}\theta$$\\
+$$x_4\stackrel{\Delta}{=}\dot{\theta}$$\\
+$$y_1\stackrel{\Delta}{=}x_M$$ \\
+$$y_2\stackrel{\Delta}{=}\theta$$\\
 \end{cases}
-$\\\\\\\
-Dal sistema di equazioni appena ricavato si ottiene:
-$$
-\ddot{x}_M=\dot{x}_2=\displaystyle\frac{u+ml_ax_4^2\sin(x_3)+gm\cos(x_3)\sin(x_3)}{M+m-m\cos^2(x_3)}
-$$
-$$
-\ddot{\theta}=\dot{x}_4=-\displaystyle\frac{u\cos(x_3)+ml_ax_4^2\sin(x_3)\cos(x_3)+gm\cos^2(x_3)\sin(x_3)}{(M+m-m\cos^2(x_3))l_a}-\displaystyle\frac{g\sin(x_3)}{l_a}
-$$
-\\
-Le derivate prime delle variabili di stato del sistema sono dunque:
+$\\\\\\
+Sostituendo queste ultime nelle equazioni appena ricavate si ottiengono le equazioni:
 \\\\\\
-$\begin{cases}
-$$\dot{x}_1=x_2$$ \\
-$$\dot{x}_2=\displaystyle\frac{u+ml_ax_4^2\sin(x_3)+gm\cos(x_3)\sin(x_3)}{M+m-m\cos^2(x_3)}$$\\
-$$\dot{x}_3=x_4$$\\
-$$\dot{x}_4=-\displaystyle\frac{u\cos(x_3)+ml_ax_4^2\sin(x_3)\cos(x_3)+gm\cos^2(x_3)\sin(x_3)}{(M+m-m\cos^2(x_3))l_a}-\displaystyle\frac{g\sin(x_3)}{l_a}$$\\
-\end{cases}
+$\underline{\dot{x}}=\displaystyle\frac{d}{d t}
+\begin{bmatrix}
+x_M\\\\
+\dot{x}_M\\\\
+\theta\\\\
+\dot{\theta}\\\\
+\end{bmatrix}
+=
+\begin{bmatrix}
+x_2\\\\
+\displaystyle\frac{u+ml_ax_4^2\sin(x_3)+gm\cos(x_3)\sin(x_3)}{m\sin^2(x_3)+M}\\\\
+x_4\\\\
+-\displaystyle\frac{u\cos(x_3)+ml_ax_4^2\sin(x_3)\cos(x_3)+g(M+m)\sin(x_3)}{l_a(m\sin^2(x_3)+M)}\\\\
+\end{bmatrix}
 $
 \\\\\\
+\section{Linearizzazione del modello}\label{LinMod}
 \textbf{Punti di equilibrio del sistema} \\
-Vogliamo ora linearizzare le precedenti equazioni di stato attorno al punto di equilibrio $\underline{x_{eq}}=\underline{0}$, $u_{eq}=0$ trovato: \\\\
-$\displaystyle\frac{\partial{f_1}}{\partial{\underline{x}}}(\underline x)=
+Per la ricerca dei punti di equilibrio poniamo $\underline{f}(\underline{x},u)=\underline{0}$\quad(dove $\underline{\dot{x}}=\underline{f}(\underline{x},u$)):\\\\
+$\begin{cases}
+$$x_2=0$$ \\
+$$\displaystyle\frac{u+ml_ax_4^2\sin(x_3)+gm\cos(x_3)\sin(x_3)}{m\sin^2(x_3)+M}=0$$\\
+$$x_4=0$$\\
+$$\displaystyle\frac{u\cos(x_3)+ml_ax_4^2\sin(x_3)\cos(x_3)+g(M+m)\sin(x_3)}{l_a(m\sin^2(x_3)+M)}=0$$
+\end{cases}
+$\\\\\\
+Dal precedente sistema si capisce che punti di equilibrio del pendolo su carrello sono due, uno instabile per \\
+$\begin{cases}
+$$x_1=\forall$$ \\
+$$x_2=0$$\\
+$$x_3=\pm\pi$$\\
+$$x_4=0$$\\
+$$u=0$$
+\end{cases}$\\
+ovvero quando il pendolo è rivolto verso l'alto (penodolo inverso), l'altro, stabile, per\\
+$\begin{cases}
+$$x_1=\forall$$ \\
+$$x_2=0$$\\
+$$x_3=0$$\\
+$$x_4=0$$\\
+$$u=0$$
+\end{cases}$\\
+quando il pendolo è rivolto verso il basso (pendolo "normale").
+Siccome il punto di equilibrio non dipende dalla posizione del carrello possiamo per semplicità scegliere $x_1=0$.\\\\
+\textbf{Linearizzazione del sistema attorno al punto di equilibrio}\\
+Vogliamo ora linearizzare le precedenti equazioni di stato attorno al punto di equilibrio $\underline{\tilde{x}}=\underline{0}$, $\tilde{u}=0$ trovato: \\\\
+$\displaystyle\frac{\partial{f_1}}{\partial{\underline{x}}}(\underline x,u)=
 \begin{bmatrix}
 0&1&0&0
-\end{bmatrix}$\\\\\\
-$\displaystyle\frac{\partial{f_2}}{\partial{x_1}}(\underline{x})=0$\quad
-$\displaystyle\frac{\partial{f_2}}{\partial{x_2}}(\underline{x})=0$\quad
-$\displaystyle\frac{\partial{f_2}}{\partial{x_3}}(\underline{x})_{\big|_{\underline{x_{eq}}, u_{eq}}}=\displaystyle\frac{gm}{M}$\\
-$\displaystyle\frac{\partial{f_2}}{\partial{x_4}}(\underline{x})_{\big|_{\underline{x_{eq}}, u_{eq}}}=0$\\\\\\
-$\displaystyle\frac{\partial{f_3}}{\partial{\underline{x}}}(\underline x)=
+\end{bmatrix}$\qquad
+$\displaystyle\frac{\partial{f_1}}{\partial{u}}(\underline{x},u)=0$\\\\\\
+$\displaystyle\frac{\partial{f_2}}{\partial{x_1}}(\underline{x},u)=0$\qquad
+$\displaystyle\frac{\partial{f_2}}{\partial{x_2}}(\underline{x},u)=0$\\
+$\displaystyle\frac{\partial{f_2}}{\partial{x_3}}(\underline{x},u)=\displaystyle\frac{[ml_ax_4^2\cos(x_3)+mg(\cos^2(x_3)-\sin^2(x_3))](M+m\sin^2(x_3))}{(M+m\sin^2(x_3))^2}$\\
+$-\displaystyle\frac{[u+ml_ax_4^2\sin(x_3)+mg\sin(x_3)\cos(x_3)](2\sin(x_3)\cos(x_3))}{(M+m\sin^2(x_3))^2}\bigg|_{\underline{\tilde{x}},\tilde{u}}=\displaystyle\frac{mg}{M}$\\ $\displaystyle\frac{\partial{f_2}}{\partial{x_4}}(\underline{x},u)=\displaystyle\frac{2ml_a\sin(x_3)x_4}{M+m\sin^2(x_3)}\bigg|_{\underline{\tilde{x}},\tilde{u}}=0$\quad$\displaystyle\frac{\partial{f_2}}{\partial{u}}(\underline{x},u)=\displaystyle\frac{1}{M+m\sin^2(x_3)}\bigg|_{\underline{\tilde{x}},\tilde{u}}=\displaystyle\frac{1}{M}$\\\\\\
+$\displaystyle\frac{\partial{f_3}}{\partial{\underline{x}}}(\underline x,u)=
 \begin{bmatrix}
 0&0&0&1
-\end{bmatrix}$\\\\\\
-$\displaystyle\frac{\partial{f_4}}{\partial{x_1}}(\underline{x})=0$\quad
-$\displaystyle\frac{\partial{f_4}}{\partial{x_2}}(\underline{x})=0$\\
-$\displaystyle\frac{\partial{f_4}}{\partial{x_3}}(\underline{x})_{\big|_{\underline{x_{eq}}, u_{eq}}}=-\displaystyle\frac{(M+m)g}{Ml}$\quad
-$\displaystyle\frac{\partial{f_4}}{\partial{x_4}}(\underline{x})_{\big|_{\underline{x_{eq}}, u_{eq}}}=0$\\\\
-$\displaystyle\frac{\partial{f_1}}{\partial{u}}(\underline{x})=0$\quad
-$\displaystyle\frac{\partial{f_2}}{\partial{u}}(\underline{x})_{\big|_{\underline{x_{eq}}, u_{eq}}}=\displaystyle\frac{1}{M}$\quad
-$\displaystyle\frac{\partial{f_3}}{\partial{u}}(\underline{x})=0$\quad
-$\displaystyle\frac{\partial{f_4}}{\partial{u}}(\underline{x})_{\big|_{\underline{x_{eq}}, u_{eq}}}=-\displaystyle\frac{1}{ml_a}$\\\\
-Si ottiene dunque:\\\\
+\end{bmatrix}$\qquad$\displaystyle\frac{\partial{f_3}}{\partial{u}}(\underline{x},u)=0$\\\\\\
+$\displaystyle\frac{\partial{f_4}}{\partial{x_1}}(\underline{x},u)=0$\qquad
+$\displaystyle\frac{\partial{f_4}}{\partial{x_2}}(\underline{x},u)=0$\\
+$\displaystyle\frac{\partial{f_4}}{\partial{x_3}}(\underline{x},u)=\displaystyle\frac{[u\sin(x_3)-ml_ax_4^2(\cos^2(x_3)-\sin^2(x_3))-g\cos(x_3)(M+m)][l_a(m\sin^2(x_3)+M)]}{l_a^2(m\sin^2(x_3)+M)^2}+$ $-\displaystyle\frac{[-u\cos(x_3)-ml_ax^2_4\sin(x_3)\cos(x_3)-g\sin(x_3)(m+M)][2ml_a\sin(x_3)\cos(x_3)]}{l_a^2(m\sin^2(x_3)+M)^2}\bigg|_{\underline{\tilde{x}},\tilde{u}}=$
+$=-\displaystyle\frac{(M+m)g}{Ml}$\qquad$\displaystyle\frac{\partial{f_4}}{\partial{x_4}}(\underline{x},u)=\displaystyle\frac{-2ml_ax_4\sin(x_3)\cos(x_3)}{l_a(m\sin^2(x_3)+M)}\bigg|_{\underline{\tilde{x}},\tilde{u}}=0$\\$\displaystyle\frac{\partial{f_4}}{\partial{u}}(\underline{x},u)=\displaystyle\frac{-\cos(x_3)}{l_a(m\sin^2(x_3)+M)}\bigg|_{\underline{\tilde{x}},\tilde{u}}=-\displaystyle\frac{1}{ml_a}$\\\\\\
+Le equazioni linearizzate sono dunque:\\\\
 $\underline{\delta\dot{x}}=
 \begin{bmatrix}
 0&1&0&0\\
-0&0&\displaystyle\frac{gm}{M}&0\\
+0&0&\displaystyle\frac{mg}{M}&0\\
 0&0&0&1\\
-0&0&-\displaystyle\frac{(M+M)g}{Ml_a}&0
+0&0&-\displaystyle\frac{(M+m)g}{Ml_a}&0
 \end{bmatrix}
 \underline{\delta x}+
 \begin{bmatrix}
@@ -135,7 +193,7 @@ $\underline{\delta y}=
 \end{bmatrix}
 \underline{\delta x}
 $\\\\\\
-Calcolando ora la funzione di trasferimento $T(s)$ tra l'ingresso $u$(Forza esercitata sul carrello,
+Calcolando ora la funzione di trasferimento $T(s)$ tra l'ingresso $u$ (forza esercitata sul carrello,
 avanti/indietro) e l'uscita $y_2$(angolo $\theta$ del pendolo rispetto alla verticale) si ottiene:\\\\
 $T_{u,y_2}(s)=C(sI-A)^{-1}B=
 \begin{bmatrix}
@@ -144,7 +202,7 @@ $T_{u,y_2}(s)=C(sI-A)^{-1}B=
 \begin{bmatrix}
 *&*&*&*\\
 *&*&*&*\\
-*&0&*&\displaystyle\frac{1}{s^2+\frac{(M+m)g}{ml_a}}\\
+*&0&*&\displaystyle\frac{1}{s^2+\frac{(M+m)g}{Ml_a}}\\
 *&*&*&*
 \end{bmatrix}
 \begin{bmatrix}
@@ -154,4 +212,194 @@ $T_{u,y_2}(s)=C(sI-A)^{-1}B=
 -\displaystyle\frac{1}{Ml_a}\\
 \end{bmatrix} = \\
 =-\displaystyle\frac{1}{Ml_as^2+(M+m)g}
+$\\\\\\
+Inserendo ora i parametri del modello fisico del pendolo su  carrello realizzato con l'ausilio del Lego MINDSTORM EV3 si può procedere all'identificazione della funzione di trasferimento\\\\
+\begin{tabular}{|l|l|l|}
+	\hline
+	\textbf{Parametro} & \textbf{Valore} & \textbf{Unità di misura}\\
+	\hline
+	$M$ & 0.7295 & $Kg$\\
+	\hline
+	$m$ & 0.015 & $Kg$ \\
+	\hline
+	$g$ & 9.81 & $\frac{m}{s^2}$\\
+	\hline
+	$l_a$ & 0.166 & $m$\\
+	\hline
+\end{tabular}\\\\\\
+Data la precedente tabella si ha:\\
+$T_{u,y_2}(s)=-\displaystyle\frac{1}{0.121s^2+7.303}$
+
+\section{Modello senza trascurare l'inerzia dell'Asta}\label{Im}
+
+Il sistema che deriva dalla \ref{FCarr} e dalla \ref{momInThetaP} senza trascurare l'inerzia dell'asta $I_m$ è dunque il seguente:
+\\\\
+$\begin{cases}
+$$(M+m)\ddot{x}_M+ml_a\cos(\theta)\ddot{\theta}=u+ml_a\dot{\theta}^2\sin(\theta)$$ \\
+$$I_m\ddot{\theta}=ml_a(g\sin(\theta)+l_a\ddot{\theta}+\ddot{x}_M\cos(\theta))$$\\
+\end{cases}
 $
+\\\\\\
+Assegno le variabili di stato:\\\\
+$\begin{cases}
+$$x_1 = x_M$$ \\
+$$x_2=\dot{x}_M$$\\
+$$x_3=\theta$$\\
+$$x_4=\dot{\theta}$$\\
+\end{cases}
+$\\\\\\\
+Dalla \ref{FCarr} si ottiene:
+$$
+\ddot{x}_M=\displaystyle\frac{u+ml_a\dot{\theta}^2\sin(\theta)-ml_a\cos(\theta)\ddot{\theta}}{M+m}
+$$
+$$
+\ddot{\theta}=\displaystyle\frac{(M+m)I_m\dot{\theta}-g\sin(\theta)ml_a(M+m)-\cos(\theta)ml_au-\cos(\theta)\sin(\theta)\dot{\theta}^2m^2l_a^2+m^2l_a^2\cos^2(\theta)\ddot{\theta}}{ml_a^2(m+M)}
+$$
+\\
+Le derivate prime delle variabili di stato del sistema sono dunque:
+\\\\\\
+$\begin{cases}
+$$\dot{x}_1=\displaystyle\frac{u+ml_a\dot{\theta}^2\sin(\theta)-ml_a\cos(\theta)\ddot{\theta}}{M+m}$$ \\
+$$\dot{x}_2=\dot{x}_M$$\\
+$$\dot{x}_3=x_4$$\\
+$$\dot{x}_4=\displaystyle\frac{(M+m)I_m\dot{\theta}-g\sin(\theta)ml_a(M+m)-\cos(\theta)ml_au-\cos(\theta)\sin(\theta)\dot{\theta}^2m^2l_a^2+m^2l_a^2\cos^2(\theta)\ddot{\theta}}{ml_a^2(m+M)}$$\\
+\end{cases}
+$
+\\\\\\
+\textbf{Punti di equilibrio del sistema} \\
+Vogliamo ora linearizzare le precedenti equazioni di stato attorno al punto di equilibrio $\underline{x}=\underline{0}$, $u=0$ trovato: \\\\
+$\displaystyle\frac{\partial{f_1}}{\partial{\underline{x}}}(\underline x)=
+\begin{bmatrix}
+0&1&0&0
+\end{bmatrix}$\\\\\\
+$\displaystyle\frac{\partial{f_2}}{\partial{x_1}}(\underline{x})=0$\quad
+$\displaystyle\frac{\partial{f_2}}{\partial{x_2}}(\underline{x})=0$\quad
+$\displaystyle\frac{\partial{f_2}}{\partial{x_3}}(\underline{x})=\displaystyle\frac{ml_ax_4^2\cos(x_3)+ml_a\sin(x_3)\dot{x_4}}{M+m}$\\
+$\displaystyle\frac{\partial{f_2}}{\partial{x_4}}(\underline{x})=\displaystyle\frac{2ml_ax_4\sin(x_3)-ml_a\cos(x_3)\ddot{x_4}}{M+m}$\\\\\\
+$\displaystyle\frac{\partial{f_3}}{\partial{\underline{x}}}(\underline x)=
+\begin{bmatrix}
+0&0&0&1
+\end{bmatrix}$\\\\\\
+$\displaystyle\frac{\partial{f_4}}{\partial{x_1}}(\underline{x})=0$\quad
+$\displaystyle\frac{\partial{f_4}}{\partial{x_2}}(\underline{x})=0$\\
+$\displaystyle\frac{\partial{f_4}}{\partial{x_3}}(\underline{x})=\displaystyle\frac{(ml_a)[-g\cos(x_3)(M+m)+\sin(x_3)u-2\cos(x_3)\sin(x_3)\dot{x_4}ml_a+(\sin^2(x_3)-cos^2(x_3))x^2_4ml_a]}{ml_a^2(M+m)}$\quad
+$\displaystyle\frac{\partial{f_4}}{\partial{x_4}}(\underline{x})=\displaystyle\frac{(M+m)I_m-2\cos(x_3)\sin(x_3)x_4m^2l_a^2+m^2l_a^2\cos^2(x_3)\ddot{x_4}}{ml_a(M+m)}$\\\\
+$\displaystyle\frac{\partial{f_1}}{\partial{u}}(\underline{x})=0$\quad
+$\displaystyle\frac{\partial{f_2}}{\partial{u}}(\underline{x})=\displaystyle\frac{1}{M+m}$\quad
+$\displaystyle\frac{\partial{f_3}}{\partial{u}}(\underline{x})=0$\quad
+$\displaystyle\frac{\partial{f_4}}{\partial{u}}(\underline{x})=\displaystyle\frac{-\cos(x_3)}{l_a(M+m)}$\\\\
+Sostituendo quindi nelle precedenti equazioni il punto di equilibrio si ottiene:\\\\
+$\underline{\delta\dot{x}}=
+\begin{bmatrix}
+0&1&0&0\\
+0&0&0&0\\
+0&0&0&1\\
+0&0&\displaystyle\frac{-g}{l_a}&\displaystyle\frac{I_m}{ml_a^2}
+\end{bmatrix}
+\underline{\delta x}+
+\begin{bmatrix}
+0\\
+\displaystyle\frac{1}{M+m}\\
+0\\
+\displaystyle\frac{-1}{l_a(M+m)}\\
+\end{bmatrix}
+\underline{\delta u}
+$\\\\
+$\underline{\delta y}=
+\begin{bmatrix}
+1&0&0&0\\
+0&0&1&0
+\end{bmatrix}
+\underline{\delta x}
+$\\\\\\
+Calcolando ora la funzione di Trasferimento $T(s)$ tra l'ingresso $u$(Forza esercitata sul carrello,
+avanti/indietro) e l'uscita $y_2$(angolo $\theta$ del pendolo rispetto alla verticale) si ottiene:\\
+$T_{u,y_2}(s)=C(sI-A)^{-1}B=
+\begin{bmatrix}
+0&0&1&0
+\end{bmatrix}
+\begin{bmatrix}
+*&*&*&*\\
+*&*&*&*\\
+*&0&*&\displaystyle\frac{1}{s^2-\frac{I_m}{ml_a^2}s+\frac{g}{l_a}}\\
+*&*&*&*
+\end{bmatrix}
+\begin{bmatrix}
+0\\
+\displaystyle\frac{1}{M+m}\\
+0\\
+\displaystyle\frac{-1}{l_a(M+m)}\\
+\end{bmatrix} = \\
+=\displaystyle\frac{-1}{l_a(M+m)(s^2-\frac{I_m}{ml_a^2}s+\frac{g}{l_a})}
+$
+
+\section{Stabilizzazione del pendolo}
+Il pendolo di per sè è un sistema già stabile, lo scopo della realizzazione su carrello consiste nello smorzarne l'oscillazione riducendo la costante di tempo del sistema grazie all'impiego di due ruote motrici.\\
+Di seguito la realizzazione del pendolo su carrello utilizzando un motore EV3 Large come trazione del carrello e un encoder GlideWheel-M per misurare l'angolo del pendolo rispetto alla verticale.
+\begin{center}
+	\includegraphics[scale=0.1]{pendoloFisico.jpg}\\
+	{\small  Realizzazione fisica del pendolo su carrello}
+\end{center}
+Sfruttando il modello del motore EV3 Large da noi ricavato si può quindi ricavare la funizione di Trasferimento del sistema complessivo(avente come ingresso la potenza richiesta al motore e come uscita la posizione angolare del pendolo).\\
+IMMAGINE SIMULINK MODELLO SISTEMA PENDOLO+MOTORE NON RETROAZIONATO\\
+Il sistema complessivo in ciclo aperto è dato quindi dalla seguente funzione di Trasferimento ricavata con l'ausilio del 'Linear Analisys Tool' di Simulink:\\
+$$T_{u,y_2}=\displaystyle\frac{1}{non ricordo}$$\\
+della quale possiamo calcolare il luogo delle radici per studiarne la stabilità.
+IMMAGINE ROOT LOCUS\\
+Come si evince dal luogo delle radici del sistema, è possibile utilizzare un semplice Regolatore Proporzionale purchè il suo guadagno $P\in[-qualcosa,0]$.\\
+IMMAGINE SIMULINK CON REGOLATORE PROPORZIONALE\\
+Il Regolatore propozionale permette di ridurre ampiamente il periodo di oscillazione del pendolo.\\
+Nel seguito abbiamo sperimentato e osservato il comportamento del sistema cercando di quantificare il miglioramento ottenuto. 
+Come si può vedere nel seguente grafico posizionando il pendolo ad un'angolazione iniziale di $\theta=\ang{30}$, in ciclo aperto(ovvero senza controllo sul motore) si raggiunge il punto di stabilità $\theta=\ang{0}$ in poco più di 25 secondi, mentre risulta un tempo di appena 1.15 secondi per quanto riguarda il sistema in ciclo chiuso.\\
+GRAFICI DI OSCILLAZIONE PENDOLO IN OL E CL\\
+Un Regolatore migliore potrebbe essere un PID(Proporzionale Integrativo Derivativo) che permette grazie all'aggiunta di uno zero ($\in\Re$), e quindi necessariamente almeno un polo ($\in\Re$) di avere un maggiore margine di stabilità.\\\\
+\section{Controllo della posizione del carrello}
+Fino ad ora abbiamo trascurato la seconda uscita di nostro interesse, ovvero la posizione del carrello
+$x_M$. Perciò vogliamo provare a controllare quest'ultima in modo da decidere non solo il tempo di assestamento del pendolo ma allo stesso tempo anche la posizione del carrello dove il sistema dovrà assestarsi.\\
+A tal proposito riprendiamo le equazioni ricavate al paragrafo \ref{LinMod}.\\
+Dalle seguenti equazioni di stato linearizzate attorno al punto di equilibrio $\underline{x}=\underline{0}$, $u=0$\\ 
+$\underline{\delta\dot{x}}=
+\begin{bmatrix}
+0&1&0&0\\
+0&0&\displaystyle\frac{mg}{M}&0\\
+0&0&0&1\\
+0&0&-\displaystyle\frac{(M+m)g}{Ml_a}&0
+\end{bmatrix}
+\underline{\delta x}+
+\begin{bmatrix}
+0\\
+\displaystyle\frac{1}{M}\\
+0\\
+-\displaystyle\frac{1}{Ml_a}\\
+\end{bmatrix}
+\underline{\delta u}
+$\\\\
+$\underline{\delta y}=
+\begin{bmatrix}
+1&0&0&0\\
+0&0&1&0
+\end{bmatrix}
+\underline{\delta x}
+$\\\\\\
+si può ricavare la funzione di trasferimento $T(s)$ tra l'ingresso $u$ (forza esercitata sul carrello,
+avanti/indietro) e l'uscita $y_1$(posizione $x_M$ del carrello):\\\\
+$T_{u,y_1}(s)=C(sI-A)^{-1}B=
+\begin{bmatrix}
+1&0&0&0
+\end{bmatrix}
+\begin{bmatrix}
+*&\displaystyle\frac{1}{s^2}&*&\displaystyle\frac{mg}{s^2(Ms^2+\displaystyle\frac{(m+M)g}{l_a})}\\
+*&*&*&*\\
+*&*&*&*\\
+*&*&*&*
+\end{bmatrix}
+\begin{bmatrix}
+0\\
+\displaystyle\frac{1}{M}\\
+0\\
+-\displaystyle\frac{1}{Ml_a}\\
+\end{bmatrix} = \\
+=\displaystyle\frac{s^2+\displaystyle\frac{g}{l_a}}{s^2(Ms^2+\displaystyle\frac{(M+m)g}{l_a})}
+$\\\\
+Sostituendo i parametri del modello si ha:\\\\
+$T_{u,y_2}(s)=\displaystyle\frac{1.371s^2+81.02}{s^2(s^2+60.311)}$
