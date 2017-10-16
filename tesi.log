@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.9.7)  15 OCT 2017 12:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.9.30)  16 OCT 2017 12:46
 entering extended mode
 **./tesi.tex
 (tesi.tex
@@ -1002,21 +1002,75 @@ italian.ldf    on input line 21.
 
 ]
 Capitolo 1.
-<megainerzia.png, id=24, 1611.01875pt x 1611.01875pt>
+<motoreSimulink.jpg, id=24, 862.72313pt x 140.02313pt>
+File: motoreSimulink.jpg Graphic file (type jpg)
+
+<use motoreSimulink.jpg>
+Package pdftex.def Info: motoreSimulink.jpg used on input line 4.
+(pdftex.def)             Requested size: 390.0pt x 63.29825pt.
+ <megainerzia.png, id=25, 1611.01875pt x 1611.01875pt>
 File: megainerzia.png Graphic file (type png)
- <use megainerzia.png>
-Package pdftex.def Info: megainerzia.png used on input line 9.
-(pdftex.def)             Requested size: 241.64238pt x 241.64238pt.
+
+<use megainerzia.png>
+Package pdftex.def Info: megainerzia.png used on input line 10.
+(pdftex.def)             Requested size: 390.0pt x 389.99557pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [7])
-[8 <./megainerzia.png>]
+ [7 <./motoreSimulink.jpg>] <motore50StepCamp1000.jpg, id=31, 1927.2pt x 951.55
+5pt>
+File: motore50StepCamp1000.jpg Graphic file (type jpg)
+
+<use motore50StepCamp1000.jpg>
+Package pdftex.def Info: motore50StepCamp1000.jpg used on input line 18.
+(pdftex.def)             Requested size: 390.0pt x 192.55815pt.
+ [8 <./megainerzia.png>]
+<motore50StepCamp1000Polo100.jpg, id=36, 1927.2pt x 951.555pt>
+File: motore50StepCamp1000Polo100.jpg Graphic file (type jpg)
+
+<use motore50StepCamp1000Polo100.jpg>
+Package pdftex.def Info: motore50StepCamp1000Polo100.jpg used on input line 22.
+
+(pdftex.def)             Requested size: 390.0pt x 192.55815pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 24--28
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 30--33
+
+ []
+
+[9 <./motore50StepCamp1000.jpg> <./motore50StepCamp1000Polo100.jpg>]
+<modMotorvsReale.jpg, id=40, 1927.2pt x 951.555pt>
+File: modMotorvsReale.jpg Graphic file (type jpg)
+ <use modMotorvsReale.jpg>
+Package pdftex.def Info: modMotorvsReale.jpg used on input line 34.
+(pdftex.def)             Requested size: 390.0pt x 192.55815pt.
+
+[10 <./modMotorvsReale.jpg>]
+<modMotoreTorque.jpg, id=45, 757.6305pt x 231.86626pt>
+File: modMotoreTorque.jpg Graphic file (type jpg)
+
+<use modMotoreTorque.jpg>
+Package pdftex.def Info: modMotoreTorque.jpg used on input line 60.
+(pdftex.def)             Requested size: 390.0pt x 119.35406pt.
+)
+Underfull \hbox (badness 10000) in paragraph at lines 62--66
+
+ []
+
+[11 <./modMotoreTorque.jpg>]
 \openout2 = `pendoloModifica.aux'.
 
- (pendoloModifica.tex
+ (pendoloModifica.tex [12
+
+
+
+]
 Capitolo 2.
-<pendolo.png, id=34, 628.59843pt x 329.73187pt>
+<pendolo.png, id=52, 628.59843pt x 329.73187pt>
 File: pendolo.png Graphic file (type png)
  <use pendolo.png>
 Package pdftex.def Info: pendolo.png used on input line 5.
@@ -1031,11 +1085,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 16--19
 
  []
 
-[9
-
-
-
- <./pendolo.png>]
+[13 <./pendolo.png>]
 Overfull \hbox (76.05557pt too wide) detected at line 50
 \OML/cmm/m/it/12 I[][] \OT1/cmr/m/n/12 = \OML/cmm/m/it/12 l[] []\OT1/cmr/m/n/12
  (\OML/cmm/m/it/12 \OT1/cmr/m/n/12 )[\OML/cmm/m/it/12 mg \OT1/cmr/m/n/12 + \OM
@@ -1068,7 +1118,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 58--69
 
  []
 
-[10]
+[14]
 Underfull \hbox (badness 10000) in paragraph at lines 76--77
 
  []
@@ -1123,7 +1173,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 96--125
 
  []
 
-[11]
+[15]
 Underfull \hbox (badness 10000) in paragraph at lines 126--232
 
  []
@@ -1255,10 +1305,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 126--232
 
  []
 
-[12]
+[16]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [13]
+ [17]
 Underfull \hbox (badness 10000) in paragraph at lines 235--252
 
  []
@@ -1291,7 +1341,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 235--252
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [14]
+ [18]
 Overfull \hbox (79.77107pt too wide) detected at line 257
 [] \OT1/cmr/m/n/12 = []
  []
@@ -1398,11 +1448,11 @@ Overfull \hbox (39.669pt too wide) in paragraph at lines 257--335
 m/it/12 A\OT1/cmr/m/n/12 )[]\OML/cmm/m/it/12 B \OT1/cmr/m/n/12 = [] [] [] =
  []
 
-[15]
+[19]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [16]
-<pendoloFisico.jpg, id=69, 2914.89pt x 3589.41pt>
+ [20]
+<pendoloFisico.jpg, id=87, 2914.89pt x 3589.41pt>
 File: pendoloFisico.jpg Graphic file (type jpg)
  <use pendoloFisico.jpg>
 Package pdftex.def Info: pendoloFisico.jpg used on input line 340.
@@ -1417,7 +1467,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 343--346
 
  []
 
-[17 <./pendoloFisico.jpg>]
+[21 <./pendoloFisico.jpg>]
 Underfull \hbox (badness 10000) in paragraph at lines 346--356
 
  []
@@ -1464,10 +1514,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 357--67
 
  []
 
-[18] [19]
+[22] [23]
 \openout2 = `PendoloInverso.aux'.
 
- (PendoloInverso.tex [20
+ (PendoloInverso.tex [24
 
 
 
@@ -1478,7 +1528,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 13--15
 
  []
 
-[21]
+[25]
 Underfull \hbox (badness 10000) in paragraph at lines 60--112
 
  []
@@ -1509,13 +1559,13 @@ Overfull \hbox (5.74782pt too wide) in paragraph at lines 60--112
 ] [] = []$ 
  []
 
-) [22] (tesi.aux (modelloMotore.aux) (pendoloModifica.aux) (PendoloInverso.aux)
+) [26] (tesi.aux (modelloMotore.aux) (pendoloModifica.aux) (PendoloInverso.aux)
 ) ) 
 Here is how much of TeX's memory you used:
- 13917 strings out of 493323
- 278114 string characters out of 3139055
- 333540 words of memory out of 3000000
- 17320 multiletter control sequences out of 15000+200000
+ 13944 strings out of 493323
+ 278781 string characters out of 3139048
+ 332541 words of memory out of 3000000
+ 17342 multiletter control sequences out of 15000+200000
  538261 words of font info for 51 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  40i,10n,43p,10378b,378s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1531,9 +1581,9 @@ s/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6
 rogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsl12.pfb><C:/Program F
 iles/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiK
 TeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on tesi.pdf (22 pages, 8602844 bytes).
+Output written on tesi.pdf (26 pages, 8868633 bytes).
 PDF statistics:
- 130 PDF objects out of 1000 (max. 8388607)
+ 148 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 16 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 41 words of extra memory for PDF output out of 10000 (max. 10000000)
 
