@@ -1,9 +1,9 @@
-\chapter{Pendolo su carrello}
+\chapter{Pendolo su carrello}\label{PendCarrello}
 \section{Modello e relative Equazioni}
 
 \begin{center}
-	\includegraphics[scale=0.75]{pendolo.png}\\
-	{\small  Modello del pendolo su carrello}\\
+	\includegraphics[scale=0.7]{pendolo.png}\\
+	{\footnotesize  Modello del pendolo su carrello}\\
 \end{center}
 \textbf{Bilanciamento forze sull'asta}\\
 Asse X:
@@ -46,11 +46,11 @@ I_m\ddot{\theta}=l_aV\sin(\theta)+l_aH\cos(\theta)
 \end{equation}
 sostituendo la \ref{Hv} e la \ref{Vv}:
 $$
-I_m\ddot{\theta}=l_a\sin(\theta)[mg+ml_a\cos(\theta)\dot{\theta}^2+ml_a\sin(\theta)\ddot{\theta}]+l_a\cos(\theta)[m\ddot{x}_M-ml_a\sin(\theta)\dot{\theta}^2+ml_a\cos(\theta)\ddot{\theta}]=
+I_m\ddot{\theta}=l_a\sin(\theta)[mg+ml_a\cos(\theta)\dot{\theta}^2+ml_a\sin(\theta)\ddot{\theta}]+$$$$+l_a\cos(\theta)[m\ddot{x}_M-ml_a\sin(\theta)\dot{\theta}^2+ml_a\cos(\theta)\ddot{\theta}]=
 $$
 $$
-=mgl_a\sin(\theta)+ml_a^2\sin(\theta)\cos(\theta)\dot{\theta}^2+ml_a^2\sin^2(\theta)\ddot{\theta}+ml_a\ddot{x}_M\cos(\theta)-ml_a^2\cos(\theta)\sin(\theta)\dot{\theta}^2$$
-$$+ml_a^2\cos^2(\theta)\ddot{\theta}=$$
+=mgl_a\sin(\theta)+ml_a^2\sin(\theta)\cos(\theta)\dot{\theta}^2+ml_a^2\sin^2(\theta)\ddot{\theta}+ml_a\ddot{x}_M\cos(\theta)+$$$$-ml_a^2\cos(\theta)\sin(\theta)\dot{\theta}^2
++ml_a^2\cos^2(\theta)\ddot{\theta}=$$
 $$=mgl_a\sin(\theta)+ml_a^2\ddot{\theta}+ml_a\ddot{x}_M\cos(\theta) =
 $$
 \begin{equation} \label{momInThetaP}
@@ -195,7 +195,7 @@ $\underline{\delta y}=
 $\\\\\\
 Calcolando ora la funzione di trasferimento $T(s)$ tra l'ingresso $u$ (forza esercitata sul carrello,
 avanti/indietro) e l'uscita $y_2$(angolo $\theta$ del pendolo rispetto alla verticale) si ottiene:\\\\
-$T_{u,y_2}(s)=C(sI-A)^{-1}B=
+$T_{y_2,u}(s)=C(sI-A)^{-1}B=
 \begin{bmatrix}
 0&0&1&0
 \end{bmatrix}
@@ -218,19 +218,19 @@ Inserendo ora i parametri del modello fisico del pendolo su  carrello realizzato
 	\hline
 	\textbf{Parametro} & \textbf{Valore} & \textbf{Unità di misura}\\
 	\hline
-	$M$ & 0.7295 & $Kg$\\
+	$M$ & 0.7535 & $kg$\\
 	\hline
-	$m$ & 0.015 & $Kg$ \\
+	$m$ & 0.015 & $kg$ \\
 	\hline
-	$g$ & 9.81 & $\frac{m}{s^2}$\\
+	$g$ & 9.81 & $m/s^2$\\
 	\hline
 	$l_a$ & 0.166 & $m$\\
 	\hline
 \end{tabular}\\\\\\
 Data la precedente tabella si ha:\\
-$T_{u,y_2}(s)=-\displaystyle\frac{1}{0.121s^2+7.303}$
+$T_{y_2,u}(s)=-\displaystyle\frac{1}{0.125s^2+7.539}$
 
-\section{Modello senza trascurare l'inerzia dell'asta}\label{Im}
+\section{Modello senza trascurare l'inerzia dell'asta(Forse da Togliere)}\label{Im}
 
 Il sistema che deriva dalla \ref{FCarr} e dalla \ref{momInThetaP} senza trascurare l'inerzia dell'asta $I_m$ è dunque il seguente:
 \\\\
@@ -282,7 +282,8 @@ $\displaystyle\frac{\partial{f_3}}{\partial{\underline{x}}}(\underline x)=
 \end{bmatrix}$\\\\\\
 $\displaystyle\frac{\partial{f_4}}{\partial{x_1}}(\underline{x})=0$\quad
 $\displaystyle\frac{\partial{f_4}}{\partial{x_2}}(\underline{x})=0$\\
-$\displaystyle\frac{\partial{f_4}}{\partial{x_3}}(\underline{x})=\displaystyle\frac{(ml_a)[-g\cos(x_3)(M+m)+\sin(x_3)u-2\cos(x_3)\sin(x_3)\dot{x_4}ml_a+(\sin^2(x_3)-cos^2(x_3))x^2_4ml_a]}{ml_a^2(M+m)}$\quad
+$\displaystyle\frac{\partial{f_4}}{\partial{x_3}}(\underline{x})=\displaystyle\frac{(ml_a)[-g\cos(x_3)(M+m)+\sin(x_3)u-2\cos(x_3)\sin(x_3)\dot{x_4}ml_a}{ml_a^2(M+m)}+$
+$+\displaystyle\frac{(ml_a)(\sin^2(x_3)-cos^2(x_3))x^2_4ml_a}{ml_a^2(M+m)}$\\
 $\displaystyle\frac{\partial{f_4}}{\partial{x_4}}(\underline{x})=\displaystyle\frac{(M+m)I_m-2\cos(x_3)\sin(x_3)x_4m^2l_a^2+m^2l_a^2\cos^2(x_3)\ddot{x_4}}{ml_a(M+m)}$\\\\
 $\displaystyle\frac{\partial{f_1}}{\partial{u}}(\underline{x})=0$\quad
 $\displaystyle\frac{\partial{f_2}}{\partial{u}}(\underline{x})=\displaystyle\frac{1}{M+m}$\quad
@@ -314,7 +315,7 @@ $\underline{\delta y}=
 $\\\\\\
 Calcolando ora la funzione di Trasferimento $T(s)$ tra l'ingresso $u$(Forza esercitata sul carrello,
 avanti/indietro) e l'uscita $y_2$(angolo $\theta$ del pendolo rispetto alla verticale) si ottiene:\\
-$T_{u,y_2}(s)=C(sI-A)^{-1}B=
+$T_{y_2,u}(s)=C(sI-A)^{-1}B=
 \begin{bmatrix}
 0&0&1&0
 \end{bmatrix}
@@ -335,29 +336,42 @@ $
 
 \section{Stabilizzazione del pendolo}
 Il pendolo di per sè è un sistema già stabile, lo scopo della realizzazione su carrello consiste nello smorzarne l'oscillazione riducendo la costante di tempo del sistema grazie all'impiego di due ruote motrici.\\
-Di seguito la realizzazione del pendolo su carrello utilizzando un motore EV3 Large come trazione e un encoder GlideWheel-M per misurare l'angolo del pendolo rispetto alla verticale.
+Di seguito la realizzazione del pendolo su carrello utilizzando un motore EV3 Large Servo Motor come trazione e un encoder GlideWheel-M per misurare l'angolo del pendolo rispetto alla verticale.
 \begin{center}
-	\includegraphics[scale=0.1]{pendoloFisico.jpg}\\
-	{\small  Realizzazione fisica del pendolo su carrello}
+	\includegraphics[scale=0.08]{pendoloFisico.jpg}\\
+	{\footnotesize  Realizzazione fisica del pendolo su carrello}
 \end{center}
-Sfruttando il modello del motore EV3 Large da noi ricavato si può quindi ricavare la funizione di Trasferimento del sistema complessivo(avente come ingresso la potenza richiesta al motore e come uscita la posizione angolare del pendolo).\\
-IMMAGINE SIMULINK MODELLO SISTEMA PENDOLO+MOTORE NON RETROAZIONATO\\
-Il sistema complessivo in ciclo aperto è dato quindi dalla seguente funzione di Trasferimento ricavata con l'ausilio del 'Linear Analisys Tool' di Simulink:\\
-$$T_{u,y_2}=\displaystyle\frac{1}{non ricordo}$$\\
-della quale possiamo calcolare il luogo delle radici per studiarne la stabilità.
-IMMAGINE ROOT LOCUS\\
-Come si evince dal luogo delle radici del sistema, è possibile utilizzare un semplice Regolatore Proporzionale purchè il suo guadagno $P\in[-qualcosa,0]$.\\
-IMMAGINE SIMULINK CON REGOLATORE PROPORZIONALE\\
+Sfruttando il modello del motore LEGO da noi ricavato si può quindi ricavare la funzione di Trasferimento del sistema complessivo (avente come ingresso la potenza richiesta al motore e come uscita la posizione angolare del pendolo).\\
+Siccome in uscita al modello del motore abbiamo la coppia erogata dallo stesso, per poterlo mettere in serie al modello del pendolo su carrello (il quale come ingresso riceve una spinta sotto forma di forza) occorre adattare il collegamento I/O. Poichè si assume un puro moto di rotolamento delle ruote del carrello si tratta di trovare il giusto coefficiente di proporzionalità tra coppia e spinta.
+Abbiamo verificato sperimentalmente con la sovrapposizione dei grafici simulati e reali del sistema complessivo che tale coefficiente risulta essere all'incirca $17$.\\
+\begin{center}
+	\includegraphics[scale=0.5]{SisComplessivoPendoloNormale.PNG}\\
+	{\footnotesize  Sistema Complessivo}
+\end{center}
+Per realizzare ora una retroazione algebrica sull'uscita che ci permetta di controllarlo in ciclo chiuso, possiamo riassumere in un'unica funzione di Trasferimento il sistema complessivo:\\
+$$T_{y_2,u}=-\displaystyle\frac{323.4s+45.26}{s^4+31.67s^3+227s^2+1910s+10050}$$\\
+della quale si può calcolare il luogo delle radici per studiarne la stabilità in ciclo chiuso.
+\begin{center}
+	\includegraphics[scale=0.45]{RLocusPendoloNormale.PNG}\\
+	{\footnotesize  Luogo delle Radici di $-T_{y_2,u}$}
+\end{center}
+Come si evince dal luogo delle radici del sistema, è possibile utilizzare un semplice Regolatore Proporzionale purchè il suo guadagno rientri in un intervallo molto limitato ovvero $P\in(-10,0)$.\\
+Attraverso l'utilizzo di uno strumento MATLAB quale `sisotool' e grazie ad un'analisi sperimentale siamo arrivati a definirne il guadagno $P=-2$.\\
+\begin{center}
+	\includegraphics[scale=0.7]{SisComplessivoPNRetroazionato.PNG}\\
+	{\footnotesize  Sistema Retroazionato algebricamente}
+\end{center}
 Il Regolatore propozionale permette di ridurre ampiamente il periodo di oscillazione del pendolo.\\
-Nel seguito abbiamo sperimentato e osservato il comportamento del sistema cercando di quantificare il miglioramento ottenuto. 
+Abbiamo quindi sperimentato e osservato il comportamento del sistema cercando di quantificare il miglioramento ottenuto. 
 Come si può vedere nel seguente grafico posizionando il pendolo ad un'angolazione iniziale di $\theta=\ang{30}$, in ciclo aperto(ovvero senza controllo sul motore) si raggiunge il punto di stabilità $\theta=\ang{0}$ in poco più di 25 secondi, mentre risulta un tempo di appena 1.15 secondi per quanto riguarda il sistema in ciclo chiuso.\\
 GRAFICI DI OSCILLAZIONE PENDOLO IN OL E CL\\
 Un Regolatore migliore potrebbe essere un PID(Proporzionale Integrativo Derivativo) che permette grazie all'aggiunta di uno zero ($\in\Re$), e quindi necessariamente almeno un polo ($\in\Re$) di avere un maggiore margine di stabilità.\\\\
+PARTE IN FASE DI SVILUPPO\\\\
 \section{Controllo della posizione del carrello}
 Fino ad ora abbiamo trascurato la seconda uscita di nostro interesse, ovvero la posizione del carrello
 $x_M$. Perciò vogliamo provare a controllare quest'ultima in modo da decidere non solo il tempo di assestamento del pendolo ma allo stesso tempo anche la posizione del carrello dove il sistema dovrà assestarsi.\\
 A tal proposito riprendiamo le equazioni ricavate al paragrafo \ref{LinMod}.\\
-Dalle seguenti equazioni di stato linearizzate attorno al punto di equilibrio $\underline{x}=\underline{0}$, $u=0$\\ 
+Dalle seguenti equazioni di stato linearizzate attorno al punto di equilibrio $\underline{x}=\underline{0}$, $u=0$\\\\
 $\underline{\delta\dot{x}}=
 \begin{bmatrix}
 0&1&0&0\\
@@ -381,9 +395,9 @@ $\underline{\delta y}=
 \end{bmatrix}
 \underline{\delta x}
 $\\\\\\
-si può ricavare la funzione di trasferimento $T(s)$ tra l'ingresso $u$ (forza esercitata sul carrello,
+si può ricavare la funzione di trasferimento $T_{y_1,u}(s)$ tra l'ingresso $u$ (forza esercitata sul carrello,
 avanti/indietro) e l'uscita $y_1$(posizione $x_M$ del carrello):\\\\
-$T_{u,y_1}(s)=C(sI-A)^{-1}B=
+$T_{y_1,u}(s)=
 \begin{bmatrix}
 1&0&0&0
 \end{bmatrix}
@@ -402,4 +416,4 @@ $T_{u,y_1}(s)=C(sI-A)^{-1}B=
 =\displaystyle\frac{s^2+\displaystyle\frac{g}{l_a}}{s^2(Ms^2+\displaystyle\frac{(M+m)g}{l_a})}
 $\\\\
 Sostituendo i parametri del modello si ha:\\\\
-$T_{u,y_2}(s)=\displaystyle\frac{1.371s^2+81.02}{s^2(s^2+60.311)}$
+$T_{y_1,u}(s)=\displaystyle\frac{1.327s^2+78.42}{s^2(s^2+60.27)}$

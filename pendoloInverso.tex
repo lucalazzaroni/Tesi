@@ -1,72 +1,7 @@
-\chapter{Pendolo inverso su carrello}
-\section{Equazioni e linearizzazione del modello}
+\chapter{Pendolo inverso su carrello(forse da togliere)}
+\section{Linearizzazione del modello attorno al punto di equilibrio}
 
-
-\textbf{Bilanciamento forse sull'asta}\\
-asse x:
-\begin{equation}
-m\ddot{x}_m=H
-\end{equation}
-asse y:
-\begin{equation}
-m\ddot{y}_m=V-mg
-\end{equation}
-con:\\
-\begin{equation}\label{H}
-H=m\ddot{x}_m-ml\sin(\theta)\dot{\theta}^2+ml\cos(\theta)\ddot{\theta}
-\end{equation}
-\begin{equation}\label{V}
-V=mg-ml\cos(\theta)\dot{\theta}^2-ml\sin(\theta)\ddot{\theta}
-\end{equation}
-\textbf{Bilanciamento forze sul carrello}
-\begin{equation}
-M\ddot{x}_M=u-H
-\end{equation}
-sostituendo la \ref{H}
-$$
-M\ddot{x}_M=u-[m\ddot{x}_m-ml\sin(\theta)\dot{\theta}^2+ml\cos(\theta)\ddot{\theta}]
-$$
-$$
-(M+m)\ddot{x}_M+ml\cos(\theta)\ddot{\theta}=u+ml\dot{\theta}^2\sin(\theta)
-$$
-\textbf{Bilanciamento momenti sistema Asta-massa}
-\begin{equation}
-I_m\ddot{\theta}=lV\sin(\theta)-lH\cos(\theta)
-\end{equation}
-sostituendo la \ref{H} e la \ref{V} e semplificando
-$$
-\cos(\theta)\ddot{x}_M+l\ddot{\theta}=g\sin(\theta)
-$$
-Assegno le variabili di stato:\\
-$\begin{cases}
-$$x_1 = x_M$$ \\
-$$x_2=\dot{x}_M$$\\
-$$x_3=\theta$$\\
-$$x_4=\dot{\theta}$$
-\end{cases}
-$
-
-\begin{equation}
-\dot{x}_1=x_2
-\end{equation}
-\begin{equation}
-\dot{x}_2=\frac{u+mlx_4^2\sin(x_3)-mg\sin(x_3)\cos(x_3)} {M+m\sin^2(x_3)}
-\end{equation}
-\begin{equation}
-\dot{x}_3=x_4
-\end{equation}
-\begin{equation}
-\dot{x}_4=\frac{g\sin(x_3)(M+m)-\cos(x_3)(u+mlx_4\sin(x_3)}{l(M+m\sin^2(x_3))}
-\end{equation}\\
-\textbf{Ricerca punti di equilibrio del pendolo inverso}\\
-$\begin{cases}
-	$$x_1 =\forall$$ $(non dipende dalla posizione del carrello)$\\
-	$$x_2=0\\$$
-	$$x_3=k\pi $$ $(k pari pendolo inverso, k dispari pendolo normale)$\\
-	$$x_4=0$$\\
-\end{cases}\\\\$
-Per semplicità scelgo $x_1=0$ e per trattare il pendolo inverso scelgo $x_3=0$.\\\\
-\textbf{Linearizzazione delle equazioni attorno al punto di equilibrio}\\
+Utilizzando le equazioni ricavate al paragrafo \ref{LinMod} e linearizzandole attorno al punto di equilibrio instabile si ottengono le seguenti equazioni di stato:\\\\
 $\underline{\delta\dot{x}}=
 \begin{bmatrix}
 0&1&0&0\\

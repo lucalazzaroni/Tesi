@@ -6,8 +6,8 @@
 \contentsline {chapter}{\numberline {2}Pendolo su carrello}{13}
 \contentsline {section}{\numberline {2.1}Modello e relative Equazioni}{13}
 \contentsline {section}{\numberline {2.2}Linearizzazione del modello}{16}
-\contentsline {section}{\numberline {2.3}Modello senza trascurare l'inerzia dell'asta}{19}
-\contentsline {section}{\numberline {2.4}Stabilizzazione del pendolo}{21}
-\contentsline {section}{\numberline {2.5}Controllo della posizione del carrello}{22}
-\contentsline {chapter}{\numberline {3}Pendolo inverso su carrello}{25}
-\contentsline {section}{\numberline {3.1}Equazioni e linearizzazione del modello}{25}
+\contentsline {section}{\numberline {2.3}Modello senza trascurare l'inerzia dell'asta(Forse da Togliere)}{18}
+\contentsline {section}{\numberline {2.4}Stabilizzazione del pendolo}{20}
+\contentsline {section}{\numberline {2.5}Controllo della posizione del carrello}{23}
+\contentsline {chapter}{\numberline {3}Pendolo inverso su carrello(forse da togliere)}{25}
+\contentsline {section}{\numberline {3.1}Linearizzazione del modello attorno al punto di equilibrio}{25}
