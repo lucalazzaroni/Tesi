@@ -1,5 +1,5 @@
 % !TeX spellcheck = it_IT
-\documentclass[a4paper,11pt,twoside,openright]{book}
+\documentclass[a4paper,11pt,twoside]{book}
 \usepackage{amsmath}
 \usepackage{graphicx}
 \usepackage{siunitx}
@@ -9,6 +9,7 @@
 
 \usepackage[utf8]{inputenc}
 \usepackage{ fancyhdr }
+
 \newenvironment{abstract}
 {\cleardoublepage
 	\thispagestyle{empty}
@@ -19,41 +20,53 @@
 
 
 \begin{document}
+
 \thispagestyle{empty}
 \begin{center}
-	Francesco Tornatore\\
-	Luca Lazzaroni
-\end{center}
-
-\null\vspace{\stretch {1}}
-
-\begin{center}
 	\begin{Huge}
-		\textsc{Progetto ``model-base''\\
-			 del controllo di robot Lego\\
-			 in ambiente Simulink\\}
+		\textsc{Progetto ``model-based''\\
+				del controllo di robot Lego\\
+				in ambiente Simulink\\}
 	\end{Huge}
 \end{center}
+\vfill
+\begin{center}
+	\includegraphics[scale=0.4]{logo_unige.png}
+\end{center}
+\vfill
+\begin{center}
+	{\LARGE Francesco Tornatore Luca Lazzaroni}
+\end{center}
+
+\begin{center}
+	{\Large DITEN - Dipartimento di Ingegneria Navale, Elettrica, Elettronica e delle Telecomunicazioni}
+\end{center}
+\begin{center}
+	{\Large Università degli Studi di Genova}	
+\end{center}
+\vfill
 \begin{center}
 	Tesi di Laurea Triennale
 \end{center}
-
-\vspace{\stretch {2}}\null
-\null
-\vfill
 \begin{center}
-	Università degli Studi di Genova\\
-	Ottobre 2017
+	27 Ottobre 2017
 \end{center}
-\clearpage
+
+\vfill
 
 
+\newpage\null\thispagestyle{empty}\newpage
+
+\setcounter{secnumdepth}{3}
+\setcounter{tocdepth}{3}
+
+\frontmatter
+\thispagestyle{empty}
 \begin{flushright}
 	\null\vspace{\stretch {1}}
 	...DEDICA...
 	\vspace{\stretch {2}}\null
 \end{flushright}
-
 \begin{abstract}
 	\begin{center}
 		... versione del sommario in italiano ...
@@ -61,9 +74,18 @@
 \end{abstract}
 
 \tableofcontents
+\listoffigures
 
+\mainmatter
+\include{Introduzione}
 \include{modelloMotore}
 \include{pendoloModifica}
 \include{PendoloInverso}
+
+\appendix
+\bibliographystyle{Classes/RoboticsBiblio}    % bibliography style
+\renewcommand{\bibname}{References}           % change default name Bibliography to References
+\bibliography{References/references}          % References file
+\addcontentsline{toc}{chapter}{References} 
 
 \end{document}
