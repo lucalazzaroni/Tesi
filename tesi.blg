@@ -1,0 +1,19 @@
+This is BibTeX, Version 0.99dThe top-level auxiliary file: tesi.aux
+A level-1 auxiliary file: Introduzione.aux
+A level-1 auxiliary file: modelloMotore.aux
+A level-1 auxiliary file: pendoloModifica.aux
+A level-1 auxiliary file: PendoloInverso.aux
+I couldn't open style file Classes/RoboticsBiblio.bst
+---line 14 of file tesi.aux
+ : \bibstyle{Classes/RoboticsBiblio
+ :                                 }
+I'm skipping whatever remains of this command
+I couldn't open database file References/references.bib
+---line 15 of file tesi.aux
+ : \bibdata{References/references
+ :                               }
+I'm skipping whatever remains of this command
+I found no \citation commands---while reading file tesi.aux
+I found no database files---while reading file tesi.aux
+I found no style file---while reading file tesi.aux
+(There were 5 error messages)

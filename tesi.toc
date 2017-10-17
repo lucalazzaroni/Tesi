@@ -1,13 +1,13 @@
 \select@language {italian}
 \select@language {italian}
-\contentsline {chapter}{\numberline {1}Pendolo su carrello}{1}
-\contentsline {section}{\numberline {1.1}Modello del motore}{1}
-\contentsline {section}{\numberline {1.2}Dalla velocit\IeC {\`a} angolare alla coppia}{4}
-\contentsline {chapter}{\numberline {2}Pendolo su carrello}{7}
-\contentsline {section}{\numberline {2.1}Modello e relative Equazioni}{7}
-\contentsline {section}{\numberline {2.2}Linearizzazione del modello}{10}
-\contentsline {section}{\numberline {2.3}Modello senza trascurare l'inerzia dell'asta(Forse da Togliere)}{12}
-\contentsline {section}{\numberline {2.4}Stabilizzazione del pendolo}{14}
-\contentsline {section}{\numberline {2.5}Controllo della posizione del carrello}{17}
-\contentsline {chapter}{\numberline {3}Pendolo inverso su carrello(forse da togliere)}{19}
-\contentsline {section}{\numberline {3.1}Linearizzazione del modello attorno al punto di equilibrio}{19}
+\contentsline {chapter}{\numberline {1}Introduzione}{1}
+\contentsline {chapter}{\numberline {2}Modello del motore}{3}
+\contentsline {section}{\numberline {2.1}Dalla potenza in ingresso alla velocit\IeC {\`a} angolare}{3}
+\contentsline {section}{\numberline {2.2}Dalla velocit\IeC {\`a} angolare alla coppia}{6}
+\contentsline {chapter}{\numberline {3}Pendolo su carrello}{9}
+\contentsline {section}{\numberline {3.1}Modello e relative Equazioni}{9}
+\contentsline {section}{\numberline {3.2}Linearizzazione del modello}{12}
+\contentsline {section}{\numberline {3.3}Stabilizzazione del pendolo}{14}
+\contentsline {section}{\numberline {3.4}Controllo della posizione del carrello}{17}
+\contentsline {chapter}{\numberline {4}Pendolo inverso su carrello(forse da togliere)}{19}
+\contentsline {section}{\numberline {4.1}Linearizzazione del modello attorno al punto di equilibrio}{19}

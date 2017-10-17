@@ -1,26 +1,40 @@
-\chapter{Pendolo su carrello}
-\section{Modello del motore}
-\begin{center}
+\chapter{Modello del motore}
+\section{Dalla potenza in ingresso alla velocità angolare}
+
+\begin{figure}[ht]
+	\centering
 	\includegraphics[width=\textwidth]{motoreSimulink.jpg}
-\end{center}
+	\caption{Schema a blocchi Motore}
+	\label{motoreSimulink}
+\end{figure}
 Il LEGO MINDSTORM EV3 è dotato di un motore, l'EV3 Large Servo Motor, la cui velocità angolare, misurata in $rad/s$, è stata assunta come uscita del sistema.\\
 I valori di ingresso possibili sono invece compresi tra -100 e +100, dove +100 indica la massima potenza erogabile, mentre -100 idem, ma con verso di rotazione opposto.\\
 Al fine di modellare nel modo più preciso possibile abbiamo applicato a tale motore un albero dotato di pesi posti a una certa distanza da quest'ultimo in modo tale da incrementare il momento d'inerzia $I$ e, di conseguenza, diminuire l'accelerazione angolare massima $\alpha$ in accordo con la seconda legge di Newton (in forma angolare) $\tau = I\alpha$, dove $\tau$ è il momento della forza o, più semplicemente, la coppia massima erogata: valore caratteristico del motore.
-\begin{center}
+\newpage
+\begin{figure}[ht]
+	\centering
 	\includegraphics[width=\textwidth]{megainerzia.png}
-\end{center}
+	\caption{Albero per aumentare Inerzia del motore}
+	\label{megainerzia}
+\end{figure}
 In questo modo il tempo di assestamento $t_a$ del sistema, direttamente proporzionale a $\alpha$, è sensibilmente più lungo ed è dunque più semplice trovare una funzione di trasferimento assimilabile a quella dell'EV3 Large Servo Motor.\\
-L'encoder presente all'interno del motore è poi in grado di misurare, in $rad$, la rotazione dello stesso.
+All'interno del motore è inoltre presente un'encoder che permette di misurare, in gradi, la posizione angolare dello stesso.
 Di conseguenza, al fine di ottenere la velocità angolare $\omega$ è stato applicato in cascata un derivatore, ma anche un filtro passa basso con frequenza di taglio $\omega_c=25\;Hz$, necessario per attenuare le alte frequenze del sistema, al fine di ottenere una funzione in uscita meno spezzata possibile e, di conseguenza, più facilmente identificabile.\\
 Al fine di ridurre il più possibile l'errore è stato scelto come tempo di campionamento dell'encoder il valore minimo supportato: 0.001 $s$.\\
-Il risultato che si ottiene utilizzando come ingresso una funzione gradino con valore finale pari a 50 è mostrato nella figura seguente:
-\begin{center}
+Il risultato che si ottiene utilizzando come ingresso una funzione gradino con valore finale pari a 50 è mostrato nella figura \ref{motore50StepCamp1000}.
+\begin{figure}[ht]
+	\centering
 	\includegraphics[width=\textwidth]{motore50StepCamp1000.jpg}
-\end{center}
+	\caption{$\omega_c=25\;Hz$}
+	\label{motore50StepCamp1000}
+\end{figure}
 Scegliendo invece una frequenza di taglio del filtro passa basso $\omega_c = 100Hz$ l'uscita del sistema diventa:
-\begin{center}
+\begin{figure}[ht]
+	\centering
 	\includegraphics[width=\textwidth]{motore50StepCamp1000Polo100.jpg}
-\end{center}
+	\caption{Risposta al gradino con $\omega_c=100\;Hz$ }
+	\label{motore50StepCamp1000Polo100}
+\end{figure}
 Si può notare come la frequenza di taglio sia troppo elevata non attenuando abbastanza le alte frequenze e rendendo così impossibile una stima della funzione di trasferimento.\\
 Prendendo quindi in esame il primo dei due grafici si può stimare una costante di tempo $\tau$ (tempo che impiega la funzione a raggiungere il 63\% del valore di regime) del sistema pari a circa 0.15 $s$ e guadagno statico 10.4.\\
 La funzione di trasferimento che ne consegue è dunque:
@@ -30,9 +44,13 @@ T_{motore}(s)=\displaystyle\frac{10.4}{0.15s+1}
 $$
 \\\\\\\\
 Di seguito un confronto tra $T_{motore}(s)$ e la funzione di trasferimento reale del motore.
-\begin{center}
+\begin{figure}[ht]
+	\centering
 	\includegraphics[width=\textwidth]{modMotorvsReale.jpg}
-\end{center}
+	\caption{Risposta al gradino del Motore reale e del suo modello}
+	\label{modMotorvsReale}
+\end{figure}
+
 \section{Dalla velocità angolare alla coppia}
 È necessario ora ottenere la coppia generata dal motore in funzione del tempo al fine di utilizzarla come ingresso per la funzione di trasferimento del pendolo che sarà trattata in modo approfondito nel prossimo capitolo.\\
 La formula utilizzata per calcolare tale coppia è la seguente:
@@ -79,9 +97,12 @@ Inserendo ora i parametri calcolati sperimentalmente e riportati nella seguente 
 	\hline
 \end{tabular}\\\\\\
 Essendo $\tau=K\omega+I\alpha$ possiamo disegnare tramite Simulink il seguente diagramma a blocchi:
-\begin{center}
+\begin{figure}[ht]
+	\centering
 	\includegraphics[width=\textwidth]{modMotoreTorque.jpg}
-\end{center}
+	\caption{Modello completo del Motore}
+	\label{modMotoreTorque}
+\end{figure}
 L'uscita del sistema è proprio la coppia $\tau$ desiderata.\\
 Si può notare come nel blocco inferiore siano stati aggiunti il derivatore e il filtro passa basso.\\
 Il primo è necessario dal momento che l'accelerazione angolare $\alpha$ è proprio la derivata della velocità angolare $\omega$.\\
@@ -89,6 +110,9 @@ Per quanto riguarda il filtro, invece, è stato aggiunto (scegliendo appositamen
 Inoltre si è resa necessaria anche l'aggiunta di un blocco di saturazione dell'ingresso dal momento che, come già reso noto in precedenza, l'EV3 Large Servo Motor accetta valori compresi tra -100 e +100.\\
 In ultimo il valore di K è stato invece ricavato sperimentalmente avendo nota la coppia a regime, caratteristica dell'EV3 Large Servo Motor e pari a 0.2 $Nm$.\\
 Come si può notare nella seguente figura un valore di K pari a 0.000192 $Nm\,s/rad$ permette di rispettare appieno tale specifica.
-\begin{center}
+\begin{figure}[ht]
+	\centering
 	\includegraphics[width=\textwidth]{torque02.jpg}
-\end{center}
+	\caption{Risposta al gradino del modello completo}
+	\label{torque02}
+\end{figure}
