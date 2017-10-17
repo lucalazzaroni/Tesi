@@ -4,7 +4,7 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {2.1}{\ignorespaces Schema a blocchi Motore}}{3}
 \contentsline {figure}{\numberline {2.2}{\ignorespaces Albero per aumentare Inerzia del motore}}{4}
-\contentsline {figure}{\numberline {2.3}{\ignorespaces $\omega _c=25\tmspace +\thickmuskip {.2777em}Hz$}}{5}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Risposta al gradino con $\omega _c=25\tmspace +\thickmuskip {.2777em}Hz$}}{5}
 \contentsline {figure}{\numberline {2.4}{\ignorespaces Risposta al gradino con $\omega _c=100\tmspace +\thickmuskip {.2777em}Hz$ }}{5}
 \contentsline {figure}{\numberline {2.5}{\ignorespaces Risposta al gradino del Motore reale e del suo modello}}{6}
 \contentsline {figure}{\numberline {2.6}{\ignorespaces Modello completo del Motore}}{7}
@@ -12,7 +12,11 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {3.1}{\ignorespaces Modello del pendolo su carrello}}{9}
 \contentsline {figure}{\numberline {3.2}{\ignorespaces Realizzazione fisica del pendolo su carrello}}{15}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Schema a blocchi del sistema complessivo}}{15}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Luogo delle Radici di $-T_{y_2,u}$}}{16}
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Sistema complessivo controllato proporzionalmente}}{16}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Massima velocit\IeC {\`a} di oscillazione libera}}{16}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Schema a blocchi del sistema complessivo}}{16}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Luogo delle Radici di $-T_{y_2,u}$}}{17}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Sistema complessivo controllato proporzionalmente}}{17}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Sistema in ciclo aperto}}{18}
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Sistema in ciclo chiuso con Regolatore P}}{18}
+\addvspace {10\p@ }
 \addvspace {10\p@ }

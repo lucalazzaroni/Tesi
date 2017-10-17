@@ -5,19 +5,16 @@
 \usepackage{siunitx}
 \usepackage{setspace}
 \usepackage[english,italian]{babel}
-%\usepackage[latin1]{inputenc}
-
 \usepackage[utf8]{inputenc}
 \usepackage{ fancyhdr }
-
 \newenvironment{abstract}
 {\cleardoublepage
 	\thispagestyle{empty}
-	\null \vfill\begin{center}
-		\bfseries \abstractname \end{center}}
+	\null \vfill
+	\begin{center}
+		\bfseries \abstractname 
+	\end{center}}
 {\vfill\null}
-
-
 
 \begin{document}
 
@@ -31,7 +28,7 @@
 \end{center}
 \vfill
 \begin{center}
-	\includegraphics[scale=0.4]{logo_unige.png}
+	\includegraphics[scale=0.35]{logo_unige.png}
 \end{center}
 \vfill
 \begin{center}
@@ -47,10 +44,10 @@
 \end{center}
 \vfill
 \begin{center}
-	Tesi di Laurea Triennale
+	{\large Tesi di Laurea Triennale}
 \end{center}
 \begin{center}
-	27 Ottobre 2017
+	{\large 27 Ottobre 2017}
 \end{center}
 
 \vfill
@@ -58,19 +55,22 @@
 
 \newpage\null\thispagestyle{empty}\newpage
 
-\setcounter{secnumdepth}{3}
-\setcounter{tocdepth}{3}
-
 \frontmatter
 \thispagestyle{empty}
+\begin{center}
+	\section*{Ringraziamenti}
+		
+\end{center}
+
+\newpage
 \begin{flushright}
 	\null\vspace{\stretch {1}}
-	...DEDICA...
+	A chi ci paga gli studi e a chi ci aiuta a non abbandonarli,\\ a buon rendere...
 	\vspace{\stretch {2}}\null
 \end{flushright}
 \begin{abstract}
 	\begin{center}
-		... versione del sommario in italiano ...
+		
 	\end{center}
 \end{abstract}
 
@@ -82,11 +82,25 @@
 \include{modelloMotore}
 \include{pendoloModifica}
 \include{PendoloInverso}
+\include{Conclusioni}
 
-\appendix
-\bibliographystyle{Classes/RoboticsBiblio}    % bibliography style
-\renewcommand{\bibname}{References}           % change default name Bibliography to References
-\bibliography{References/references}          % References file
-\addcontentsline{toc}{chapter}{References} 
+
+\begin{thebibliography}{9}
+
+	\bibitem{latexcompanion} 
+	Michel Goossens, Frank Mittelbach, and Alexander Samarin. 
+	\textit{The \LaTeX\ Companion}. 
+	Addison-Wesley, Reading, Massachusetts, 1993.
+	
+	\bibitem{einstein} 
+	Albert Einstein. 
+	\textit{Zur Elektrodynamik bewegter K{\"o}rper}. (German) 
+	[\textit{On the electrodynamics of moving bodies}]. 
+	Annalen der Physik, 322(10):891–921, 1905.
+	
+	\bibitem{knuthwebsite} 
+	Knuth: Computers and Typesetting,
+	\\\texttt{http://www-cs-faculty.stanford.edu/\~{}uno/abcde.html}
+\end{thebibliography}
 
 \end{document}

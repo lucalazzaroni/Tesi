@@ -58,7 +58,7 @@ $$
 \begin{equation} \label{momInThetaP}
 =ml_a(g\sin(\theta)+l_a\ddot{\theta}+\ddot{x}_M\cos(\theta))
 \end{equation}
-Essendo il momento d'inerzia dell'asta molto inferiore rispetto a quello della massa $m$ attacata al pendolo, possiamo per semplicità trascurarlo, per cui poniamo $I_m=0$. Vedremo poi nel paragrafo \ref{Im} che i risultati senza approssimazione saranno praticamente gli stessi.\\
+Essendo il momento d'inerzia dell'asta molto inferiore rispetto a quello della massa $m$ attaccata al pendolo, possiamo per semplicità trascurarlo, per cui poniamo $I_m=0$. Vedremo poi nel paragrafo \ref{Im} che i risultati senza approssimazione saranno praticamente gli stessi.\\
 Il sistema che deriva dalla \ref{FCarr} e dalla \ref{momInThetaP} è dunque il seguente:
 \\\\
 $\begin{cases}
@@ -96,7 +96,7 @@ $$
 $$
 =\frac{u+ml_a\dot{\theta}^2\sin(\theta)+gm\cos(\theta)\sin(\theta)}{m\sin^2(\theta)+M}
 $$\\
-Assegnamo le variabili di stato e definiamo le uscite desiderate:\\\\
+Assegniamo le variabili di stato e definiamo le uscite desiderate:\\\\
 $\begin{cases}
 $$x_1 \stackrel{\Delta}{=} x_M$$ \\
 $$x_2\stackrel{\Delta}{=}\dot{x}_M$$\\
@@ -106,7 +106,7 @@ $$y_1\stackrel{\Delta}{=}x_M$$ \\
 $$y_2\stackrel{\Delta}{=}\theta$$\\
 \end{cases}
 $\\\\\\
-Sostituendo queste ultime nelle equazioni appena ricavate si ottiengono le equazioni:
+Sostituendo queste ultime nelle equazioni appena ricavate si ottengono le equazioni:
 \\\\\\
 $\underline{\dot{x}}=\displaystyle\frac{d}{d t}
 \begin{bmatrix}
@@ -142,7 +142,7 @@ $$x_3=\pm\pi$$\\
 $$x_4=0$$\\
 $$u=0$$
 \end{cases}$\\
-ovvero quando il pendolo è rivolto verso l'alto (penodolo inverso), l'altro, stabile, per\\
+ovvero quando il pendolo è rivolto verso l'alto (pendolo inverso), l'altro, stabile, per\\
 $\begin{cases}
 $$x_1=\forall$$ \\
 $$x_2=0$$\\
@@ -231,18 +231,27 @@ Inserendo ora i parametri del modello fisico del pendolo su  carrello realizzato
 \end{tabular}\\\\\\
 Data la precedente tabella si ha:\\
 $T_{y_2,u}(s)=-\displaystyle\frac{1}{0.125s^2+7.539}$
-
+\newpage
 \section{Stabilizzazione del pendolo}
 Il pendolo di per sè è un sistema già stabile, lo scopo della realizzazione su carrello consiste nello smorzarne l'oscillazione riducendo la costante di tempo del sistema grazie all'impiego di due ruote motrici.\\
-In figura \ref{pendoloFisico} realizzazione del pendolo su carrello utilizzando un motore EV3 Large Servo Motor come trazione e un encoder GlideWheel-M per misurare l'angolo del pendolo rispetto alla verticale.
+In figura \ref{pendoloFisico} realizzazione del pendolo su carrello utilizzando un motore EV3 Large Servo Motor come trazione e un encoder GlideWheel-M per misurare l'angolo del pendolo 
 \begin{figure}[ht]
 	\centering
 	\includegraphics[scale=0.08]{pendoloFisico.jpg}\\
 	\caption{Realizzazione fisica del pendolo su carrello}
 	\label{pendoloFisico}
+\end{figure} 
+rispetto alla verticale.\\
+Da specifiche quest'ultimo può raggiungere un tempo di campionamento minimo di 0.001s (così come il motore) ma a tale valore non riesce sempre a campionare in modo corretto, perciò abbiamo deciso di aumentarlo in modo da non perdere nessuna variazione anche alla massima velocità angolare raggiunta dal pendolo durante l'oscillazione libera tra $[\ang{-31},\ang{+31}]$ (intervallo entro il quale il pendolo è vincolato per costruzione).
+\begin{figure}[ht]
+	\centering
+	\includegraphics[scale=0.4]{SlewRate.PNG}\\
+	\caption{Massima velocità di oscillazione libera}
+	\label{slewRate}
 \end{figure}
+Da tale esperimento è risultato che durante la prima oscillazione (in figura \ref{slewRate}), il pendolo, raggiunge per $\theta=\ang{0}$ la velocità $\omega=250\frac{\deg}{s}$(calcolata con un semplice rapporto incrementale) per cui il tempo di campionamento ottimale sarebbe stato $t_c=\displaystyle\frac{1}{250}=0.004s$.
 Sfruttando il modello del motore LEGO da noi ricavato si può quindi ricavare la funzione di Trasferimento del sistema complessivo (avente come ingresso la potenza richiesta al motore e come uscita la posizione angolare del pendolo).\\
-Siccome in uscita al modello del motore abbiamo la coppia erogata dallo stesso, per poterlo mettere in serie al modello del pendolo su carrello (il quale come ingresso riceve una spinta sotto forma di forza) occorre adattare il collegamento I/O. Poichè si assume un puro moto di rotolamento delle ruote del carrello si tratta di trovare il giusto coefficiente di proporzionalità tra coppia e spinta.
+Siccome in uscita al modello del motore abbiamo la coppia erogata dallo stesso, per poterlo mettere in serie al modello del pendolo su carrello (il quale come ingresso riceve una spinta sotto forma di forza) occorre adattare il collegamento I/O. Poiché si assume un puro moto di rotolamento delle ruote del carrello si tratta di trovare il giusto coefficiente di proporzionalità tra coppia e spinta.
 Abbiamo verificato sperimentalmente con la sovrapposizione dei grafici simulati in Simulink e quelli reali del sistema complessivo ottenuti dalla misura dei sensori MINDSTORM che tale coefficiente risulta essere all'incirca $17$.
 \begin{figure}[ht]
 	\centering
@@ -260,19 +269,32 @@ della quale si può calcolare il luogo delle radici per studiarne la stabilità 
 	\label{RLocusPendoloNormale}
 \end{figure}
 Come si evince dal luogo delle radici del sistema, è possibile utilizzare un semplice Regolatore Proporzionale purché il suo guadagno rientri in un intervallo molto limitato ovvero $P\in(-10,0)$.\\
-Attraverso l'utilizzo di uno strumento MATLAB quale `sisotool' e grazie ad un'analisi sperimentale siamo arrivati a definirne il guadagno $P=-2$.\\
+Attraverso l'utilizzo di uno strumento MATLAB quale `sisotool' e grazie ad un'analisi sperimentale siamo arrivati a definirne il 
 \begin{figure}[ht]
 	\centering
 	\includegraphics[width=\textwidth]{SisComplessivoPNRetroazionato.PNG}
 	\caption{Sistema complessivo controllato proporzionalmente}
-	\label{Sistema Retroazionato algebricamente}
+	\label{SisComplessivoPNRetroazionato}
 \end{figure}
+guadagno $P=-2$.\\
 Il Regolatore proporzionale permette di ridurre ampiamente il periodo di oscillazione del pendolo.\\
-Abbiamo quindi sperimentato e osservato il comportamento del sistema cercando di quantificare il miglioramento ottenuto. 
-Come si può vedere nel seguente grafico posizionando il pendolo ad un'angolazione iniziale di $\theta=\ang{30}$, in ciclo aperto(ovvero senza controllo sul motore) si raggiunge il punto di stabilità $\theta=\ang{0}$ in poco più di 25 secondi, mentre risulta un tempo di appena 1.15 secondi per quanto riguarda il sistema in ciclo chiuso.\\
-GRAFICI DI OSCILLAZIONE PENDOLO IN OL E CL\\
-Un Regolatore migliore potrebbe essere un PID(Proporzionale Integrativo Derivativo) che permette grazie all'aggiunta di uno zero ($\in\Re$), e quindi necessariamente almeno un polo ($\in\Re$) di avere un maggiore margine di stabilità.\\\\
-PARTE IN FASE DI SVILUPPO\\\\
+Abbiamo quindi sperimentato e osservato il comportamento del sistema cercando di quantificare il miglioramento 
+\begin{figure}[ht]
+	\centering
+	\includegraphics[scale=0.402]{oscillOL.PNG}
+	\caption{Sistema in ciclo aperto}
+	\label{oscillOL}
+\end{figure} 
+ottenuto.\\
+Come si può vedere nel grafico in figura \ref{oscillOL} posizionando il pendolo ad un'angolazione iniziale di $\theta=\ang{31}$, in ciclo aperto(ovvero senza controllo sul motore) si raggiunge il punto di stabilità $\theta=\ang{0}$ in poco più di 30 secondi, mentre risulta un tempo di appena 1.4 secondi per quanto riguarda il sistema 
+\begin{figure}[ht]
+	\centering
+	\includegraphics[scale=0.402]{oscillCL.PNG}
+	\caption{Sistema in ciclo chiuso con Regolatore P}
+	\label{oscillCL}
+\end{figure}
+in ciclo chiuso.\\
+Un Regolatore migliore potrebbe essere un PID (Proporzionale Integrativo Derivativo) che permette grazie all'aggiunta di uno zero ($\in\Re$), e quindi necessariamente almeno un polo ($\in\Re$) di avere un maggiore margine di stabilità.
 \section{Controllo della posizione del carrello}
 Fino ad ora abbiamo trascurato la seconda uscita di nostro interesse, ovvero la posizione del carrello
 $x_M$. Perciò vogliamo provare a controllare quest'ultima in modo da decidere non solo il tempo di assestamento del pendolo ma allo stesso tempo anche la posizione del carrello dove il sistema dovrà assestarsi.\\

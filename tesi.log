@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.9.7)  17 OCT 2017 20:22
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.9.7)  18 OCT 2017 00:26
 entering extended mode
 **./tesi.tex
 (tesi.tex
@@ -813,21 +813,21 @@ s
 \f@nch@O@orf=\skip66
 ) (tesi.aux
 (Introduzione.aux) (modelloMotore.aux) (pendoloModifica.aux)
-(PendoloInverso.aux))
+(PendoloInverso.aux) (Conclusioni.aux))
 \openout1 = `tesi.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
 
 ("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -969,8 +969,8 @@ Dictionary: translator-basic-dictionary, Language: English
 ("C:\Program Files\MiKTeX 2.9\tex\latex\siunitx\siunitx-abbreviations.cfg"
 File: siunitx-abbreviations.cfg 2017/08/02 v2.7j siunitx: Abbreviated units
 )
-LaTeX Info: Redefining \it@ocap on input line 22.
-LaTeX Info: Redefining \it@ccap on input line 22.
+LaTeX Info: Redefining \it@ocap on input line 19.
+LaTeX Info: Redefining \it@ccap on input line 19.
 
 
 File italian.ldf warning: 
@@ -978,23 +978,23 @@ italian.ldf    With OT1 encoding guillemets are poorly faked
 italian.ldf    Use T1 encoding
 italian.ldf    or specify a font with command \CaporaliFrom
 italian.ldf    See the documentation concerning the babel-italian typesetting 
-italian.ldf    on input line 22.
+italian.ldf    on input line 19.
 
 \c__siunitx_mathsf_int=\count284
 \c__siunitx_mathtt_int=\count285
 <logo_unige.png, id=1, 304.13625pt x 353.06906pt>
 File: logo_unige.png Graphic file (type png)
  <use logo_unige.png>
-Package pdftex.def Info: logo_unige.png used on input line 34.
-(pdftex.def)             Requested size: 121.65233pt x 141.22511pt.
+Package pdftex.def Info: logo_unige.png used on input line 31.
+(pdftex.def)             Requested size: 106.44928pt x 123.57602pt.
  [1
 
 {C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map} <./logo_unige.png>] [2] [1
 
 ]
-[2
+[2] [3
 
-] [3] [4
+] [4
 
 ] (tesi.toc)
 \tf@toc=\write3
@@ -1341,30 +1341,37 @@ Underfull \hbox (badness 10000) in paragraph at lines 128--234
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [13]
-<pendoloFisico.jpg, id=99, 2914.89pt x 3589.41pt>
+[14] <pendoloFisico.jpg, id=104, 2914.89pt x 3589.41pt>
 File: pendoloFisico.jpg Graphic file (type jpg)
- <use pendoloFisico.jpg>
+
+<use pendoloFisico.jpg>
 Package pdftex.def Info: pendoloFisico.jpg used on input line 240.
 (pdftex.def)             Requested size: 233.19597pt x 287.15866pt.
+ <SlewRate.PNG, id=105, 817.55438pt x 481.04718pt>
+File: SlewRate.PNG Graphic file (type png)
 
-<SisComplessivoPendoloNormale.PNG, id=100, 761.09344pt x 212.29312pt>
+<use SlewRate.PNG>
+Package pdftex.def Info: SlewRate.PNG used on input line 248.
+(pdftex.def)             Requested size: 327.01596pt x 192.41545pt.
+
+<SisComplessivoPendoloNormale.PNG, id=106, 761.09344pt x 212.29312pt>
 File: SisComplessivoPendoloNormale.PNG Graphic file (type png)
 
 <use SisComplessivoPendoloNormale.PNG>
-Package pdftex.def Info: SisComplessivoPendoloNormale.PNG used on input line 24
-9.
+Package pdftex.def Info: SisComplessivoPendoloNormale.PNG used on input line 25
+8.
 (pdftex.def)             Requested size: 360.0pt x 100.41916pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 236--254
+Underfull \hbox (badness 10000) in paragraph at lines 236--263
 
  []
 
-[14] [15 <./pendoloFisico.jpg> <./SisComplessivoPendoloNormale.PNG>]
+[15 <./pendoloFisico.jpg>]
 <RLocusPendoloNormale.PNG, id=111, 836.3747pt x 472.01344pt>
 File: RLocusPendoloNormale.PNG Graphic file (type png)
 
 <use RLocusPendoloNormale.PNG>
-Package pdftex.def Info: RLocusPendoloNormale.PNG used on input line 258.
+Package pdftex.def Info: RLocusPendoloNormale.PNG used on input line 267.
 (pdftex.def)             Requested size: 360.0pt x 203.17068pt.
 
 <SisComplessivoPNRetroazionato.PNG, id=112, 423.83344pt x 162.6075pt>
@@ -1372,66 +1379,64 @@ File: SisComplessivoPNRetroazionato.PNG Graphic file (type png)
 
 <use SisComplessivoPNRetroazionato.PNG>
 Package pdftex.def Info: SisComplessivoPNRetroazionato.PNG used on input line 2
-66.
+75.
 (pdftex.def)             Requested size: 360.0pt x 138.12274pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 254--276
+<oscillOL.PNG, id=113, 818.30719pt x 482.55281pt>
+File: oscillOL.PNG Graphic file (type png)
+ <use oscillOL.PNG>
+Package pdftex.def Info: oscillOL.PNG used on input line 284.
+(pdftex.def)             Requested size: 328.95279pt x 193.98227pt.
+
+<oscillCL.PNG, id=114, 822.07124pt x 485.56406pt>
+File: oscillCL.PNG Graphic file (type png)
+ <use oscillCL.PNG>
+Package pdftex.def Info: oscillCL.PNG used on input line 292.
+(pdftex.def)             Requested size: 330.4659pt x 195.19276pt.
+ [16 <./SlewRate.PNG> <./SisComplessivoPendoloNormale.PNG>] [17 <./RLocusPendol
+oNormale.PNG> <./SisComplessivoPNRetroazionato.PNG>])
+Underfull \hbox (badness 10000) in paragraph at lines 299--83
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 254--276
+Underfull \hbox (badness 10000) in paragraph at lines 299--83
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 254--276
-
- []
-
-[16 <./RLocusPendoloNormale.PNG> <./SisComplessivoPNRetroazionato.PNG>])
-Underfull \hbox (badness 10000) in paragraph at lines 277--83
+Underfull \hbox (badness 10000) in paragraph at lines 299--83
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 277--83
+Underfull \hbox (badness 10000) in paragraph at lines 299--83
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 277--83
+Underfull \hbox (badness 10000) in paragraph at lines 299--83
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 277--83
+Underfull \hbox (badness 10000) in paragraph at lines 299--83
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 277--83
+Underfull \hbox (badness 10000) in paragraph at lines 299--83
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 277--83
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 277--83
-
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [17]
-[18]
+[18 <./oscillOL.PNG> <./oscillCL.PNG>] [19]
 \openout2 = `PendoloInverso.aux'.
 
- (PendoloInverso.tex
+ (PendoloInverso.tex [20
+
+
+
+]
 Capitolo 4.
 
 Underfull \hbox (badness 10000) in paragraph at lines 4--47
@@ -1464,22 +1469,42 @@ Overfull \hbox (15.46542pt too wide) in paragraph at lines 4--47
 .95 ) = [] [] [] = []$ 
  []
 
-) [19
+) [21]
+\openout2 = `Conclusioni.aux'.
+
+ (Conclusioni.tex
+Overfull \hbox (42.83792pt too wide) has occurred while \output is active
+\OT1/cmr/m/n/10.95 22 \OT1/cmr/m/sl/10.95 CAPITOLO 4.  PENDOLO INVERSO SU CARRE
+LLO(FORSE DA TOGLIERE)
+ []
+
+[22
 
 
 
-] (tesi.bbl) (tesi.aux (Introduzione.aux) (modelloMotore.aux)
-(pendoloModifica.aux) (PendoloInverso.aux))
+]
+Capitolo 5.
+) [23]
+Underfull \hbox (badness 10000) in paragraph at lines 87--88
+
+ []
+
+[24
+
+] [25
+
+] (tesi.aux (Introduzione.aux) (modelloMotore.aux) (pendoloModifica.aux) (Pendo
+loInverso.aux) (Conclusioni.aux))
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 13998 strings out of 493323
- 279928 string characters out of 3139055
- 332884 words of memory out of 3000000
- 17378 multiletter control sequences out of 15000+200000
- 538867 words of font info for 53 fonts, out of 3000000 for 9000
+ 14029 strings out of 493323
+ 280380 string characters out of 3139055
+ 333200 words of memory out of 3000000
+ 17400 multiletter control sequences out of 15000+200000
+ 539863 words of font info for 56 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  40i,9n,43p,10378b,494s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Pr
@@ -1495,10 +1520,13 @@ s/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr1
 iles/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTe
 X 2.9/fonts/type1/public/amsfonts/cm/cmsl10.pfb><C:/Program Files/MiKTeX 2.9/fo
 nts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
-1/public/amsfonts/cm/cmsy8.pfb>
-Output written on tesi.pdf (29 pages, 9086740 bytes).
+1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/
+amsfonts/cm/cmti10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts
+/cm/cmti8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt1
+0.pfb>
+Output written on tesi.pdf (35 pages, 9193132 bytes).
 PDF statistics:
- 174 PDF objects out of 1000 (max. 8388607)
+ 211 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 66 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 81 words of extra memory for PDF output out of 10000 (max. 10000000)
 
