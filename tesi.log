@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.9.7)  18 OCT 2017 00:26
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.9.30)  18 OCT 2017 00:54
 entering extended mode
 **./tesi.tex
 (tesi.tex
@@ -1058,33 +1058,21 @@ Underfull \hbox (badness 10000) in paragraph at lines 20--42
  []
 
 
+Underfull \hbox (badness 10000) in paragraph at lines 20--42
+
+ []
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [4 <./megainerzia.png>]
-Underfull \vbox (badness 1817) has occurred while \output is active []
-
- [5 <./motore50StepCamp1000.jpg> <./motore50StepCamp1000Polo100.jpg>]
-<modMotorvsReale.jpg, id=67, 1927.2pt x 951.555pt>
+ [4 <./megainerzia.png>] [5 <./motore50StepCamp1000.jpg> <./motore50StepCamp100
+0Polo100.jpg>] <modMotorvsReale.jpg, id=67, 1927.2pt x 951.555pt>
 File: modMotorvsReale.jpg Graphic file (type jpg)
- <use modMotorvsReale.jpg>
+
+<use modMotorvsReale.jpg>
 Package pdftex.def Info: modMotorvsReale.jpg used on input line 49.
 (pdftex.def)             Requested size: 360.0pt x 177.74821pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 44--53
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 44--53
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 44--53
-
- []
-
-[6 <./modMotorvsReale.jpg>]
+ [6 <./modMotorvsReale.jpg>]
 Underfull \hbox (badness 10000) in paragraph at lines 70--72
 
  []
@@ -1382,61 +1370,67 @@ Package pdftex.def Info: SisComplessivoPNRetroazionato.PNG used on input line 2
 75.
 (pdftex.def)             Requested size: 360.0pt x 138.12274pt.
 
-<oscillOL.PNG, id=113, 818.30719pt x 482.55281pt>
+<pendoloReale.jpg, id=113, 479.391pt x 206.57175pt>
+File: pendoloReale.jpg Graphic file (type jpg)
+ <use pendoloReale.jpg>
+Package pdftex.def Info: pendoloReale.jpg used on input line 283.
+(pdftex.def)             Requested size: 360.0pt x 155.13014pt.
+
+[16 <./SlewRate.PNG> <./SisComplessivoPendoloNormale.PNG>] [17 <./RLocusPendolo
+Normale.PNG> <./SisComplessivoPNRetroazionato.PNG>]
+<oscillOL.PNG, id=124, 818.30719pt x 482.55281pt>
 File: oscillOL.PNG Graphic file (type png)
  <use oscillOL.PNG>
-Package pdftex.def Info: oscillOL.PNG used on input line 284.
+Package pdftex.def Info: oscillOL.PNG used on input line 296.
 (pdftex.def)             Requested size: 328.95279pt x 193.98227pt.
 
-<oscillCL.PNG, id=114, 822.07124pt x 485.56406pt>
+<oscillCL.PNG, id=125, 822.07124pt x 485.56406pt>
 File: oscillCL.PNG Graphic file (type png)
  <use oscillCL.PNG>
-Package pdftex.def Info: oscillCL.PNG used on input line 292.
+Package pdftex.def Info: oscillCL.PNG used on input line 304.
 (pdftex.def)             Requested size: 330.4659pt x 195.19276pt.
- [16 <./SlewRate.PNG> <./SisComplessivoPendoloNormale.PNG>] [17 <./RLocusPendol
-oNormale.PNG> <./SisComplessivoPNRetroazionato.PNG>])
-Underfull \hbox (badness 10000) in paragraph at lines 299--83
+)
+Underfull \hbox (badness 10000) in paragraph at lines 311--83
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 299--83
+Underfull \hbox (badness 10000) in paragraph at lines 311--83
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 299--83
+Underfull \hbox (badness 10000) in paragraph at lines 311--83
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 299--83
+Underfull \hbox (badness 10000) in paragraph at lines 311--83
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 299--83
+Underfull \hbox (badness 10000) in paragraph at lines 311--83
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 299--83
+Underfull \hbox (badness 10000) in paragraph at lines 311--83
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 299--83
+Underfull \hbox (badness 10000) in paragraph at lines 311--83
 
  []
 
-[18 <./oscillOL.PNG> <./oscillCL.PNG>] [19]
+[18 <./pendoloReale.jpg>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [19 <./oscillOL.PNG>] [20 <./oscillCL.PNG>]
 \openout2 = `PendoloInverso.aux'.
 
- (PendoloInverso.tex [20
-
-
-
-]
+ (PendoloInverso.tex
 Capitolo 4.
 
 Underfull \hbox (badness 10000) in paragraph at lines 4--47
@@ -1469,7 +1463,11 @@ Overfull \hbox (15.46542pt too wide) in paragraph at lines 4--47
 .95 ) = [] [] [] = []$ 
  []
 
-) [21]
+) [21
+
+
+
+]
 \openout2 = `Conclusioni.aux'.
 
  (Conclusioni.tex
@@ -1484,26 +1482,20 @@ LLO(FORSE DA TOGLIERE)
 
 ]
 Capitolo 5.
-) [23]
-Underfull \hbox (badness 10000) in paragraph at lines 87--88
+) [23] [24
 
- []
 
-[24
-
-] [25
-
-] (tesi.aux (Introduzione.aux) (modelloMotore.aux) (pendoloModifica.aux) (Pendo
-loInverso.aux) (Conclusioni.aux))
+] [25] (tesi.aux (Introduzione.aux) (modelloMotore.aux)
+(pendoloModifica.aux) (PendoloInverso.aux) (Conclusioni.aux))
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 14029 strings out of 493323
- 280380 string characters out of 3139055
- 333200 words of memory out of 3000000
- 17400 multiletter control sequences out of 15000+200000
+ 14035 strings out of 493323
+ 280493 string characters out of 3139048
+ 333211 words of memory out of 3000000
+ 17405 multiletter control sequences out of 15000+200000
  539863 words of font info for 56 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  40i,9n,43p,10378b,494s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1524,9 +1516,9 @@ nts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
 amsfonts/cm/cmti10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts
 /cm/cmti8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt1
 0.pfb>
-Output written on tesi.pdf (35 pages, 9193132 bytes).
+Output written on tesi.pdf (35 pages, 9228387 bytes).
 PDF statistics:
- 211 PDF objects out of 1000 (max. 8388607)
+ 212 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 81 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 86 words of extra memory for PDF output out of 10000 (max. 10000000)
 
