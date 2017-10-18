@@ -217,22 +217,29 @@ $T_{y_2,u}(s)=C(sI-A)^{-1}B=
 \end{bmatrix} = \\
 =-\displaystyle\frac{1}{Ml_as^2+(M+m)g}
 $\\\\\\
-Inserendo ora i parametri del modello fisico del pendolo su  carrello realizzato con l'ausilio del Lego MINDSTORM EV3 si può procedere all'identificazione della funzione di trasferimento\\\\
-\begin{tabular}{|l|l|l|l|}
-	\hline
-	\textbf{Sigla} & \textbf{Valore} & \textbf{U.d.m.} & \textbf{Parametro}\\
-	\hline
-	$M$ & 0.7535 & $kg$ & massa carrello\\
-	\hline
-	$m$ & 0.016 & $kg$ & massa all'estremità del pendolo\\
-	\hline
-	$g$ & 9.81 & $m/s^2$ & accelerazione di gravità\\
-	\hline
-	$l_a$ & 0.166 & $m$ & lunghezza asta del pendolo\\
-	\hline
-\end{tabular}\\\\\\
-Data la precedente tabella si ha:\\
-$T_{y_2,u}(s)=-\displaystyle\frac{1}{0.125s^2+7.541}$
+Inserendo ora i parametri del modello fisico del pendolo su  carrello realizzato con l'ausilio del Lego MINDSTORM EV3 si può procedere all'identificazione della funzione di trasferimento.
+\begin{table}[ht]
+	\begin{tabular}{|l|l|l|l|}
+		\hline
+		\textbf{Sigla} & \textbf{Valore} & \textbf{U.d.m.} & \textbf{Parametro}\\
+		\hline
+		$M$ & 0.7535 & $kg$ & massa carrello\\
+		\hline
+		$m$ & 0.016 & $kg$ & massa all'estremità del pendolo\\
+		\hline
+		$g$ & 9.81 & $m/s^2$ & accelerazione di gravità\\
+		\hline
+		$l_a$ & 0.166 & $m$ & lunghezza asta del pendolo\\
+		\hline
+		$r$ & 0.034 & $m$ & raggio ruote motrici\\
+		\hline
+	
+	\end{tabular}	
+\caption{Parametri del sistema Carrello-Pendolo}
+\label{carrPend}
+\end{table}
+\\Data la tabella \ref{carrPend} si ha:
+$$T_{y_2,u}(s)=-\displaystyle\frac{1}{0.125s^2+7.541}$$
 \newpage
 \section{Stabilizzazione del pendolo}
 Il pendolo di per sè è un sistema già stabile, lo scopo della realizzazione su carrello consiste nello smorzarne l'oscillazione riducendo la costante di tempo del sistema grazie all'impiego di due ruote motrici.\\
@@ -256,14 +263,14 @@ Sfruttando il modello del motore LEGO da noi ricavato si può quindi ricavare la
 Siccome in uscita al modello del motore abbiamo la coppia erogata dallo stesso, per poterlo mettere in serie al modello del pendolo su carrello (il quale come ingresso riceve una spinta sotto forma di forza) occorre adattare il collegamento I/O. Poiché si assume un puro moto di rotolamento delle ruote del carrello si tratta di trovare il giusto coefficiente $C$ di proporzionalità tra coppia e spinta.
 \begin{figure}[ht]
 	\centering
-	\includegraphics[scale=0.5]{braccioForza.PNG}
+	\includegraphics[scale=0.4]{braccioForza.PNG}
 	\caption{Momento della forza}
 	\label{braccioForza}
 \end{figure}
 \\La relazione tra queste ultime è data dalla formula fisica del momento della forza
 $\tau=r\times F=(r\sin(\phi))F=r_{\bot}F$
 ove $r_{\bot}$ rappresenta il braccio della forza F.
-Poiché nel nostro caso $r$ risulta essere il raggio della ruota ed F la forza tangente alla ruota abbiamo ricavato $$F=\displaystyle\frac{\tau}{r}\Rightarrow C=\displaystyle\frac{1}{r}=29.41$$ 
+Poiché nel nostro caso $r$ risulta essere il raggio della ruota ed F la forza tangente alla ruota abbiamo ricavato sostituendo il suo valore dalla tabella \ref{carrPend}: $$F=\displaystyle\frac{\tau}{r}\Rightarrow C=\displaystyle\frac{1}{r}=29.41$$ 
 \begin{figure}[ht]
 	\centering
 	\includegraphics[width=\textwidth]{SisComplessivoPendoloNormale.PNG}
@@ -279,42 +286,55 @@ della quale si può calcolare il luogo delle radici per studiarne la stabilità 
 	\caption{Luogo delle Radici di $-T_{y_2,u}$}
 	\label{RLocusPendoloNormale}
 \end{figure}
-Come si evince dal luogo delle radici del sistema, è possibile utilizzare un semplice Regolatore Proporzionale purché il suo guadagno rientri in un intervallo molto limitato ovvero $P\in(-10,0)$.\\ 
-Attraverso l'utilizzo di uno strumento MATLAB
+Come si evince dal luogo delle radici del sistema, è possibile utilizzare un semplice Regolatore Proporzionale purché il suo guadagno rientri in un intervallo molto limitato ovvero $P\in(-6,0)$.
+\newpage
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=\textwidth]{gainOttimaleft.PNG}
+	\caption{Particolare del Luogo delle Radici di $-T_{y_2,u}$}
+	\label{gainOttimaleft}
+\end{figure}
+Attraverso l'utilizzo di uno strumento MATLAB quale `rlocus'(vedi fig.\ref{gainOttimaleft}) siamo arrivati a definirne il guadagno $P=-2$, in seguito verificato anche sperimentalmente.
 \begin{figure}[ht]
 	\centering
 	\includegraphics[width=\textwidth]{SisComplessivoPNRetroazionato.PNG}
 	\caption{Sistema complessivo controllato proporzionalmente}
 	\label{SisComplessivoPNRetroazionato}
 \end{figure}
- quale `sisotool' siamo arrivati a definirne il guadagno $P=-2$, in seguito verificato anche sperimentalmente.\\
-Nella realizzazione dello schema a blocchi in Simulink, caricato nel Brick EV3 MINDSTORM per confermare la veridicità dei risultati ottenuti in MATLAB,
+\\Nella realizzazione dello schema a blocchi in Simulink, caricato nel Brick EV3 MINDSTORM per confermare la veridicità dei risultati ottenuti in MATLAB, abbiamo posto un ingresso costante 0 poiché si assume il pendolo inizialmente a riposo nel punto di equilibrio $\theta=\ang{0}$.
 \begin{figure}[ht]
 	\centering
 	\includegraphics[width=\textwidth]{pendoloReale.jpg}
 	\caption{Sistema reale controllato proporzionalmente}
 	\label{pendoloReale}
 \end{figure}
-abbiamo posto un ingresso costante 0 poiché si assume il pendolo inizialmente a riposo nel punto di equilibrio $\theta=\ang{0}$.\\
-L'encoder, invece, è settato a $0$ tramite un segnale di reset dopo un tempo pari a $0.001s$ dall'inizializzazione poiché, all'avvio del programma caricato nel Brick, l'encoder considera come angolo $\theta=\ang{0}$ di riferimento il primo valore misurato.\\
-Sotto tali presupposti il motore, avendo ingresso nullo, non erogherà potenza fino quando il pendolo non verrà spostato dal suo stato iniziale.\\
-Alla variare della posizione angolare, il motore reagisce muovendo il carrello nella stessa direzione per riportare il 
+\\L'encoder, invece, è settato a $0$ tramite un segnale di reset dopo un tempo pari a $0.001s$ dall'inizializzazione poiché, all'avvio del programma caricato nel Brick, l'encoder considera come angolo $\theta=\ang{0}$ di riferimento il primo valore misurato.
+\newpage
+A conferma della veridicità del luogo delle radici abbiamo provato a controllare il sistema al variare di $P$ e come mostrato nelle figura \ref{variazioneGainP} il sistema risulta effettivamente instabile per valori che si discostano dall'intervallo di stabilità trovato.
 \begin{figure}[ht]
 	\centering
-	\includegraphics[width=\textwidth]{oscillOL.PNG}
+	\includegraphics[width=\textwidth]{variazioneGainP.jpg}
+	\caption{Uscita $\theta$ del sistema per valori di $P=-2,-6,-8$}
+	\label{variazioneGainP}
+\end{figure}
+\\Sotto tali presupposti il motore, avendo ingresso nullo, non erogherà potenza fino quando il pendolo non verrà spostato dal 
+\begin{figure}[ht]
+	\centering
+	\includegraphics[scale=0.4]{oscillOL.PNG}
 	\caption{Sistema in ciclo aperto}
 	\label{oscillOL}
 \end{figure} 
-pendolo nel suo punto di equilibrio.\\
-Come si può vedere nel grafico in figura \ref{oscillOL} posizionando il pendolo ad un'angolazione di $\theta=\ang{31}$ e lasciandolo quindi libero di oscillare, in ciclo aperto (ovvero senza controllo sul motore), si raggiunge il punto di stabilità $\theta=\ang{0}$ in poco più di $30$ secondi, mentre risulta un tempo di appena $1.4$ secondi per quanto riguarda il sistema 
+suo stato iniziale.\\
+Al variare della posizione angolare, il motore reagisce muovendo il carrello nella stessa direzione per riportare il pendolo nel suo punto di equilibrio.\\
+Come si può vedere nel grafico in figura \ref{oscillOL} posizionando il pendolo ad un'angolazione di $\theta=\ang{31}$ e lasciandolo quindi libero di oscillare, in ciclo aperto (ovvero senza controllo sul motore), si raggiunge il punto di stabilità $\theta=\ang{0}$ in poco più di $30$ secondi, mentre risulta un tempo di appena $1.4$ secondi per quanto riguarda il sistema in ciclo chiuso.
 \begin{figure}[ht]
 	\centering
-	\includegraphics[width=\textwidth]{oscillCL.PNG}
+	\includegraphics[scale=0.4]{oscillCL.PNG}
 	\caption{Sistema in ciclo chiuso con Regolatore P}
 	\label{oscillCL}
-\end{figure}
-in ciclo chiuso.\\
-Un Regolatore migliore potrebbe essere un PID (Proporzionale Integrativo Derivativo) che permette grazie all'aggiunta di uno zero ($\in\Re$), e quindi necessariamente almeno un polo ($\in\Re$) di avere un maggiore margine di stabilità.
+\end{figure}\\
+Un altro regolatore d'interesse potrebbe essere un PID (Proporzionale Integrativo Derivativo) che permette grazie all'aggiunta di uno zero ($\in\Re$), e quindi necessariamente almeno un polo ($\in\Re$) di avere un maggiore margine di stabilità.
+\newpage
 \section{Controllo della posizione del carrello}
 Fino ad ora abbiamo trascurato la seconda uscita di nostro interesse, ovvero la posizione del carrello
 $x_M$. Perciò vogliamo provare a controllare quest'ultima in modo da decidere non solo il tempo di assestamento del pendolo ma allo stesso tempo anche la posizione del carrello dove il sistema dovrà assestarsi.\\
