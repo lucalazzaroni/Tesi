@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.9.7)  19 OCT 2017 00:46
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.9.30)  19 OCT 2017 00:55
 entering extended mode
 **./tesi.tex
 (tesi.tex
@@ -1342,7 +1342,7 @@ File: braccioForza.PNG Graphic file (type png)
 Package pdftex.def Info: braccioForza.PNG used on input line 266.
 (pdftex.def)             Requested size: 133.69713pt x 116.23218pt.
  [15 <./pendoloFisico.jpg>] [16 <./SlewRate.PNG> <./braccioForza.PNG>]
-<SisComplessivoPendoloNormale.PNG, id=115, 520.94624pt x 124.96687pt>
+<SisComplessivoPendoloNormale.PNG, id=114, 520.94624pt x 124.96687pt>
 File: SisComplessivoPendoloNormale.PNG Graphic file (type png)
 
 <use SisComplessivoPendoloNormale.PNG>
@@ -1354,21 +1354,21 @@ Underfull \hbox (badness 10000) in paragraph at lines 273--281
 
  []
 
-<RLocusPendoloNormale.PNG, id=116, 836.3747pt x 472.01344pt>
+<RLocusPendoloNormale.PNG, id=115, 836.3747pt x 472.01344pt>
 File: RLocusPendoloNormale.PNG Graphic file (type png)
 
 <use RLocusPendoloNormale.PNG>
 Package pdftex.def Info: RLocusPendoloNormale.PNG used on input line 285.
 (pdftex.def)             Requested size: 360.0pt x 203.17068pt.
  [17 <./SisComplessivoPendoloNormale.PNG> <./RLocusPendoloNormale.PNG>] <gainOt
-timaleft.PNG, id=122, 820.56563pt x 457.71pt>
+timaleft.PNG, id=120, 820.56563pt x 457.71pt>
 File: gainOttimaleft.PNG Graphic file (type png)
 
 <use gainOttimaleft.PNG>
 Package pdftex.def Info: gainOttimaleft.PNG used on input line 293.
 (pdftex.def)             Requested size: 360.0pt x 200.80637pt.
 
-<SisComplessivoPNRetroazionato.PNG, id=123, 430.60875pt x 155.07938pt>
+<SisComplessivoPNRetroazionato.PNG, id=121, 430.60875pt x 155.07938pt>
 File: SisComplessivoPNRetroazionato.PNG Graphic file (type png)
 
 <use SisComplessivoPNRetroazionato.PNG>
@@ -1376,7 +1376,7 @@ Package pdftex.def Info: SisComplessivoPNRetroazionato.PNG used on input line 3
 00.
 (pdftex.def)             Requested size: 360.0pt x 129.6529pt.
 
-<pendoloReale.jpg, id=124, 479.391pt x 206.57175pt>
+<pendoloReale.jpg, id=122, 479.391pt x 206.57175pt>
 File: pendoloReale.jpg Graphic file (type jpg)
  <use pendoloReale.jpg>
 Package pdftex.def Info: pendoloReale.jpg used on input line 307.
@@ -1388,19 +1388,19 @@ Overfull \hbox (7.09505pt too wide) in paragraph at lines 297--312
  []
 
 [18 <./gainOttimaleft.PNG> <./SisComplessivoPNRetroazionato.PNG>]
-<variazioneGainP.jpg, id=129, 834.11626pt x 453.94594pt>
+<variazioneGainP.jpg, id=127, 834.11626pt x 453.94594pt>
 File: variazioneGainP.jpg Graphic file (type jpg)
 
 <use variazioneGainP.jpg>
 Package pdftex.def Info: variazioneGainP.jpg used on input line 316.
 (pdftex.def)             Requested size: 360.0pt x 195.92024pt.
- <oscillOL.PNG, id=130, 818.30719pt x 482.55281pt>
+ <oscillOL.PNG, id=128, 818.30719pt x 482.55281pt>
 File: oscillOL.PNG Graphic file (type png)
 
 <use oscillOL.PNG>
 Package pdftex.def Info: oscillOL.PNG used on input line 323.
 (pdftex.def)             Requested size: 327.31708pt x 193.0177pt.
- <oscillCL.PNG, id=131, 822.07124pt x 485.56406pt>
+ <oscillCL.PNG, id=129, 822.07124pt x 485.56406pt>
 File: oscillCL.PNG Graphic file (type png)
 
 <use oscillCL.PNG>
@@ -1497,6 +1497,21 @@ LLO(FORSE DA TOGLIERE)
 
 ]
 Capitolo 5.
+
+Underfull \hbox (badness 10000) in paragraph at lines 2--9
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2--9
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2--9
+
+ []
+
 ) [25] [26
 
 
@@ -1510,7 +1525,7 @@ Overfull \hbox (7.70331pt too wide) in paragraph at lines 123--126
 (PendoloInverso.aux) (Conclusioni.aux)) ) 
 Here is how much of TeX's memory you used:
  14064 strings out of 493323
- 280991 string characters out of 3139055
+ 280991 string characters out of 3139048
  334342 words of memory out of 3000000
  17428 multiletter control sequences out of 15000+200000
  539863 words of font info for 56 fonts, out of 3000000 for 9000
@@ -1533,9 +1548,9 @@ l10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
 am Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program Files
 /MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti8.pfb><C:/Program Files/MiKTeX 2
 .9/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on tesi.pdf (37 pages, 9312711 bytes).
+Output written on tesi.pdf (37 pages, 9306177 bytes).
 PDF statistics:
- 224 PDF objects out of 1000 (max. 8388607)
+ 220 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  101 words of extra memory for PDF output out of 10000 (max. 10000000)
 
