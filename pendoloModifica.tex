@@ -254,10 +254,16 @@ Da specifiche quest'ultimo può raggiungere un tempo di campionamento minimo di 
 Da tale esperimento è risultato che durante la prima oscillazione (in figura \ref{slewRate}), il pendolo, raggiunge per $\theta=\ang{0}$ la velocità $\omega=250\deg/s$ (calcolata con un semplice rapporto incrementale) per cui il tempo di campionamento ottimale sarebbe stato $t_c=\displaystyle\frac{1}{250}=0.004s$.
 Sfruttando il modello del motore LEGO da noi ricavato si può quindi ricavare la funzione di Trasferimento del sistema complessivo (avente come ingresso la potenza richiesta al motore e come uscita la posizione angolare del pendolo).\\
 Siccome in uscita al modello del motore abbiamo la coppia erogata dallo stesso, per poterlo mettere in serie al modello del pendolo su carrello (il quale come ingresso riceve una spinta sotto forma di forza) occorre adattare il collegamento I/O. Poiché si assume un puro moto di rotolamento delle ruote del carrello si tratta di trovare il giusto coefficiente $C$ di proporzionalità tra coppia e spinta.
-La relazione tra queste ultime è data dalla formula fisica del momento della forza
+\begin{figure}[ht]
+	\centering
+	\includegraphics[scale=0.5]{braccioForza.PNG}
+	\caption{Momento della forza}
+	\label{braccioForza}
+\end{figure}
+\\La relazione tra queste ultime è data dalla formula fisica del momento della forza
 $\tau=r\times F=(r\sin(\phi))F=r_{\bot}F$
 ove $r_{\bot}$ rappresenta il braccio della forza F.
-Poiché nel nostro caso $r$ risulta essere il raggio della ruota ed F la forza tangente alla ruota abbiamo ricavato $$F=\dispalystyle\frac{\tau}{r}\Rightarrow C=\dispalystyle\frac{1}{r}=29.41$$ 
+Poiché nel nostro caso $r$ risulta essere il raggio della ruota ed F la forza tangente alla ruota abbiamo ricavato $$F=\displaystyle\frac{\tau}{r}\Rightarrow C=\displaystyle\frac{1}{r}=29.41$$ 
 \begin{figure}[ht]
 	\centering
 	\includegraphics[width=\textwidth]{SisComplessivoPendoloNormale.PNG}

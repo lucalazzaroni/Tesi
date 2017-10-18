@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.9.7)  18 OCT 2017 19:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.9.30)  18 OCT 2017 19:21
 entering extended mode
 **./tesi.tex
 (tesi.tex
@@ -816,18 +816,18 @@ s
 (PendoloInverso.aux) (Conclusioni.aux))
 \openout1 = `tesi.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
 
 ("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -969,8 +969,8 @@ Dictionary: translator-basic-dictionary, Language: English
 ("C:\Program Files\MiKTeX 2.9\tex\latex\siunitx\siunitx-abbreviations.cfg"
 File: siunitx-abbreviations.cfg 2017/08/02 v2.7j siunitx: Abbreviated units
 )
-LaTeX Info: Redefining \it@ocap on input line 19.
-LaTeX Info: Redefining \it@ccap on input line 19.
+LaTeX Info: Redefining \it@ocap on input line 40.
+LaTeX Info: Redefining \it@ccap on input line 40.
 
 
 File italian.ldf warning: 
@@ -978,14 +978,14 @@ italian.ldf    With OT1 encoding guillemets are poorly faked
 italian.ldf    Use T1 encoding
 italian.ldf    or specify a font with command \CaporaliFrom
 italian.ldf    See the documentation concerning the babel-italian typesetting 
-italian.ldf    on input line 19.
+italian.ldf    on input line 40.
 
 \c__siunitx_mathsf_int=\count284
 \c__siunitx_mathtt_int=\count285
 <logo_unige.png, id=1, 304.13625pt x 353.06906pt>
 File: logo_unige.png Graphic file (type png)
  <use logo_unige.png>
-Package pdftex.def Info: logo_unige.png used on input line 31.
+Package pdftex.def Info: logo_unige.png used on input line 52.
 (pdftex.def)             Requested size: 106.44928pt x 123.57602pt.
  [1
 
@@ -1025,27 +1025,27 @@ Capitolo 1.
 
 ]
 Capitolo 2.
-<motoreSimulink.jpg, id=53, 551.05875pt x 78.2925pt>
+<motoreSimulink.jpg, id=54, 551.05875pt x 78.2925pt>
 File: motoreSimulink.jpg Graphic file (type jpg)
  <use motoreSimulink.jpg>
 Package pdftex.def Info: motoreSimulink.jpg used on input line 6.
 (pdftex.def)             Requested size: 360.0pt x 51.14995pt.
 
 [3 <./motoreSimulink.jpg>]
-<megainerzia.png, id=58, 1611.01875pt x 1611.01875pt>
+<megainerzia.png, id=59, 1611.01875pt x 1611.01875pt>
 File: megainerzia.png Graphic file (type png)
  <use megainerzia.png>
 Package pdftex.def Info: megainerzia.png used on input line 16.
 (pdftex.def)             Requested size: 360.0pt x 359.98079pt.
 
-<motore50StepCamp1000.jpg, id=59, 1927.2pt x 951.555pt>
+<motore50StepCamp1000.jpg, id=60, 1927.2pt x 951.555pt>
 File: motore50StepCamp1000.jpg Graphic file (type jpg)
 
 <use motore50StepCamp1000.jpg>
 Package pdftex.def Info: motore50StepCamp1000.jpg used on input line 27.
 (pdftex.def)             Requested size: 360.0pt x 177.74821pt.
 
-<motore50StepCamp1000Polo100.jpg, id=60, 1927.2pt x 951.555pt>
+<motore50StepCamp1000Polo100.jpg, id=61, 1927.2pt x 951.555pt>
 File: motore50StepCamp1000Polo100.jpg Graphic file (type jpg)
 
 <use motore50StepCamp1000Polo100.jpg>
@@ -1066,7 +1066,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 20--42
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [4 <./megainerzia.png>] [5 <./motore50StepCamp1000.jpg> <./motore50StepCamp100
-0Polo100.jpg>] <modMotorvsReale.jpg, id=67, 1927.2pt x 951.555pt>
+0Polo100.jpg>] <modMotorvsReale.jpg, id=68, 1927.2pt x 951.555pt>
 File: modMotorvsReale.jpg Graphic file (type jpg)
 
 <use modMotorvsReale.jpg>
@@ -1090,17 +1090,17 @@ File: torque02.jpg Graphic file (type jpg)
 Package pdftex.def Info: torque02.jpg used on input line 115.
 (pdftex.def)             Requested size: 360.0pt x 177.37323pt.
 )
-Underfull \hbox (badness 10000) in paragraph at lines 74--83
+Underfull \hbox (badness 10000) in paragraph at lines 74--104
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 74--83
+Underfull \hbox (badness 10000) in paragraph at lines 74--104
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 74--83
+Underfull \hbox (badness 10000) in paragraph at lines 74--104
 
  []
 
@@ -1340,43 +1340,30 @@ File: SlewRate.PNG Graphic file (type png)
 <use SlewRate.PNG>
 Package pdftex.def Info: SlewRate.PNG used on input line 250.
 (pdftex.def)             Requested size: 360.0pt x 211.82289pt.
- [15 <./pendoloFisico.jpg>]
-! Undefined control sequence.
-l.260 ... ruota abbiamo ricavato $$F=\dispalystyle
-                                                  \frac{\tau}{r}\Rightarrow ...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
+ <braccioForza.PNG, id=106, 334.24875pt x 290.58563pt>
+File: braccioForza.PNG Graphic file (type png)
 
-! Undefined control sequence.
-l.260 ...\frac{\tau}{r}\Rightarrow C=\dispalystyle
-                                                  \frac{1}{r}=29.41$$
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-<SisComplessivoPendoloNormale.PNG, id=110, 520.94624pt x 124.96687pt>
+<use braccioForza.PNG>
+Package pdftex.def Info: braccioForza.PNG used on input line 259.
+(pdftex.def)             Requested size: 167.12396pt x 145.29245pt.
+ [15 <./pendoloFisico.jpg>] [16 <./SlewRate.PNG> <./braccioForza.PNG>]
+<SisComplessivoPendoloNormale.PNG, id=115, 520.94624pt x 124.96687pt>
 File: SisComplessivoPendoloNormale.PNG Graphic file (type png)
 
 <use SisComplessivoPendoloNormale.PNG>
 Package pdftex.def Info: SisComplessivoPendoloNormale.PNG used on input line 26
-3.
+9.
 (pdftex.def)             Requested size: 360.0pt x 86.3588pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 260--268
+Underfull \hbox (badness 10000) in paragraph at lines 266--274
 
  []
 
-[16 <./SlewRate.PNG> <./SisComplessivoPendoloNormale.PNG>]
 <RLocusPendoloNormale.PNG, id=116, 836.3747pt x 472.01344pt>
 File: RLocusPendoloNormale.PNG Graphic file (type png)
 
 <use RLocusPendoloNormale.PNG>
-Package pdftex.def Info: RLocusPendoloNormale.PNG used on input line 272.
+Package pdftex.def Info: RLocusPendoloNormale.PNG used on input line 278.
 (pdftex.def)             Requested size: 360.0pt x 203.17068pt.
 
 <SisComplessivoPNRetroazionato.PNG, id=117, 430.60875pt x 155.07938pt>
@@ -1384,65 +1371,63 @@ File: SisComplessivoPNRetroazionato.PNG Graphic file (type png)
 
 <use SisComplessivoPNRetroazionato.PNG>
 Package pdftex.def Info: SisComplessivoPNRetroazionato.PNG used on input line 2
-80.
+86.
 (pdftex.def)             Requested size: 360.0pt x 129.6529pt.
 
 <pendoloReale.jpg, id=118, 479.391pt x 206.57175pt>
 File: pendoloReale.jpg Graphic file (type jpg)
  <use pendoloReale.jpg>
-Package pdftex.def Info: pendoloReale.jpg used on input line 288.
+Package pdftex.def Info: pendoloReale.jpg used on input line 294.
 (pdftex.def)             Requested size: 360.0pt x 155.13014pt.
 
 <oscillOL.PNG, id=119, 818.30719pt x 482.55281pt>
 File: oscillOL.PNG Graphic file (type png)
  <use oscillOL.PNG>
-Package pdftex.def Info: oscillOL.PNG used on input line 298.
+Package pdftex.def Info: oscillOL.PNG used on input line 304.
 (pdftex.def)             Requested size: 360.0pt x 212.29443pt.
 
 <oscillCL.PNG, id=120, 822.07124pt x 485.56406pt>
 File: oscillCL.PNG Graphic file (type png)
  <use oscillCL.PNG>
-Package pdftex.def Info: oscillCL.PNG used on input line 306.
+Package pdftex.def Info: oscillCL.PNG used on input line 312.
 (pdftex.def)             Requested size: 360.0pt x 212.63379pt.
- [17 <./RLocusPendoloNormale.PNG> <./SisComplessivoPNRetroazionato.PNG>])
-Underfull \hbox (badness 10000) in paragraph at lines 313--84
+ [17 <./SisComplessivoPendoloNormale.PNG> <./RLocusPendoloNormale.PNG>] [18 <./
+SisComplessivoPNRetroazionato.PNG> <./pendoloReale.jpg>])
+Underfull \hbox (badness 10000) in paragraph at lines 319--105
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 313--84
+Underfull \hbox (badness 10000) in paragraph at lines 319--105
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 313--84
+Underfull \hbox (badness 10000) in paragraph at lines 319--105
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 313--84
+Underfull \hbox (badness 10000) in paragraph at lines 319--105
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 313--84
+Underfull \hbox (badness 10000) in paragraph at lines 319--105
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 313--84
+Underfull \hbox (badness 10000) in paragraph at lines 319--105
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 313--84
+Underfull \hbox (badness 10000) in paragraph at lines 319--105
 
  []
 
-[18 <./pendoloReale.jpg>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [19 <./oscillOL.PNG>] [20 <./oscillCL.PNG>]
+[19 <./oscillOL.PNG>] [20 <./oscillCL.PNG>]
 \openout2 = `PendoloInverso.aux'.
 
  (PendoloInverso.tex
@@ -1503,10 +1488,10 @@ Capitolo 5.
 ] [25] (tesi.aux (Introduzione.aux) (modelloMotore.aux)
 (pendoloModifica.aux) (PendoloInverso.aux) (Conclusioni.aux)) ) 
 Here is how much of TeX's memory you used:
- 14034 strings out of 493323
- 280489 string characters out of 3139055
- 334211 words of memory out of 3000000
- 17404 multiletter control sequences out of 15000+200000
+ 14045 strings out of 493323
+ 280652 string characters out of 3139048
+ 334324 words of memory out of 3000000
+ 17414 multiletter control sequences out of 15000+200000
  539863 words of font info for 56 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  40i,9n,43p,10378b,494s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1527,9 +1512,9 @@ msfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/
 cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10
 .pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti8.pfb><C:/
 Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on tesi.pdf (35 pages, 9216752 bytes).
+Output written on tesi.pdf (35 pages, 9222069 bytes).
 PDF statistics:
- 212 PDF objects out of 1000 (max. 8388607)
+ 213 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 86 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 91 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -15,7 +15,28 @@
 		\bfseries \abstractname 
 	\end{center}}
 {\vfill\null}
-
+\makeatletter 
+\renewcommand{\frontmatter}{% 
+	\cleardoublepage\@mainmatterfalse 
+	\pagenumbering{smallRoman}} 
+\DeclareRobustCommand{\@smrc}[1]{% 
+	\begingroup$\m@th$\fontsize{\sf@size}{\sf@size}\selectfont#1\endgroup} 
+\def\smallRoman#1{\expandafter\@smallRoman\csname c@#1\endcsname} 
+\def\@smallRoman#1{\@smrc{\expandafter\@slowromansmallcap\romannumeral #1@}} 
+\def\@slowromansmallcap#1{\ifx @#1% then terminate 
+	\else 
+	\if i#1I\else 
+	\if v#1V\else 
+	\if x#1X\else 
+	\if l#1L\else 
+	\if c#1C\else 
+	\if d#1D\else 
+	\if m#1M\else 
+	#1\fi\fi\fi\fi\fi\fi\fi 
+	\expandafter\@slowromansmallcap 
+	\fi 
+} 
+\makeatother
 \begin{document}
 
 \thispagestyle{empty}
