@@ -5,7 +5,7 @@
 \contentsline {section}{\numberline {2.1}Dalla potenza alla velocit\IeC {\`a} angolare}{3}
 \contentsline {section}{\numberline {2.2}Dalla velocit\IeC {\`a} angolare alla coppia}{6}
 \contentsline {chapter}{\numberline {3}Pendolo su carrello}{9}
-\contentsline {section}{\numberline {3.1}Modello e relative Equazioni}{9}
+\contentsline {section}{\numberline {3.1}Modello e relative equazioni}{9}
 \contentsline {section}{\numberline {3.2}Linearizzazione del modello}{12}
 \contentsline {section}{\numberline {3.3}Stabilizzazione del pendolo}{15}
 \contentsline {section}{\numberline {3.4}Controllo della posizione del carrello}{18}
