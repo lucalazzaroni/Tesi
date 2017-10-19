@@ -317,71 +317,19 @@ A conferma della veridicità del luogo delle radici abbiamo provato a controllar
 	\caption{Uscita $\theta$ del sistema per valori di $P=-2,-6,-8$}
 	\label{variazioneGainP}
 \end{figure}
-\\Sotto tali presupposti il motore, avendo ingresso nullo, non erogherà potenza fino quando il pendolo non verrà spostato dal 
+\\Sotto tali presupposti il motore, avendo ingresso nullo, non erogherà potenza fino quando il pendolo non verrà spostato dal suo stato iniziale.\\
+Al variare della posizione angolare, il motore reagisce muovendo il carrello nella stessa direzione per riportare il pendolo nel suo punto di equilibrio.
+\newpage
+Come si può vedere nel grafico in figura \ref{oscillOL} posizionando il pendolo ad un'angolazione di $\theta=\ang{31}$ e
 \begin{figure}[ht]
 	\centering
 	\includegraphics[scale=0.4]{oscillOL.PNG}
 	\caption{Sistema in ciclo aperto}
 	\label{oscillOL}
-\end{figure} 
-suo stato iniziale.\\
-Al variare della posizione angolare, il motore reagisce muovendo il carrello nella stessa direzione per riportare il pendolo nel suo punto di equilibrio.\\
-Come si può vedere nel grafico in figura \ref{oscillOL} posizionando il pendolo ad un'angolazione di $\theta=\ang{31}$ e lasciandolo quindi libero di oscillare, in ciclo aperto (ovvero senza controllo sul motore), si raggiunge il punto di stabilità $\theta=\ang{0}$ in poco più di $30$ secondi, mentre risulta un tempo di appena $1.4$ secondi per quanto riguarda il sistema in ciclo chiuso.
+\end{figure}  lasciandolo quindi libero di oscillare, in ciclo aperto (ovvero senza controllo sul motore), si raggiunge il punto di stabilità $\theta=\ang{0}$ in poco più di $30$ secondi, mentre risulta un tempo di appena $1.4$ secondi per quanto riguarda il sistema in ciclo chiuso.
 \begin{figure}[ht]
 	\centering
 	\includegraphics[scale=0.4]{oscillCL.PNG}
 	\caption{Sistema in ciclo chiuso con Regolatore P}
 	\label{oscillCL}
-\end{figure}\\
-Un altro regolatore d'interesse potrebbe essere un PID (Proporzionale Integrativo Derivativo) che permette grazie all'aggiunta di uno zero ($\in\Re$), e quindi necessariamente almeno un polo ($\in\Re$) di avere un maggiore margine di stabilità.
-\newpage
-\section{Controllo della posizione del carrello}
-Fino ad ora abbiamo trascurato la seconda uscita di nostro interesse, ovvero la posizione del carrello
-$x_M$. Perciò vogliamo provare a controllare quest'ultima in modo da decidere non solo il tempo di assestamento del pendolo ma allo stesso tempo anche la posizione del carrello dove il sistema dovrà assestarsi.\\
-A tal proposito riprendiamo le equazioni ricavate al paragrafo \ref{LinMod}.\\
-Dalle seguenti equazioni di stato linearizzate attorno al punto di equilibrio $\underline{x}=\underline{0}$, $u=0$\\\\
-$\underline{\delta\dot{x}}=
-\begin{bmatrix}
-0&1&0&0\\
-0&0&\displaystyle\frac{mg}{M}&0\\
-0&0&0&1\\
-0&0&-\displaystyle\frac{(M+m)g}{Ml_a}&0
-\end{bmatrix}
-\underline{\delta x}+
-\begin{bmatrix}
-0\\
-\displaystyle\frac{1}{M}\\
-0\\
--\displaystyle\frac{1}{Ml_a}\\
-\end{bmatrix}
-\underline{\delta u}
-$\\\\
-$\underline{\delta y}=
-\begin{bmatrix}
-1&0&0&0\\
-0&0&1&0
-\end{bmatrix}
-\underline{\delta x}
-$\\\\\\
-si può ricavare la funzione di trasferimento $T_{y_1,u}(s)$ tra l'ingresso $u$ (forza esercitata sul carrello,
-avanti/indietro) e l'uscita $y_1$(posizione $x_M$ del carrello):\\\\
-$T_{y_1,u}(s)=
-\begin{bmatrix}
-1&0&0&0
-\end{bmatrix}
-\begin{bmatrix}
-*&\displaystyle\frac{1}{s^2}&*&\displaystyle\frac{mg}{s^2(Ms^2+\displaystyle\frac{(m+M)g}{l_a})}\\
-*&*&*&*\\
-*&*&*&*\\
-*&*&*&*
-\end{bmatrix}
-\begin{bmatrix}
-0\\
-\displaystyle\frac{1}{M}\\
-0\\
--\displaystyle\frac{1}{Ml_a}\\
-\end{bmatrix} = \\
-=\displaystyle\frac{s^2+\displaystyle\frac{g}{l_a}}{s^2(Ms^2+\displaystyle\frac{(M+m)g}{l_a})}
-$\\\\
-Sostituendo i parametri del modello si ha:\\\\
-$T_{y_1,u}(s)=\displaystyle\frac{1.327s^2+78.42}{s^2(s^2+60.34)}$
+\end{figure}

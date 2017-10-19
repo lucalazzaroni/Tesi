@@ -8,7 +8,4 @@
 \contentsline {section}{\numberline {3.1}Modello e relative equazioni}{9}
 \contentsline {section}{\numberline {3.2}Linearizzazione del modello}{12}
 \contentsline {section}{\numberline {3.3}Stabilizzazione del pendolo}{15}
-\contentsline {section}{\numberline {3.4}Controllo della posizione del carrello}{21}
-\contentsline {chapter}{\numberline {4}Pendolo inverso su carrello(forse da togliere)}{23}
-\contentsline {section}{\numberline {4.1}Linearizzazione del modello attorno al punto di equilibrio}{23}
-\contentsline {chapter}{\numberline {5}Conclusioni}{25}
+\contentsline {chapter}{\numberline {4}Conclusioni}{21}

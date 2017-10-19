@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.9.30)  19 OCT 2017 00:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.9.7)  19 OCT 2017 19:41
 entering extended mode
 **./tesi.tex
 (tesi.tex
@@ -812,8 +812,7 @@ s
 \f@nch@O@olf=\skip65
 \f@nch@O@orf=\skip66
 ) (tesi.aux
-(Introduzione.aux) (modelloMotore.aux) (pendoloModifica.aux)
-(PendoloInverso.aux) (Conclusioni.aux))
+(Introduzione.aux) (modelloMotore.aux) (pendoloModifica.aux) (Conclusioni.aux))
 \openout1 = `tesi.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 33.
@@ -828,7 +827,6 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 33.
 LaTeX Font Info:    ... okay on input line 33.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 33.
 LaTeX Font Info:    ... okay on input line 33.
-
 ("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count278
@@ -1059,30 +1057,30 @@ Package pdftex.def Info: motoreSimulink.jpg used on input line 6.
 <megainerzia.png, id=59, 1611.01875pt x 1611.01875pt>
 File: megainerzia.png Graphic file (type png)
  <use megainerzia.png>
-Package pdftex.def Info: megainerzia.png used on input line 16.
+Package pdftex.def Info: megainerzia.png used on input line 17.
 (pdftex.def)             Requested size: 360.0pt x 359.98079pt.
 
 <motore50StepCamp1000.jpg, id=60, 1927.2pt x 951.555pt>
 File: motore50StepCamp1000.jpg Graphic file (type jpg)
 
 <use motore50StepCamp1000.jpg>
-Package pdftex.def Info: motore50StepCamp1000.jpg used on input line 27.
+Package pdftex.def Info: motore50StepCamp1000.jpg used on input line 28.
 (pdftex.def)             Requested size: 360.0pt x 177.74821pt.
 
 <motore50StepCamp1000Polo100.jpg, id=61, 1927.2pt x 951.555pt>
 File: motore50StepCamp1000Polo100.jpg Graphic file (type jpg)
 
 <use motore50StepCamp1000Polo100.jpg>
-Package pdftex.def Info: motore50StepCamp1000Polo100.jpg used on input line 34.
+Package pdftex.def Info: motore50StepCamp1000Polo100.jpg used on input line 35.
 
 (pdftex.def)             Requested size: 360.0pt x 177.74821pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 20--42
+Underfull \hbox (badness 10000) in paragraph at lines 21--43
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 20--42
+Underfull \hbox (badness 10000) in paragraph at lines 21--43
 
  []
 
@@ -1094,10 +1092,10 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 File: modMotorvsReale.jpg Graphic file (type jpg)
 
 <use modMotorvsReale.jpg>
-Package pdftex.def Info: modMotorvsReale.jpg used on input line 49.
+Package pdftex.def Info: modMotorvsReale.jpg used on input line 50.
 (pdftex.def)             Requested size: 360.0pt x 177.74821pt.
  [6 <./modMotorvsReale.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 70--72
+Underfull \hbox (badness 10000) in paragraph at lines 71--73
 
  []
 
@@ -1105,13 +1103,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 70--72
 File: modMotoreTorque.jpg Graphic file (type jpg)
 
 <use modMotoreTorque.jpg>
-Package pdftex.def Info: modMotoreTorque.jpg used on input line 106.
+Package pdftex.def Info: modMotoreTorque.jpg used on input line 107.
 (pdftex.def)             Requested size: 360.0pt x 108.40431pt.
  <torque02.jpg, id=73, 1927.2pt x 949.5475pt>
 File: torque02.jpg Graphic file (type jpg)
 
 <use torque02.jpg>
-Package pdftex.def Info: torque02.jpg used on input line 119.
+Package pdftex.def Info: torque02.jpg used on input line 120.
 (pdftex.def)             Requested size: 360.0pt x 177.37323pt.
 ) [7 <./modMotoreTorque.jpg>] [8 <./torque02.jpg>]
 \openout2 = `pendoloModifica.aux'.
@@ -1394,163 +1392,98 @@ File: variazioneGainP.jpg Graphic file (type jpg)
 <use variazioneGainP.jpg>
 Package pdftex.def Info: variazioneGainP.jpg used on input line 316.
 (pdftex.def)             Requested size: 360.0pt x 195.92024pt.
- <oscillOL.PNG, id=128, 818.30719pt x 482.55281pt>
+ [19 <./pendoloReale.jpg> <./variazioneGainP.jpg>]
+<oscillOL.PNG, id=131, 818.30719pt x 482.55281pt>
 File: oscillOL.PNG Graphic file (type png)
-
-<use oscillOL.PNG>
-Package pdftex.def Info: oscillOL.PNG used on input line 323.
+ <use oscillOL.PNG>
+Package pdftex.def Info: oscillOL.PNG used on input line 326.
 (pdftex.def)             Requested size: 327.31708pt x 193.0177pt.
- <oscillCL.PNG, id=129, 822.07124pt x 485.56406pt>
-File: oscillCL.PNG Graphic file (type png)
 
-<use oscillCL.PNG>
+<oscillCL.PNG, id=132, 822.07124pt x 485.56406pt>
+File: oscillCL.PNG Graphic file (type png)
+ <use oscillCL.PNG>
 Package pdftex.def Info: oscillCL.PNG used on input line 332.
 (pdftex.def)             Requested size: 328.82266pt x 194.22217pt.
- [19 <./pendoloReale.jpg> <./variazioneGainP.jpg>] [20 <./oscillOL.PNG> <./osci
-llCL.PNG>])
-Underfull \hbox (badness 10000) in paragraph at lines 339--93
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 339--93
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 339--93
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 339--93
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 339--93
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 339--93
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 339--93
-
- []
-
-[21]
-\openout2 = `PendoloInverso.aux'.
-
- (PendoloInverso.tex [22
-
-
-
-]
-Capitolo 4.
-
-Underfull \hbox (badness 10000) in paragraph at lines 4--47
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 4--47
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 4--47
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 4--47
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 4--47
-
- []
-
-
-Overfull \hbox (15.46542pt too wide) in paragraph at lines 4--47
-\OML/cmm/m/it/10.95 T[]\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 s\OT1/cmr/m/n/10
-.95 ) = [] [] [] = []$ 
- []
-
-) [23]
+) [20 <./oscillOL.PNG> <./oscillCL.PNG>]
 \openout2 = `Conclusioni.aux'.
 
  (Conclusioni.tex
-Overfull \hbox (42.83792pt too wide) has occurred while \output is active
-\OT1/cmr/m/n/10.95 24 \OT1/cmr/m/sl/10.95 CAPITOLO 4.  PENDOLO INVERSO SU CARRE
-LLO(FORSE DA TOGLIERE)
+Capitolo 4.
+
+Underfull \hbox (badness 10000) in paragraph at lines 2--9
+
  []
 
-[24
 
+Underfull \hbox (badness 10000) in paragraph at lines 2--9
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2--9
+
+ []
+
+) [21
+
+
+
+] [22
 
 
 ]
-Capitolo 5.
-
-Underfull \hbox (badness 10000) in paragraph at lines 2--9
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2--9
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2--9
-
- []
-
-) [25] [26
-
-
-]
-Overfull \hbox (7.70331pt too wide) in paragraph at lines 123--126
+Overfull \hbox (7.70331pt too wide) in paragraph at lines 106--109
 \OT1/cmtt/m/n/10.95 https://digital.library.unt.edu/ark:/67531/metadc804943/m2/
 1/ 
  []
 
-[27] (tesi.aux (Introduzione.aux) (modelloMotore.aux) (pendoloModifica.aux)
-(PendoloInverso.aux) (Conclusioni.aux)) ) 
+
+Overfull \hbox (13.452pt too wide) in paragraph at lines 115--117
+\OT1/cmtt/m/n/10.95 http://eie.uonbi.ac.ke/sites/default/files/cae/engineering/
+eie 
+ []
+
+
+Overfull \hbox (122.67706pt too wide) in paragraph at lines 119--121
+\OT1/cmtt/m/n/10.95 http://control.disp.uniroma2.it/carnevale/archivio/Tesi/ant
+enuccialessio/tesi.pdf 
+ []
+
+
+Overfull \hbox (18.51083pt too wide) in paragraph at lines 123--125
+\OT1/cmtt/m/n/10.95 http://laurensvalk.com/files/Bos[]Valk[]SC4050[]Balancing[]
+Robot.pdf 
+ []
+
+[23] (tesi.aux (Introduzione.aux) (modelloMotore.aux) (pendoloModifica.aux)
+(Conclusioni.aux)) ) 
 Here is how much of TeX's memory you used:
- 14064 strings out of 493323
- 280991 string characters out of 3139048
- 334342 words of memory out of 3000000
- 17428 multiletter control sequences out of 15000+200000
- 539863 words of font info for 56 fonts, out of 3000000 for 9000
+ 14054 strings out of 493323
+ 280838 string characters out of 3139055
+ 334071 words of memory out of 3000000
+ 17426 multiletter control sequences out of 15000+200000
+ 539511 words of font info for 55 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  40i,9n,43p,10378b,494s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program Files/MiKTeX 2.9/fonts/typ
-e1/public/amsfonts/cm/cmbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publi
-c/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfon
-ts/cm/cmcsc10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/c
-mex10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pf
-b><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Pro
-gram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program File
-s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 
-2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts
-/type1/public/amsfonts/cm/cmr17.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pu
-blic/amsfonts/cm/cmr6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfo
-nts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cms
-l10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Progr
-am Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program Files
-/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti8.pfb><C:/Program Files/MiKTeX 2
-.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on tesi.pdf (37 pages, 9306177 bytes).
+<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
+/cmbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.
+pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:
+/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program
+ Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/M
+iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Program Files/MiKTeX 2.9
+/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
+pe1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publi
+c/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfont
+s/cm/cmr17.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6
+.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/P
+rogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsl10.pfb><C:/Program F
+iles/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiK
+TeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/f
+onts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
+e1/public/amsfonts/cm/cmtt10.pfb>
+Output written on tesi.pdf (33 pages, 9286203 bytes).
 PDF statistics:
- 220 PDF objects out of 1000 (max. 8388607)
+ 201 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  101 words of extra memory for PDF output out of 10000 (max. 10000000)
 

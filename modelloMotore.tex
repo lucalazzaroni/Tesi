@@ -8,16 +8,17 @@
 	\label{motoreSimulink}
 \end{figure}
 Il LEGO MINDSTORM EV3 è dotato di un motore, l'EV3 Large Servo Motor, la cui velocità angolare, misurata in $rad/s$, è stata assunta come uscita del sistema.\\
-I valori di ingresso possibili sono invece compresi tra -100 e +100, dove +100 indica la massima potenza erogabile, mentre -100 idem, ma con verso di rotazione opposto.\\
-Al fine di modellare nel modo più preciso possibile abbiamo applicato a tale motore un albero dotato di pesi posti a una certa distanza da quest'ultimo in modo tale da incrementare il momento d'inerzia $I$ e, di conseguenza, diminuire l'accelerazione angolare massima $\alpha$ in accordo con la seconda legge di Newton (in forma angolare) $\tau = I\alpha$, dove $\tau$ è il momento della forza o, più semplicemente, la coppia massima erogata: valore caratteristico del motore.
+I valori di ingresso significativi sono invece compresi tra -100 e +100, dove $\pm$100 indicano la massima potenza erogabile in entrambi i versi di rotazione.\\
+Al fine di riuscire a modellarlo, abbiamo applicato al motore un albero dotato di pesi posti a una certa distanza dallo stesso in modo tale da incrementarne il momento d'inerzia $I$. Questo poiché in assenza di un carico significativo la dinamica del motore risulta  troppo veloce per  essere identificata con gli strumenti a nostra disposizione. In particolare l'insufficiente precisione e la limitata frequenza massima di campionamento dell'encoder non permettono una corretta analisi del transitorio del motore.\\
+Come conseguenza, si ha una diminuzione dell'accelerazione angolare massima $\alpha$ in accordo con la seconda legge di Newton (in forma angolare) $\tau = I\alpha$, dove $\tau$ è il momento della forza o, più semplicemente, la coppia massima erogata, valore caratteristico del motore.
 \newpage
 \begin{figure}[ht]
 	\centering
 	\includegraphics[width=\textwidth]{megainerzia.png}
-	\caption{Albero per aumentare Inerzia del motore}
+	\caption{Carico per aumentare Inerzia del motore}
 	\label{megainerzia}
 \end{figure}
-In questo modo il tempo di assestamento $t_a$ del sistema, direttamente proporzionale a $\alpha$, è sensibilmente più lungo ed è dunque più semplice trovare una funzione di trasferimento assimilabile a quella dell'EV3 Large Servo Motor.\\
+In questo modo il tempo di assestamento $t_a$ del sistema è sensibilmente più lungo ed è dunque possibile trovare una funzione di trasferimento assimilabile a quella dell'EV3 Large Servo Motor.\\
 All'interno del motore è inoltre presente un'encoder che permette di misurare, in gradi, la posizione angolare dello stesso.
 Di conseguenza, al fine di ottenere la velocità angolare $\omega$ è stato applicato in cascata un derivatore, ma anche un filtro passa basso con frequenza di taglio $\omega_c=25\;Hz$, necessario per attenuare le alte frequenze del sistema, al fine di ottenere una funzione in uscita meno spezzata possibile e, di conseguenza, più facilmente identificabile.\\
 Al fine di ridurre il più possibile l'errore è stato scelto come tempo di campionamento dell'encoder il valore minimo supportato: 0.001 $s$.\\
@@ -97,7 +98,7 @@ Inserendo ora i parametri misurati  e riportati nella tabella \ref{Inerzia}, si 
 		$d_R$ & 0.085 & $m$  & distanza ruota grande - asse di rotazione\\
 		\hline
 	\end{tabular}
-\caption{Parametri dell'Albero}
+\caption{Parametri del carico dell'albero motore}
 \label{Inerzia}
 \end{table}
 \\Essendo $\tau=K\omega+I\alpha$ possiamo disegnare tramite Simulink il diagramma a blocchi rappresentato in figura \ref{modMotoreTorque}:
