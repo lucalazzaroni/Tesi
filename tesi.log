@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.9.30)  20 OCT 2017 10:26
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.9.7)  20 OCT 2017 10:44
 entering extended mode
 **./tesi.tex
 (tesi.tex
@@ -1387,7 +1387,7 @@ oneGainP.png (PNG copy)> <./oscillOL.PNG (PNG copy)>]
 <oscillCL.PNG, id=135, 1445.4pt x 712.16063pt>
 File: oscillCL.PNG Graphic file (type png)
  <use oscillCL.PNG>
-Package pdftex.def Info: oscillCL.PNG used on input line 346.
+Package pdftex.def Info: oscillCL.PNG used on input line 345.
 (pdftex.def)             Requested size: 360.0pt x 177.37685pt.
 ) [21 <./oscillCL.PNG (PNG copy)>]
 \openout2 = `Conclusioni.aux'.
@@ -1429,7 +1429,7 @@ Robot.pdf
 (Conclusioni.aux)) ) 
 Here is how much of TeX's memory you used:
  14055 strings out of 493323
- 280853 string characters out of 3139048
+ 280853 string characters out of 3139055
  333079 words of memory out of 3000000
  17427 multiletter control sequences out of 15000+200000
  539511 words of font info for 55 fonts, out of 3000000 for 9000
@@ -1451,7 +1451,7 @@ iles/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiK
 TeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/f
 onts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
 e1/public/amsfonts/cm/cmtt10.pfb>
-Output written on tesi.pdf (35 pages, 11816032 bytes).
+Output written on tesi.pdf (35 pages, 11816047 bytes).
 PDF statistics:
  207 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
