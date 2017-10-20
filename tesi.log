@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.9.7)  20 OCT 2017 03:18
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.9.30)  20 OCT 2017 10:26
 entering extended mode
 **./tesi.tex
 (tesi.tex
@@ -1374,23 +1374,22 @@ Package pdftex.def Info: pendoloReale.jpg used on input line 316.
 File: variazioneGainP.png Graphic file (type png)
 
 <use variazioneGainP.png>
-Package pdftex.def Info: variazioneGainP.png used on input line 327.
+Package pdftex.def Info: variazioneGainP.png used on input line 329.
 (pdftex.def)             Requested size: 360.0pt x 177.37685pt.
  <oscillOL.PNG, id=127, 1445.4pt x 712.16063pt>
 File: oscillOL.PNG Graphic file (type png)
 
 <use oscillOL.PNG>
-Package pdftex.def Info: oscillOL.PNG used on input line 335.
+Package pdftex.def Info: oscillOL.PNG used on input line 336.
 (pdftex.def)             Requested size: 360.0pt x 177.37685pt.
- <oscillCL.PNG, id=128, 1445.4pt x 712.16063pt>
+ [19 <./SisComplessivoPNRetroazionato.PNG> <./pendoloReale.jpg>] [20 <./variazi
+oneGainP.png (PNG copy)> <./oscillOL.PNG (PNG copy)>]
+<oscillCL.PNG, id=135, 1445.4pt x 712.16063pt>
 File: oscillCL.PNG Graphic file (type png)
-
-<use oscillCL.PNG>
-Package pdftex.def Info: oscillCL.PNG used on input line 341.
+ <use oscillCL.PNG>
+Package pdftex.def Info: oscillCL.PNG used on input line 346.
 (pdftex.def)             Requested size: 360.0pt x 177.37685pt.
- [19 <./SisComplessivoPNRetroazionato.PNG> <./pendoloReale.jpg>]) [20 <./variaz
-ioneGainP.png (PNG copy)> <./oscillOL.PNG (PNG copy)>]
-[21 <./oscillCL.PNG (PNG copy)>]
+) [21 <./oscillCL.PNG (PNG copy)>]
 \openout2 = `Conclusioni.aux'.
 
  (Conclusioni.tex [22
@@ -1403,25 +1402,25 @@ Capitolo 4.
 
 
 ]
-Overfull \hbox (7.70331pt too wide) in paragraph at lines 106--109
+Overfull \hbox (7.70331pt too wide) in paragraph at lines 109--112
 \OT1/cmtt/m/n/10.95 https://digital.library.unt.edu/ark:/67531/metadc804943/m2/
 1/ 
  []
 
 
-Overfull \hbox (13.452pt too wide) in paragraph at lines 115--117
+Overfull \hbox (13.452pt too wide) in paragraph at lines 118--120
 \OT1/cmtt/m/n/10.95 http://eie.uonbi.ac.ke/sites/default/files/cae/engineering/
 eie 
  []
 
 
-Overfull \hbox (122.67706pt too wide) in paragraph at lines 119--121
+Overfull \hbox (122.67706pt too wide) in paragraph at lines 122--124
 \OT1/cmtt/m/n/10.95 http://control.disp.uniroma2.it/carnevale/archivio/Tesi/ant
 enuccialessio/tesi.pdf 
  []
 
 
-Overfull \hbox (18.51083pt too wide) in paragraph at lines 123--125
+Overfull \hbox (18.51083pt too wide) in paragraph at lines 126--128
 \OT1/cmtt/m/n/10.95 http://laurensvalk.com/files/Bos[]Valk[]SC4050[]Balancing[]
 Robot.pdf 
  []
@@ -1430,7 +1429,7 @@ Robot.pdf
 (Conclusioni.aux)) ) 
 Here is how much of TeX's memory you used:
  14055 strings out of 493323
- 280853 string characters out of 3139055
+ 280853 string characters out of 3139048
  333079 words of memory out of 3000000
  17427 multiletter control sequences out of 15000+200000
  539511 words of font info for 55 fonts, out of 3000000 for 9000
@@ -1452,7 +1451,7 @@ iles/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiK
 TeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/f
 onts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
 e1/public/amsfonts/cm/cmtt10.pfb>
-Output written on tesi.pdf (35 pages, 11815181 bytes).
+Output written on tesi.pdf (35 pages, 11816032 bytes).
 PDF statistics:
  207 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

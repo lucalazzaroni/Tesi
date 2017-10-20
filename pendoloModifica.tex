@@ -16,7 +16,7 @@ Asse Y:
 \begin{equation}\notag
 m\ddot{y}_m=V-mg
 \end{equation}
-Dove $H$ e $V$ sono le reazioni vincolari (orizzontale e verticale) a cui e sottoposta la massa $m$ per il fatto di essere bloccata all'estremità dell'asta.\\ \\
+Dove $H$ e $V$ sono le reazioni vincolari (orizzontale e verticale) a cui è sottoposta la massa $m$ per il fatto di essere bloccata all'estremità dell'asta.\\ \\
 Essendo poi:\\
 \begin{equation}\notag
 x_m = x_M+l_a\sin(\theta) \quad \Rightarrow \quad \ddot{x}_m=\ddot{x}_M-l_a\sin(\theta)\dot{\theta}^2+l_a\cos(\theta)\ddot{\theta}
@@ -61,7 +61,7 @@ $$
 =ml_a(g\sin(\theta)+l_a\ddot{\theta}+\ddot{x}_M\cos(\theta))
 \end{equation}
 Essendo il momento d'inerzia dell'asta $$
-I_m=\displaystyle\frac{1}{12}m_al_a^2+m_a(\displaystyle\frac{l}{2})^2=\displaystyle\frac{1}{3}m_al_a^2=0.000045kg\cdot m^2$$molto inferiore (1 ordine di grandezza) rispetto a quello della massa $m$ attaccata al pendolo, $$
+I_m=\displaystyle\frac{1}{12}m_al_a^2+m_a(\displaystyle\frac{l}{2})^2=\displaystyle\frac{1}{3}m_al_a^2=0.000045kg\cdot m^2$$molto inferiore (1 ordine di grandezza) rispetto a quello della massa $m$ attaccata al pendolo: $$
 I_m=ml_a^2=0.00041kg\cdot m^2$$ possiamo per semplicità trascurarlo, per cui poniamo $I_m=0$.
 
 Il sistema che deriva dalla \ref{FCarr} e dalla \ref{momInThetaP} è dunque il seguente:
@@ -72,7 +72,7 @@ $$g\sin(\theta)+l_a\ddot{\theta}+\ddot{x}_M\cos(\theta)=0$$\\
 \end{cases}
 $
 \\\\
-Dalla prima equazione del sistema 
+Dalla prima equazione del sistema: 
 $$
 (M+m)(\frac{-g\sin(\theta)-l_a\ddot{\theta}}{\cos(\theta)})+ml_a\cos(\theta)\ddot{\theta}=u+ml_a\dot{\theta}^2\sin(\theta)
 $$
@@ -84,11 +84,11 @@ $$
 \begin{equation}\label{theta2punti}
 \ddot{\theta}=\frac{u\cos(\theta)+ml_a\dot{\theta}^2\sin(\theta)\cos(\theta)+g\sin(\theta)(M+m)}{-l_a(m\sin^2(\theta)+M)}
 \end{equation}\\
-Dalla seconda equazione del sistema
+Dalla seconda equazione del sistema:
 $$
 \ddot{x}_M=\frac{-g\sin(\theta)-l_a\ddot{\theta}}{\cos(\theta)}
 $$
-e sostituendo ora la \ref{theta2punti}  
+e sostituendo ora la \ref{theta2punti}:  
 $$
 \ddot{x}_M=\frac{-g\sin(\theta)-\displaystyle\frac{ul_a\cos(\theta)+ml^2_a\dot{\theta}^2\sin(\theta)\cos(\theta)+gl_a\sin(\theta)(M+m)}{-l_a(m\sin^2(\theta)+M)}}{\cos(\theta)}=
 $$
@@ -140,7 +140,7 @@ $$x_4=0$$\\
 $$\displaystyle\frac{u\cos(x_3)+ml_ax_4^2\sin(x_3)\cos(x_3)+g(M+m)\sin(x_3)}{l_a(m\sin^2(x_3)+M)}=0$$
 \end{cases}
 $\\\\\\
-Dal precedente sistema si capisce che punti di equilibrio del pendolo su carrello sono due, uno instabile per \\
+Dal precedente sistema si può notare che punti di equilibrio del pendolo su carrello sono due, uno instabile per \\
 $\begin{cases}
 $$x_1=\forall$$ \\
 $$x_2=0$$\\
@@ -156,8 +156,8 @@ $$x_3=0$$\\
 $$x_4=0$$\\
 $$u=0$$
 \end{cases}$\\\\
-quando il pendolo è rivolto verso il basso (pendolo "normale"), caso da noi trattato ne seguito.\\
-In ultimo siccome il punto di equilibrio non dipende dalla posizione del carrello possiamo per semplicità scegliere $x_1=0$.\\\\
+quando il pendolo è rivolto verso il basso (pendolo "normale"), caso da noi trattato nel seguito.\\
+In ultimo, siccome il punto di equilibrio non dipende dalla posizione del carrello, possiamo per semplicità scegliere $x_1=0$.\\\\
 \textbf{Linearizzazione del sistema attorno al punto di equilibrio}\\
 Vogliamo ora linearizzare le precedenti equazioni di stato attorno al punto di equilibrio $\underline{\tilde{x}}=\underline{0}$, $\tilde{u}=0$ trovato: \\\\
 $\displaystyle\frac{\partial{f_1}}{\partial{\underline{x}}}(\underline x,u)=
@@ -248,7 +248,7 @@ Inserendo ora i parametri del modello fisico del pendolo su  carrello realizzato
 $$T_{y_2,u}(s)=-\displaystyle\frac{1}{0.125s^2+7.541}$$
 \newpage
 \section{Stabilizzazione del pendolo}
-Il pendolo di per sè è un sistema già stabile, lo scopo della realizzazione su carrello consiste nello smorzarne l'oscillazione riducendo la costante di tempo e quindi il transitorio del sistema grazie all'impiego di due ruote motrici.\\
+Il pendolo di per sé è un sistema già stabile; lo scopo della realizzazione su carrello consiste nello smorzarne l'oscillazione riducendo la costante di tempo e quindi il transitorio del sistema grazie all'impiego di due ruote motrici.\\
 In figura \ref{pendoloFisico} si può vedere la realizzazione del pendolo su carrello utilizzando un motore EV3 Large Servo Motor come trazione e un encoder GlideWheel-M per misurare l'angolo del pendolo 
 \begin{figure}[ht]
 	\centering
@@ -257,7 +257,7 @@ In figura \ref{pendoloFisico} si può vedere la realizzazione del pendolo su car
 	\label{pendoloFisico}
 \end{figure} 
 rispetto alla verticale.\\
-Da specifiche quest'ultimo può raggiungere un tempo di campionamento minimo di 0.001s (così come il motore) al quale valore non si riesce sempre a campionare in modo corretto. Per ovviare, almeno parzialmente, al problema abbiamo deciso di abbassare la frequenza di campionamento, in modo però da non perdere nessuna variazione dell'angolo del pendolo.\\
+Da specifiche tale encoder è in grado di raggiungere un tempo di campionamento minimo di 0.001s (così come il motore) al quale valore non si riesce sempre a campionare in modo corretto. Per ovviare, almeno parzialmente, al problema abbiamo deciso di abbassare la frequenza di campionamento, in modo però da non perdere nessuna variazione dell'angolo del pendolo.\\
 Per fare questo abbiamo calcolato la massima velocità raggiunta durante la sua oscillazione libera tra $[\ang{-31},\ang{+31}]$ (intervallo entro il quale il pendolo è vincolato per costruzione).
 \begin{figure}[ht]
 	\centering
@@ -273,23 +273,23 @@ Sfruttando il modello del motore LEGO da noi identificato al capitolo \ref{modMo
 	\caption{Schema a blocchi del sistema complessivo}
 	\label{SisComplessivoPendoloNormale}
 \end{figure}
-\\Siccome in uscita al modello del motore abbiamo la coppia erogata dallo stesso, per poterlo mettere in serie al modello del pendolo su carrello (il quale come ingresso riceve una spinta sotto forma di forza) occorre adattare il collegamento I/O. Poiché si assume un puro moto di rotolamento delle ruote del carrello si tratta di trovare il giusto coefficiente $C$ di proporzionalità tra coppia e spinta.
+\\Siccome in uscita al modello del motore abbiamo la coppia erogata dallo stesso, per poterlo mettere in serie al modello del pendolo su carrello (il quale come ingresso riceve una spinta sotto forma di forza) occorre adattare il collegamento I/O. Poiché si assume un puro moto di rotolamento delle ruote del carrello, si tratta di trovare il giusto coefficiente $C$ di proporzionalità tra coppia e spinta.
 \begin{figure}[ht]
 	\centering
 	\includegraphics[scale=0.55]{braccioForza.PNG}
 	\caption{Momento della forza applicato alla ruota}
 	\label{braccioForza}
 \end{figure}
-\\La relazione tra queste ultime è data dalla formula fisica del momento della forza
+\\La relazione tra queste ultime è data dalla formula fisica del momento della forza:
 $$\tau=r\times F=(r\sin(\phi))F=r_{\bot}F$$
 ove $r_{\bot}$ rappresenta il braccio della forza F.
-Poiché nel nostro caso $r$ risulta essere il raggio della ruota ed F la forza tangente alla ruota abbiamo ricavato sostituendo il suo valore dalla tabella \ref{carrPend}: $$F=\displaystyle\frac{\tau}{r}\Rightarrow$$$$\Rightarrow C=\displaystyle\frac{1}{r}=29.41$$
-Per realizzare ora una retroazione algebrica sull'uscita che ci permetta di controllarlo in ciclo chiuso, possiamo riassumere in un'unica funzione di trasferimento il sistema complessivo.\\
-Per farlo ci siamo serviti del `Linear Analisys Tool' di Simulink che, tra le altre cose, può essere usato per ricostruire la funzione di trasferimento tra due punti specificati i un sistema (nel nostro caso tra l'ingresso del motore e l'uscita $\theta$).
+Poiché nel nostro caso $r$ risulta essere il raggio della ruota ed F la forza tangente alla ruota abbiamo ricavato, sostituendo il suo valore dalla tabella \ref{carrPend}: $$F=\displaystyle\frac{\tau}{r}\Rightarrow$$$$\Rightarrow C=\displaystyle\frac{1}{r}=29.41$$
+Per realizzare ora una retroazione algebrica sull'uscita che ci permetta di controllare il pendolo in ciclo chiuso, possiamo riassumere in un'unica funzione di trasferimento il sistema complessivo.\\
+Per farlo ci siamo serviti del `Linear Analisys Tool' di Simulink che, tra le altre cose, può essere utilizzato per ricostruire la funzione di trasferimento tra due punti specificati di un sistema (nel nostro caso tra l'ingresso del motore e l'uscita $\theta$).
 $$T_{y_2,u}=-\displaystyle\frac{559.5s+78.3}{s^4+31.67s^3+227s^2+1910s+10050}$$\\
-Tra i principali modi per studiarne la stabilità in ciclo chiuso c'è sicuramente il luogo delle radici che permette di verificare lo spostamento dei poli al variare del guadagno.
+Tra i principali modi per studiarne la stabilità in ciclo chiuso uno dei più noti è il luogo delle radici, il quale permette di verificare lo spostamento dei poli al variare del guadagno.
 \newpage
-Come si evince dal luogo delle radici del sistema, è possibile utilizzare un semplice Regolatore Proporzionale purché il suo guadagno rientri in un intervallo molto limitato ovvero $P\in(-6,0)$.
+Come si evince dal luogo delle radici del sistema, è possibile utilizzare un semplice Regolatore Proporzionale purché il suo guadagno rientri in un intervallo molto limitato, ovvero $P\in(-6,0)$.
 \begin{figure}[ht]
 	\centering
 	\includegraphics[width=\textwidth]{RLocusPendoloNormale.PNG}
@@ -303,7 +303,7 @@ Come si evince dal luogo delle radici del sistema, è possibile utilizzare un se
 	\caption{Particolare del Luogo delle Radici di $-T_{y_2,u}$}
 	\label{gainOttimaleft}
 \end{figure}
-\\Tale valore è stato in seguito validato dall'analisi della risposta del sistema  durante la simulazione attraverso diversi esperimenti i cui risultati saranno mostrati nel seguito.
+\\Tale valore è stato in seguito validato dall'analisi della risposta del sistema  durante la simulazione attraverso diversi esperimenti, i cui risultati saranno mostrati nel seguito.
 \begin{figure}[ht]
 	\centering
 	\includegraphics[width=\textwidth]{SisComplessivoPNRetroazionato.PNG}
@@ -317,25 +317,29 @@ Come si evince dal luogo delle radici del sistema, è possibile utilizzare un se
 	\caption{Sistema reale controllato proporzionalmente}
 	\label{pendoloReale}
 \end{figure}
-\\L'encoder, invece, è settato a $0$ tramite un segnale di reset dopo un tempo pari a $0.001s$ dall'inizializzazione poiché, all'avvio del programma caricato nel Brick, l'encoder considera come angolo $\theta=\ang{0}$ di riferimento il primo valore misurato.
-\\Sotto tali presupposti il motore, avendo ingresso nullo, non erogherà potenza fino quando il pendolo non verrà spostato dal suo stato iniziale.\\
-Al variare della posizione angolare, il motore reagisce muovendo il carrello nella stessa direzione per riportare il pendolo nel suo punto di equilibrio.
+\\L'encoder, invece, è settato a $0$ tramite un segnale di reset dopo un tempo pari a $0.001s$ dall'inizializzazione poiché, all'avvio del programma caricato nel Brick, viene considerato come angolo $\theta=\ang{0}$ di riferimento il primo valore misurato.
+Per effettuare tale operazione è necessario inserire nello schema un convertitore dal momento che il GlideWheel-M richiede in ingresso unicamente un segnale di tipo 'int8' (interi a 8 bit), mentre il blocco di reset ne genera uno 'double'.
 
-Come accennato poco fa ad ulteriore conferma della veridicità del luogo delle radici abbiamo provato a controllare il sistema fisico al variare di $P$ durante una simulazione interattiva, cioè nella quale è possibile modificare in tempo reale da PC il valore del guadagno del Regolatore, e come mostrato nelle figura \ref{variazioneGainP} il sistema risulta effettivamente instabile per valori che si discostano dall'intervallo di stabilità trovato.
+Sotto tali presupposti il motore, avendo ingresso nullo, non erogherà potenza fino quando il pendolo non verrà spostato dal suo stato iniziale.\\
+Al variare della posizione angolare, il motore reagirà muovendo il carrello nella stessa direzione per riportare il pendolo nel suo punto di equilibrio.
+
+Come accennato poco fa, ad ulteriore conferma della veridicità del luogo delle radici, abbiamo provato a controllare il sistema fisico al variare di $P$ durante una simulazione interattiva, nella quale è possibile modificare in tempo reale, da PC, il valore del guadagno del Regolatore, e, come mostrato nelle figura \ref{variazioneGainP}, il sistema risulta effettivamente instabile per valori che si discostano dall'intervallo di stabilità trovato.
 \begin{figure}[ht]
 	\centering
 	\includegraphics[width=\linewidth]{variazioneGainP.png}
 	\caption{Uscita $\theta$ del sistema per valori di $P=-2,-6,-8$}
 	\label{variazioneGainP}
 \end{figure}
-\\Come si può vedere nel grafico in figura \ref{oscillOL} posizionando il pendolo ad un'angolazione di $\theta=\ang{31}$ e lasciandolo quindi libero di oscillare, in ciclo aperto (ovvero senza controllo sul motore), si raggiunge il punto di stabilità $\theta=\ang{0}$ in poco più di $30$ secondi, mentre risulta un tempo di appena $1.4$ secondi per quanto
-riguarda il sistema in ciclo chiuso.
+\\Come si può vedere nel grafico in figura \ref{oscillOL}, posizionando il pendolo ad un'angolazione di $\theta=\ang{31}$ e lasciandolo quindi libero di oscillare, in ciclo aperto (ovvero senza controllo sul motore)
 \begin{figure}[ht]
 	\centering
 	\includegraphics[width=\linewidth]{oscillOL.PNG}
 	\caption{Sistema in ciclo aperto}
 	\label{oscillOL}
-\end{figure} 
+\end{figure}
+ si raggiunge il punto di stabilità $\theta=\ang{0}$ in poco più di $30$ secondi, mentre risulta un tempo di appena $1.4$ secondi per quanto
+riguarda il sistema in ciclo chiuso.
+ \newpage
 \begin{figure}[ht]
 	\centering
 	\includegraphics[width=\linewidth]{oscillCL.PNG}
