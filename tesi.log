@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.9.7)  20 OCT 2017 10:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.9.7)  20 OCT 2017 19:25
 entering extended mode
 **./tesi.tex
 (tesi.tex
@@ -812,22 +812,23 @@ s
 \f@nch@O@olf=\skip65
 \f@nch@O@orf=\skip66
 ) (tesi.aux
-(Introduzione.aux) (modelloMotore.aux) (pendoloModifica.aux) (Conclusioni.aux))
+(Titolo.aux) (Introduzione.aux) (modelloMotore.aux) (pendoloModifica.aux)
+(Conclusioni.aux))
 \openout1 = `tesi.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+ ("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count278
 \scratchdimen=\dimen160
@@ -967,8 +968,8 @@ Dictionary: translator-basic-dictionary, Language: English
 ("C:\Program Files\MiKTeX 2.9\tex\latex\siunitx\siunitx-abbreviations.cfg"
 File: siunitx-abbreviations.cfg 2017/08/02 v2.7j siunitx: Abbreviated units
 )
-LaTeX Info: Redefining \it@ocap on input line 33.
-LaTeX Info: Redefining \it@ccap on input line 33.
+LaTeX Info: Redefining \it@ocap on input line 34.
+LaTeX Info: Redefining \it@ccap on input line 34.
 
 
 File italian.ldf warning: 
@@ -976,21 +977,27 @@ italian.ldf    With OT1 encoding guillemets are poorly faked
 italian.ldf    Use T1 encoding
 italian.ldf    or specify a font with command \CaporaliFrom
 italian.ldf    See the documentation concerning the babel-italian typesetting 
-italian.ldf    on input line 33.
+italian.ldf    on input line 34.
 
 \c__siunitx_mathsf_int=\count284
 \c__siunitx_mathtt_int=\count285
-<logo_unige.png, id=1, 304.13625pt x 353.06906pt>
+\openout2 = `Titolo.aux'.
+
+(Titolo.tex <logo_unige.png, id=1, 304.13625pt x 353.06906pt>
 File: logo_unige.png Graphic file (type png)
- <use logo_unige.png>
-Package pdftex.def Info: logo_unige.png used on input line 45.
+
+<use logo_unige.png>
+Package pdftex.def Info: logo_unige.png used on input line 15.
 (pdftex.def)             Requested size: 106.44928pt x 123.57602pt.
  [1
 
-{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map} <./logo_unige.png>] [2] [1
 
-]
-[2] (tesi.toc)
+
+{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map} <./logo_unige.png>]) [2
+
+] [1
+
+] [2] (tesi.toc)
 \tf@toc=\write3
 \openout3 = `tesi.toc'.
 
@@ -1008,7 +1015,8 @@ Package pdftex.def Info: logo_unige.png used on input line 45.
 \tf@lot=\write5
 \openout5 = `tesi.lot'.
 
- [7] [8
+
+[7] [8
 
 ]
 \openout2 = `Introduzione.aux'.
@@ -1016,21 +1024,37 @@ Package pdftex.def Info: logo_unige.png used on input line 45.
  (Introduzione.tex
 Capitolo 1.
 
-Underfull \hbox (badness 10000) in paragraph at lines 9--12
+Underfull \hbox (badness 10000) in paragraph at lines 5--6
 
  []
 
-) [1
+
+Underfull \hbox (badness 10000) in paragraph at lines 7--9
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 10--11
+
+ []
+
+[1
 
 
 ]
+Underfull \hbox (badness 10000) in paragraph at lines 15--16
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 24--26
+
+ []
+
+) [2]
 \openout2 = `modelloMotore.aux'.
 
- (modelloMotore.tex [2
-
-
-
-]
+ (modelloMotore.tex
 Capitolo 2.
 <motoreSimulink.jpg, id=54, 551.05875pt x 78.2925pt>
 File: motoreSimulink.jpg Graphic file (type jpg)
@@ -1058,7 +1082,11 @@ File: motore50StepCamp1000.png Graphic file (type png)
 <use motore50StepCamp1000.png>
 Package pdftex.def Info: motore50StepCamp1000.png used on input line 35.
 (pdftex.def)             Requested size: 360.0pt x 177.37685pt.
- [3 <./motoreSimulink.jpg>] [4 <./megainerzia.png>]
+ [3
+
+
+
+ <./motoreSimulink.jpg>] [4 <./megainerzia.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 39--43
 
  []
@@ -1402,56 +1430,56 @@ Capitolo 4.
 
 
 ]
-Overfull \hbox (7.70331pt too wide) in paragraph at lines 109--112
+Overfull \hbox (7.70331pt too wide) in paragraph at lines 77--80
 \OT1/cmtt/m/n/10.95 https://digital.library.unt.edu/ark:/67531/metadc804943/m2/
 1/ 
  []
 
 
-Overfull \hbox (13.452pt too wide) in paragraph at lines 118--120
+Overfull \hbox (13.452pt too wide) in paragraph at lines 86--88
 \OT1/cmtt/m/n/10.95 http://eie.uonbi.ac.ke/sites/default/files/cae/engineering/
 eie 
  []
 
 
-Overfull \hbox (122.67706pt too wide) in paragraph at lines 122--124
+Overfull \hbox (122.67706pt too wide) in paragraph at lines 90--92
 \OT1/cmtt/m/n/10.95 http://control.disp.uniroma2.it/carnevale/archivio/Tesi/ant
 enuccialessio/tesi.pdf 
  []
 
 
-Overfull \hbox (18.51083pt too wide) in paragraph at lines 126--128
+Overfull \hbox (18.51083pt too wide) in paragraph at lines 94--96
 \OT1/cmtt/m/n/10.95 http://laurensvalk.com/files/Bos[]Valk[]SC4050[]Balancing[]
 Robot.pdf 
  []
 
-[25] (tesi.aux (Introduzione.aux) (modelloMotore.aux) (pendoloModifica.aux)
-(Conclusioni.aux)) ) 
+[25] (tesi.aux (Titolo.aux) (Introduzione.aux) (modelloMotore.aux)
+(pendoloModifica.aux) (Conclusioni.aux)) ) 
 Here is how much of TeX's memory you used:
- 14055 strings out of 493323
- 280853 string characters out of 3139055
- 333079 words of memory out of 3000000
- 17427 multiletter control sequences out of 15000+200000
+ 14063 strings out of 493323
+ 280928 string characters out of 3139055
+ 333349 words of memory out of 3000000
+ 17428 multiletter control sequences out of 15000+200000
  539511 words of font info for 55 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  40i,9n,43p,10378b,494s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
-/cmbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.
-pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:
-/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program
- Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/M
-iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Program Files/MiKTeX 2.9
-/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
-pe1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publi
-c/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfont
-s/cm/cmr17.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6
-.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/P
-rogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsl10.pfb><C:/Program F
-iles/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiK
-TeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/f
-onts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
-e1/public/amsfonts/cm/cmtt10.pfb>
-Output written on tesi.pdf (35 pages, 11816047 bytes).
+<C:/Program Files/MiKTeX 2.9/fonts/ty
+pe1/public/amsfonts/cm/cmbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publ
+ic/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfo
+nts/cm/cmcsc10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
+cmex10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.p
+fb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Pr
+ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Fil
+es/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX
+ 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/font
+s/type1/public/amsfonts/cm/cmr17.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/p
+ublic/amsfonts/cm/cmr6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsf
+onts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cm
+sl10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb
+><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Prog
+ram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program File
+s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on tesi.pdf (35 pages, 11817577 bytes).
 PDF statistics:
  207 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

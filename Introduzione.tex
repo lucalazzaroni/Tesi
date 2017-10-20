@@ -1,14 +1,28 @@
 \chapter{Introduzione}
 Nel seguente elaborato si affronta il problema della modellazione e conseguente controllo di un sistema fisico realizzato con dispositivo LEGO MINDSTORM EV3 e alcuni tra i principali sensori e attuatori disponibili per questo modello.
+In particolare i componenti utilizzati oltre al Brick, un microcontrollore all'interno del quale vengono caricati i programmi da eseguire, sono un potente motore e un sensore di posizione angolare detto encoder.
 
-L'obiettivo è quello di applicare i principi della Teoria dei Sistemi e dei Controlli Automatici per controllare e smorzare l'oscillazione di un pendolo su di un carrello con trazione motrice.
+La scelta di questa tesi è dovuta alla volontà di mettersi alla prova per la prima volta con un progetto completo che comprendesse tutte le fasi di realizzazione, dalla modellazione alla sintesi, di un sistema.\\
 
-Per la modellazione, la simulazione e l'analisi del sistema si fa uso dell'ambiente di sviluppo Simulink, strettamente integrato con MATLAB, il quale fornisce una miriade di strumenti utili al progetto.\\
-Dal suddetto ambiente si riesce a stabilire una connessione WI-FI(con l'ausilio dell'adattatore wireless USB Netgear WNA1100) oppure USB tra PC e robot con la quale il programma viene caricato ed in seguito eseguito in modalità autonoma o guidata, a seconda delle esigenze, tramite l'impostazione di alcuni parametri.
+L'obiettivo principale è quello di applicare i fondamenti della Teoria dei Sistemi e dei Controlli Automatici per controllare e smorzare l'oscillazione di un pendolo su di un carrello con trazione motrice.\\
+Va precisato però, che chiamandola Teoria dei Sistemi, in realtà si omette un termine importante: per essere più precisi si dovrebbe infatti parlare di Teoria dei Sistemi Dinamici, dove con il termine “sistemi dinamici” ci riferiamo genericamente a tutte quelle entità che evolvono nel tempo secondo leggi di causalità e che interagiscono con l’ambiente mediante un principio di causa–effetto. Con Controlli Automatici, invece, ci riferiamo alla scienza che si prefigge di modificare il comportamento del sistema da controllare, ovvero delle sue uscite, attraverso la manipolazione delle grandezze d'ingresso.\\
 
-Inizialmente si procede con l'identificazione, in seguito all'analisi della risposta al gradino, del modello del motore LEGO utilizzato per la locomozione.\\
-Si prosegue scrivendo le equazioni fisiche del modello del pendolo su carrello, quindi si cercano i punti di equilibrio e  infine si linearizzano le equazioni di stato attorno a tali punti.\\
-L'unione dei due sistemi considerati porta ad uno complessivo, del quale si analizza la stabilità con i sopracitati strumenti di MATLAB e si realizzano due tra i possibili regolatori atti a velocizzare la risposta del sistema agli stimoli in modo da ridurre il tempo di assestamento nella maniera desiderata.\\
+Come altro obiettivo, ma non per questo meno importante, c'è l'intento di fornire del materiale didattico da mostrare a studenti che si accingono ad affrontare argomenti come quelli trattati per la prima volta, in modo da rendere più interessante e pragmatica una materia che durante il corso degli studi vedranno quasi esclusivamente su carta, e magari suscitare in loro il desiderio di continuare il nostro percorso in una nuova tesi.\\ 
+
+Proprio per tali motivi abbiamo deciso di non utilizzare l'ambiente di sviluppo proprietario della casa produttrice, il quale vela tutta la teoria dei sistemi dinamici e del controllo che si nasconde dietro al funzionamento della Tecnologia LEGO, per adottare un approccio più ingegneristico.\\
+Per la modellazione, la simulazione e l'analisi del sistema si fa uso dell'ambiente di sviluppo Simulink, strettamente integrato con MATLAB, il quale fornisce una miriade di strumenti utili al progetto.
+
+Grazie al suddetto ambiente si riesce a stabilire una connessione WI-FI(con l'ausilio dell'adattatore wireless USB Netgear WNA1100) oppure USB tra PC e robot con la quale il programma viene caricato ed in seguito eseguito in modalità autonoma o guidata, a seconda delle esigenze, tramite l'impostazione di alcuni parametri.\\
+
+Nei seguenti capitoli, dopo un'attenta analisi della risposta al gradino, si procede con l'identificazione del modello del motore LEGO utilizzato per la locomozione.\\
+Si prosegue scrivendo le equazioni fisiche del modello del pendolo su carrello, facendo alcune considerazioni su quelle che sono le approssimazioni fatte per semplificarlo.\\
+Una volta individuati gli ingressi, le variabili di stato e le uscite di interesse, le equazioni di stato sono facilmente ricavabili.
+
+Siccome la quasi totalità dei sistemi fisici è non lineare, la ricerca di soluzioni analitiche è molto difficile e a volte impossibile. È solitamente possibile trasformare un problema non lineare in un problema localmente lineare, cioè trovare un sistema lineare che approssimi, entro un certo raggio, il sistema non lineare originale.
+Quindi si cercano i punti di equilibrio e infine si linearizzano le equazioni di stato attorno a tali punti.
+
+Per ricostruire ora il sistema complessivo, bisogna esaminare la relazione tra l'uscita del primo, il motore, e l'ingresso del secondo, il carrello, così da aggiungere un sistema intermedio che trasformi e adatti il segnale tra i due blocchi principali.\\
+Ricavata la funzione di trasferimento totale si analizza la stabilità con i sopracitati strumenti di MATLAB e si ricercano  i possibili regolatori adatti a velocizzare la risposta del sistema agli stimoli in modo da ridurre il tempo di assestamento nella maniera desiderata.\\
 
 
 
