@@ -1,6 +1,5 @@
 \chapter{Pendolo su carrello}\label{PendCarrello}
 \section{Modello e relative equazioni}
-
 \begin{figure}[ht]
 	\centering
 	\includegraphics[width=\textwidth]{pendolo.png}\\
@@ -8,6 +7,7 @@
 	\label{pendolo}
 \end{figure}
 \textbf{Bilanciamento forze sull'asta}\\
+Eseguiamo di seguito, sfruttando la Seconda Legge di Newton, il computo delle forze agenti sul pendolo lungo entrambi gli assi cartesiani.\\\\
 Asse X:
 \begin{equation}\notag
 m\ddot{x}_m=H
@@ -16,33 +16,35 @@ Asse Y:
 \begin{equation}\notag
 m\ddot{y}_m=V-mg
 \end{equation}
-Dove $H$ e $V$ sono le reazioni vincolari (orizzontale e verticale) a cui e sottoposta la massa $m$ per il fatto di essere bloccata all'estremità dell'asta.\\ 
-Essendo:\\
+Dove $H$ e $V$ sono le reazioni vincolari (orizzontale e verticale) a cui e sottoposta la massa $m$ per il fatto di essere bloccata all'estremità dell'asta.\\ \\
+Essendo poi:\\
 \begin{equation}\notag
 x_m = x_M+l_a\sin(\theta) \quad \Rightarrow \quad \ddot{x}_m=\ddot{x}_M-l_a\sin(\theta)\dot{\theta}^2+l_a\cos(\theta)\ddot{\theta}
 \end{equation}
 \begin{equation}\notag
 y_m=y_M-l_a\cos(\theta) \quad \Rightarrow \quad \ddot{y}_m=l_a\sin(\theta)\ddot{\theta}+l_a\cos(\theta)\dot{\theta}^2
 \end{equation}
-Si ottiene:
+si ottiene:
 \begin{equation}\label{Hv}
 H=m\ddot{x}_M-ml_a\sin(\theta)\dot{\theta}^2+ml_a\cos(\theta)\ddot{\theta}
 \end{equation}
 \begin{equation}\label{Vv}
 V=mg+ml_a\cos(\theta)\dot{\theta}^2+ml_a\sin(\theta)\ddot{\theta}
 \end{equation}
-\textbf{Bilanciamento forze sul carrello}
+\textbf{Bilanciamento forze sul carrello}\\
+Richiamando nuovamente la Legge sopracitata si ha:
 \begin{equation}\notag
 M\ddot{x}_M=u-H
 \end{equation}
-sostituendo la \ref{Hv} si ha:
+da cui sostituendo la \ref{Hv}:
 $$
 M\ddot{x}_M=u-m\ddot{x}_M+ml_a\sin(\theta)\dot{\theta}^2-ml_a\cos(\theta)\ddot{\theta}
 $$
 \begin{equation}\label{FCarr}
 (M+m)\ddot{x}_M+ml_a\cos(\theta)\ddot{\theta}=u+ml_a\dot{\theta}^2\sin(\theta)
 \end{equation} 
-\textbf{Bilanciamento momenti del sistema asta-massa}
+\textbf{Bilanciamento momenti del sistema asta-massa}\\
+In questo caso utilizziamo la versione angolare della solita Legge:
 \begin{equation}
 I_m\ddot{\theta}=l_aV\sin(\theta)+l_aH\cos(\theta)
 \end{equation}
@@ -59,8 +61,9 @@ $$
 =ml_a(g\sin(\theta)+l_a\ddot{\theta}+\ddot{x}_M\cos(\theta))
 \end{equation}
 Essendo il momento d'inerzia dell'asta $$
-I_m=\displaystyle\frac{1}{12}m_al_a^2+m_a(\displaystyle\frac{l}{2})^2=\displaystyle\frac{1}{3}m_al_a^2=0.000045\quad kg\cdot m^2$$molto inferiore rispetto a quello della massa $m$ attaccata al pendolo, $$
-I_m=ml_a^2=0.00041\quad kg\cdot m^2$$ possiamo per semplicità trascurarlo, per cui poniamo $I_m=0$.\\
+I_m=\displaystyle\frac{1}{12}m_al_a^2+m_a(\displaystyle\frac{l}{2})^2=\displaystyle\frac{1}{3}m_al_a^2=0.000045kg\cdot m^2$$molto inferiore (1 ordine di grandezza) rispetto a quello della massa $m$ attaccata al pendolo, $$
+I_m=ml_a^2=0.00041kg\cdot m^2$$ possiamo per semplicità trascurarlo, per cui poniamo $I_m=0$.
+
 Il sistema che deriva dalla \ref{FCarr} e dalla \ref{momInThetaP} è dunque il seguente:
 \\\\
 $\begin{cases}
@@ -97,7 +100,8 @@ $$
 $$
 $$
 =\frac{u+ml_a\dot{\theta}^2\sin(\theta)+gm\cos(\theta)\sin(\theta)}{m\sin^2(\theta)+M}
-$$\\
+$$
+\newpage
 Assegniamo le variabili di stato e definiamo le uscite desiderate:\\\\
 $\begin{cases}
 $$x_1 \stackrel{\Delta}{=} x_M$$ \\
@@ -128,7 +132,7 @@ $
 \\\\\\
 \section{Linearizzazione del modello}\label{LinMod}
 \textbf{Punti di equilibrio del sistema} \\
-Per la ricerca dei punti di equilibrio poniamo $\underline{f}(\underline{x},u)=\underline{0}$\quad(dove $\underline{\dot{x}}=\underline{f}(\underline{x},u$)):\\\\
+Per la ricerca dei punti di equilibrio poniamo $\underline{f}(\underline{x},u)=\underline{0}$\quad(dove $\underline{\dot{x}}=\underline{f}(\underline{x},u$)) da cui:\\\\
 $\begin{cases}
 $$x_2=0$$ \\
 $$\displaystyle\frac{u+ml_ax_4^2\sin(x_3)+gm\cos(x_3)\sin(x_3)}{m\sin^2(x_3)+M}=0$$\\
@@ -143,7 +147,7 @@ $$x_2=0$$\\
 $$x_3=\pm\pi$$\\
 $$x_4=0$$\\
 $$u=0$$
-\end{cases}$\\
+\end{cases}$\\\\
 ovvero quando il pendolo è rivolto verso l'alto (pendolo inverso), l'altro, stabile, per\\
 $\begin{cases}
 $$x_1=\forall$$ \\
@@ -151,9 +155,9 @@ $$x_2=0$$\\
 $$x_3=0$$\\
 $$x_4=0$$\\
 $$u=0$$
-\end{cases}$\\
-quando il pendolo è rivolto verso il basso (pendolo "normale").
-Siccome il punto di equilibrio non dipende dalla posizione del carrello possiamo per semplicità scegliere $x_1=0$.\\\\
+\end{cases}$\\\\
+quando il pendolo è rivolto verso il basso (pendolo "normale"), caso da noi trattato ne seguito.\\
+In ultimo siccome il punto di equilibrio non dipende dalla posizione del carrello possiamo per semplicità scegliere $x_1=0$.\\\\
 \textbf{Linearizzazione del sistema attorno al punto di equilibrio}\\
 Vogliamo ora linearizzare le precedenti equazioni di stato attorno al punto di equilibrio $\underline{\tilde{x}}=\underline{0}$, $\tilde{u}=0$ trovato: \\\\
 $\displaystyle\frac{\partial{f_1}}{\partial{\underline{x}}}(\underline x,u)=
@@ -171,9 +175,9 @@ $\displaystyle\frac{\partial{f_3}}{\partial{\underline{x}}}(\underline x,u)=
 \end{bmatrix}$\qquad$\displaystyle\frac{\partial{f_3}}{\partial{u}}(\underline{x},u)=0$\\\\\\
 $\displaystyle\frac{\partial{f_4}}{\partial{x_1}}(\underline{x},u)=0$\qquad
 $\displaystyle\frac{\partial{f_4}}{\partial{x_2}}(\underline{x},u)=0$\\
-$\displaystyle\frac{\partial{f_4}}{\partial{x_3}}(\underline{x},u)=\displaystyle\frac{[u\sin(x_3)-ml_ax_4^2(\cos^2(x_3)-\sin^2(x_3))-g\cos(x_3)(M+m)][l_a(m\sin^2(x_3)+M)]}{l_a^2(m\sin^2(x_3)+M)^2}+$ $-\displaystyle\frac{[-u\cos(x_3)-ml_ax^2_4\sin(x_3)\cos(x_3)-g\sin(x_3)(m+M)][2ml_a\sin(x_3)\cos(x_3)]}{l_a^2(m\sin^2(x_3)+M)^2}\bigg|_{\underline{\tilde{x}},\tilde{u}}=$
+$\displaystyle\frac{\partial{f_4}}{\partial{x_3}}(\underline{x},u)=$\\$\displaystyle\frac{[u\sin(x_3)-ml_ax_4^2(\cos^2(x_3)-\sin^2(x_3))-g\cos(x_3)(M+m)][l_a(m\sin^2(x_3)+M)]}{l_a^2(m\sin^2(x_3)+M)^2}+$ $-\displaystyle\frac{[-u\cos(x_3)-ml_ax^2_4\sin(x_3)\cos(x_3)-g\sin(x_3)(m+M)][2ml_a\sin(x_3)\cos(x_3)]}{l_a^2(m\sin^2(x_3)+M)^2}\bigg|_{\underline{\tilde{x}},\tilde{u}}=$
 $=-\displaystyle\frac{(M+m)g}{Ml}$\qquad$\displaystyle\frac{\partial{f_4}}{\partial{x_4}}(\underline{x},u)=\displaystyle\frac{-2ml_ax_4\sin(x_3)\cos(x_3)}{l_a(m\sin^2(x_3)+M)}\bigg|_{\underline{\tilde{x}},\tilde{u}}=0$\\$\displaystyle\frac{\partial{f_4}}{\partial{u}}(\underline{x},u)=\displaystyle\frac{-\cos(x_3)}{l_a(m\sin^2(x_3)+M)}\bigg|_{\underline{\tilde{x}},\tilde{u}}=-\displaystyle\frac{1}{ml_a}$\\\\\\
-Le equazioni linearizzate sono dunque:\\\\
+Le equazioni di stato linearizzate sono dunque:\\\\
 $\underline{\delta\dot{x}}=
 \begin{bmatrix}
 0&1&0&0\\
@@ -197,7 +201,7 @@ $\underline{\delta y}=
 \end{bmatrix}
 \underline{\delta x}
 $\\\\\\
-Calcolando ora la funzione di trasferimento $T(s)$ tra l'ingresso $u$ (forza esercitata sul carrello,
+Calcolando ora la funzione di trasferimento $T_{y_2,u}$ tra l'ingresso $u$ (forza esercitata sul carrello,
 avanti/indietro) e l'uscita $y_2$(angolo $\theta$ del pendolo rispetto alla verticale) si ottiene:\\\\
 $T_{y_2,u}(s)=C(sI-A)^{-1}B=
 \begin{bmatrix}
@@ -216,8 +220,10 @@ $T_{y_2,u}(s)=C(sI-A)^{-1}B=
 -\displaystyle\frac{1}{Ml_a}\\
 \end{bmatrix} = \\
 =-\displaystyle\frac{1}{Ml_as^2+(M+m)g}
-$\\\\\\
-Inserendo ora i parametri del modello fisico del pendolo su  carrello realizzato con l'ausilio del Lego MINDSTORM EV3 si può procedere all'identificazione della funzione di trasferimento.
+$\\\\
+in cui il segno meno è coerente col fatto che il semiperiodo iniziale dell'oscillazione del pendolo sia in direzione opposta rispetto al movimento del carrello.
+
+Inserendo ora i parametri del modello fisico del pendolo su  carrello realizzato con l'ausilio del LEGO MINDSTORM EV3 si può procedere all'identificazione della funzione di trasferimento.
 \begin{table}[ht]
 	\begin{tabular}{|l|l|l|l|}
 		\hline
@@ -242,8 +248,8 @@ Inserendo ora i parametri del modello fisico del pendolo su  carrello realizzato
 $$T_{y_2,u}(s)=-\displaystyle\frac{1}{0.125s^2+7.541}$$
 \newpage
 \section{Stabilizzazione del pendolo}
-Il pendolo di per sè è un sistema già stabile, lo scopo della realizzazione su carrello consiste nello smorzarne l'oscillazione riducendo la costante di tempo del sistema grazie all'impiego di due ruote motrici.\\
-In figura \ref{pendoloFisico} realizzazione del pendolo su carrello utilizzando un motore EV3 Large Servo Motor come trazione e un encoder GlideWheel-M per misurare l'angolo del pendolo 
+Il pendolo di per sè è un sistema già stabile, lo scopo della realizzazione su carrello consiste nello smorzarne l'oscillazione riducendo la costante di tempo e quindi il transitorio del sistema grazie all'impiego di due ruote motrici.\\
+In figura \ref{pendoloFisico} si può vedere la realizzazione del pendolo su carrello utilizzando un motore EV3 Large Servo Motor come trazione e un encoder GlideWheel-M per misurare l'angolo del pendolo 
 \begin{figure}[ht]
 	\centering
 	\includegraphics[scale=0.08]{pendoloFisico.jpg}\\
@@ -251,50 +257,53 @@ In figura \ref{pendoloFisico} realizzazione del pendolo su carrello utilizzando 
 	\label{pendoloFisico}
 \end{figure} 
 rispetto alla verticale.\\
-Da specifiche quest'ultimo può raggiungere un tempo di campionamento minimo di 0.001s (così come il motore) ma a tale valore non riesce sempre a campionare in modo corretto, perciò abbiamo deciso di aumentarlo in modo da non perdere nessuna variazione anche alla massima velocità angolare raggiunta dal pendolo durante l'oscillazione libera tra $[\ang{-31},\ang{+31}]$ (intervallo entro il quale il pendolo è vincolato per costruzione).
+Da specifiche quest'ultimo può raggiungere un tempo di campionamento minimo di 0.001s (così come il motore) al quale valore non si riesce sempre a campionare in modo corretto. Per ovviare, almeno parzialmente, al problema abbiamo deciso di abbassare la frequenza di campionamento, in modo però da non perdere nessuna variazione dell'angolo del pendolo.\\
+Per fare questo abbiamo calcolato la massima velocità raggiunta durante la sua oscillazione libera tra $[\ang{-31},\ang{+31}]$ (intervallo entro il quale il pendolo è vincolato per costruzione).
 \begin{figure}[ht]
 	\centering
 	\includegraphics[width=\textwidth]{SlewRate.PNG}\\
 	\caption{Massima velocità di oscillazione libera}
 	\label{slewRate}
 \end{figure}
-Da tale esperimento è risultato che durante la prima oscillazione (in figura \ref{slewRate}), il pendolo, raggiunge per $\theta=\ang{0}$ la velocità $\omega=250\deg/s$ (calcolata con un semplice rapporto incrementale) per cui il tempo di campionamento ottimale sarebbe stato $t_c=\displaystyle\frac{1}{250}=0.004s$.
-Sfruttando il modello del motore LEGO da noi ricavato si può quindi ricavare la funzione di Trasferimento del sistema complessivo (avente come ingresso la potenza richiesta al motore e come uscita la posizione angolare del pendolo).\\
-Siccome in uscita al modello del motore abbiamo la coppia erogata dallo stesso, per poterlo mettere in serie al modello del pendolo su carrello (il quale come ingresso riceve una spinta sotto forma di forza) occorre adattare il collegamento I/O. Poiché si assume un puro moto di rotolamento delle ruote del carrello si tratta di trovare il giusto coefficiente $C$ di proporzionalità tra coppia e spinta.
-\begin{figure}[ht]
-	\centering
-	\includegraphics[scale=0.4]{braccioForza.PNG}
-	\caption{Momento della forza}
-	\label{braccioForza}
-\end{figure}
-\\La relazione tra queste ultime è data dalla formula fisica del momento della forza
-$\tau=r\times F=(r\sin(\phi))F=r_{\bot}F$
-ove $r_{\bot}$ rappresenta il braccio della forza F.
-Poiché nel nostro caso $r$ risulta essere il raggio della ruota ed F la forza tangente alla ruota abbiamo ricavato sostituendo il suo valore dalla tabella \ref{carrPend}: $$F=\displaystyle\frac{\tau}{r}\Rightarrow C=\displaystyle\frac{1}{r}=29.41$$ 
-\begin{figure}[ht]
+\\Da tale esperimento è risultato che durante la prima oscillazione (in figura \ref{slewRate}), il pendolo, raggiunge per $\theta=\ang{0}$ la velocità $\omega=250\deg/s$ (calcolata con un semplice rapporto incrementale) per cui il tempo di campionamento necessario a non perdere nessuna variazione dell'angolo sarebbe stato $t_c=\displaystyle\frac{1}{250}=0.004s$.\\
+
+Sfruttando il modello del motore LEGO da noi identificato al capitolo \ref{modMotore} si può quindi ricavare la funzione di trasferimento del sistema complessivo (avente come ingresso la potenza richiesta al motore e come uscita la posizione angolare del pendolo).\begin{figure}[ht]
 	\centering
 	\includegraphics[width=\textwidth]{SisComplessivoPendoloNormale.PNG}
 	\caption{Schema a blocchi del sistema complessivo}
 	\label{SisComplessivoPendoloNormale}
 \end{figure}
+\\Siccome in uscita al modello del motore abbiamo la coppia erogata dallo stesso, per poterlo mettere in serie al modello del pendolo su carrello (il quale come ingresso riceve una spinta sotto forma di forza) occorre adattare il collegamento I/O. Poiché si assume un puro moto di rotolamento delle ruote del carrello si tratta di trovare il giusto coefficiente $C$ di proporzionalità tra coppia e spinta.
+\begin{figure}[ht]
+	\centering
+	\includegraphics[scale=0.55]{braccioForza.PNG}
+	\caption{Momento della forza applicato alla ruota}
+	\label{braccioForza}
+\end{figure}
+\\La relazione tra queste ultime è data dalla formula fisica del momento della forza
+$$\tau=r\times F=(r\sin(\phi))F=r_{\bot}F$$
+ove $r_{\bot}$ rappresenta il braccio della forza F.
+Poiché nel nostro caso $r$ risulta essere il raggio della ruota ed F la forza tangente alla ruota abbiamo ricavato sostituendo il suo valore dalla tabella \ref{carrPend}: $$F=\displaystyle\frac{\tau}{r}\Rightarrow$$$$\Rightarrow C=\displaystyle\frac{1}{r}=29.41$$
 Per realizzare ora una retroazione algebrica sull'uscita che ci permetta di controllarlo in ciclo chiuso, possiamo riassumere in un'unica funzione di Trasferimento il sistema complessivo:\\
 $$T_{y_2,u}=-\displaystyle\frac{559.5s+78.3}{s^4+31.67s^3+227s^2+1910s+10050}$$\\
 della quale si può calcolare il luogo delle radici per studiarne la stabilità in ciclo chiuso.
+
+Come si evince dal luogo delle radici del sistema, è possibile utilizzare un semplice Regolatore Proporzionale purché il suo guadagno rientri in un intervallo molto limitato ovvero $P\in(-6,0)$.
 \begin{figure}[ht]
 	\centering
 	\includegraphics[width=\textwidth]{RLocusPendoloNormale.PNG}
 	\caption{Luogo delle Radici di $-T_{y_2,u}$}
 	\label{RLocusPendoloNormale}
 \end{figure}
-Come si evince dal luogo delle radici del sistema, è possibile utilizzare un semplice Regolatore Proporzionale purché il suo guadagno rientri in un intervallo molto limitato ovvero $P\in(-6,0)$.
-\newpage
+\\Attraverso l'utilizzo dello strumento MATLAB chiamato `rlocus', il quale consente di ottenere data una funzione il luogo delle radici, siamo arrivati a definirne il guadagno $P=-2$ (vedi figura\ref{gainOttimaleft}) come ottimale dato il massimo rapporto possibile tra parte reale e parte immaginaria dei poli complessi coniugati in ciclo chiuso.\\
+Tale valore è stato in seguito confermato anche con diversi esperimenti i cui risultati sono mostrati in figura \ref{variazioneGainP}.
 \begin{figure}[ht]
 	\centering
 	\includegraphics[width=\textwidth]{gainOttimaleft.PNG}
 	\caption{Particolare del Luogo delle Radici di $-T_{y_2,u}$}
 	\label{gainOttimaleft}
 \end{figure}
-Attraverso l'utilizzo di uno strumento MATLAB quale `rlocus'(vedi fig.\ref{gainOttimaleft}) siamo arrivati a definirne il guadagno $P=-2$, in seguito verificato anche sperimentalmente.
+.
 \begin{figure}[ht]
 	\centering
 	\includegraphics[width=\textwidth]{SisComplessivoPNRetroazionato.PNG}

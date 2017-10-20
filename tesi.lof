@@ -4,8 +4,8 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {2.1}{\ignorespaces Schema a blocchi Motore}}{3}
 \contentsline {figure}{\numberline {2.2}{\ignorespaces Carico per aumentare Inerzia del motore}}{4}
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Risposta al gradino con $\omega _c=25\tmspace +\thickmuskip {.2777em}Hz$}}{5}
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Risposta al gradino con $\omega _c=100\tmspace +\thickmuskip {.2777em}Hz$ }}{5}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Risposta al gradino con $\omega _c=100\tmspace +\thickmuskip {.2777em}Hz$ }}{5}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Risposta al gradino con $\omega _c=25\tmspace +\thickmuskip {.2777em}Hz$}}{5}
 \contentsline {figure}{\numberline {2.5}{\ignorespaces Risposta al gradino del Motore reale e del suo modello}}{6}
 \contentsline {figure}{\numberline {2.6}{\ignorespaces Modello completo del Motore}}{7}
 \contentsline {figure}{\numberline {2.7}{\ignorespaces Risposta al gradino del modello completo}}{8}
@@ -13,13 +13,13 @@
 \contentsline {figure}{\numberline {3.1}{\ignorespaces Modello del pendolo su carrello}}{9}
 \contentsline {figure}{\numberline {3.2}{\ignorespaces Realizzazione fisica del pendolo su carrello}}{15}
 \contentsline {figure}{\numberline {3.3}{\ignorespaces Massima velocit\IeC {\`a} di oscillazione libera}}{16}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Momento della forza}}{16}
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Schema a blocchi del sistema complessivo}}{17}
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Luogo delle Radici di $-T_{y_2,u}$}}{17}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Schema a blocchi del sistema complessivo}}{16}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Momento della forza applicato alla ruota}}{17}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Luogo delle Radici di $-T_{y_2,u}$}}{18}
 \contentsline {figure}{\numberline {3.7}{\ignorespaces Particolare del Luogo delle Radici di $-T_{y_2,u}$}}{18}
-\contentsline {figure}{\numberline {3.8}{\ignorespaces Sistema complessivo controllato proporzionalmente}}{18}
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Sistema complessivo controllato proporzionalmente}}{19}
 \contentsline {figure}{\numberline {3.9}{\ignorespaces Sistema reale controllato proporzionalmente}}{19}
-\contentsline {figure}{\numberline {3.10}{\ignorespaces Uscita $\theta $ del sistema per valori di $P=-2,-6,-8$}}{19}
+\contentsline {figure}{\numberline {3.10}{\ignorespaces Uscita $\theta $ del sistema per valori di $P=-2,-6,-8$}}{20}
 \contentsline {figure}{\numberline {3.11}{\ignorespaces Sistema in ciclo aperto}}{20}
-\contentsline {figure}{\numberline {3.12}{\ignorespaces Sistema in ciclo chiuso con Regolatore P}}{20}
+\contentsline {figure}{\numberline {3.12}{\ignorespaces Sistema in ciclo chiuso con Regolatore P}}{21}
 \addvspace {10\p@ }

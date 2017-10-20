@@ -1,8 +1,11 @@
 \chapter{Introduzione}
-Nel seguente elaborato si affronta il problema della modellazione e conseguente controllo di un sistema fisico realizzato con dispositivo LEGO MINDSTORM EV3 e alcuni tra i principali sensori e attuatori disponibili per questo modello.\\\\
-L'obiettivo è quello di applicare i principi della Teoria dei Sistemi e dei Controlli Automatici per controllare e smorzare l'oscillazione di un pendolo su di un carrello con trazione motrice.\\\\
+Nel seguente elaborato si affronta il problema della modellazione e conseguente controllo di un sistema fisico realizzato con dispositivo LEGO MINDSTORM EV3 e alcuni tra i principali sensori e attuatori disponibili per questo modello.
+
+L'obiettivo è quello di applicare i principi della Teoria dei Sistemi e dei Controlli Automatici per controllare e smorzare l'oscillazione di un pendolo su di un carrello con trazione motrice.
+
 Per la modellazione, la simulazione e l'analisi del sistema si fa uso dell'ambiente di sviluppo Simulink, strettamente integrato con MATLAB, il quale fornisce una miriade di strumenti utili al progetto.\\
-Dal suddetto ambiente si riesce a stabilire una connessione WI-FI(con l'ausilio dell'adattatore wireless USB Netgear WNA1100) oppure USB tra PC e robot con la quale il programma viene caricato ed in seguito eseguito in modalità autonoma o guidata, a seconda delle esigenze, tramite l'impostazione di alcuni parametri.\\\\
+Dal suddetto ambiente si riesce a stabilire una connessione WI-FI(con l'ausilio dell'adattatore wireless USB Netgear WNA1100) oppure USB tra PC e robot con la quale il programma viene caricato ed in seguito eseguito in modalità autonoma o guidata, a seconda delle esigenze, tramite l'impostazione di alcuni parametri.
+
 Inizialmente si procede con l'identificazione, in seguito all'analisi della risposta al gradino, del modello del motore LEGO utilizzato per la locomozione.\\
 Si prosegue scrivendo le equazioni fisiche del modello del pendolo su carrello, quindi si cercano i punti di equilibrio e  infine si linearizzano le equazioni di stato attorno a tali punti.\\
 L'unione dei due sistemi considerati porta ad uno complessivo, del quale si analizza la stabilità con i sopracitati strumenti di MATLAB e si realizzano due tra i possibili regolatori atti a velocizzare la risposta del sistema agli stimoli in modo da ridurre il tempo di assestamento nella maniera desiderata.\\

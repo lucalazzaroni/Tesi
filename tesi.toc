@@ -8,4 +8,4 @@
 \contentsline {section}{\numberline {3.1}Modello e relative equazioni}{9}
 \contentsline {section}{\numberline {3.2}Linearizzazione del modello}{12}
 \contentsline {section}{\numberline {3.3}Stabilizzazione del pendolo}{15}
-\contentsline {chapter}{\numberline {4}Conclusioni}{21}
+\contentsline {chapter}{\numberline {4}Conclusioni}{23}
