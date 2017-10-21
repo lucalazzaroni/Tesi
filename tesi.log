@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.9.7)  20 OCT 2017 19:41
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.9.7)  21 OCT 2017 12:07
 entering extended mode
 **./tesi.tex
 (tesi.tex
@@ -1494,20 +1494,28 @@ File: variazioneGainP.png Graphic file (type png)
 <use variazioneGainP.png>
 Package pdftex.def Info: variazioneGainP.png used on input line 329.
 (pdftex.def)             Requested size: 360.0pt x 177.37685pt.
- <oscillOL.PNG, id=145, 1445.4pt x 712.16063pt>
-File: oscillOL.PNG Graphic file (type png)
+ [19 <./SisComplessivoPNRetroazionato.PNG> <./pendoloReale.jpg>]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 334.
 
-<use oscillOL.PNG>
-Package pdftex.def Info: oscillOL.PNG used on input line 336.
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 334.
+
+<oscillOL.PNG, id=149, 1445.4pt x 712.16063pt>
+File: oscillOL.PNG Graphic file (type png)
+ <use oscillOL.PNG>
+Package pdftex.def Info: oscillOL.PNG used on input line 343.
 (pdftex.def)             Requested size: 360.0pt x 177.37685pt.
- [19 <./SisComplessivoPNRetroazionato.PNG> <./pendoloReale.jpg>] [20 <./variazi
-oneGainP.png (PNG copy)> <./oscillOL.PNG (PNG copy)>]
-<oscillCL.PNG, id=153, 1445.4pt x 712.16063pt>
+
+<oscillCL.PNG, id=150, 1445.4pt x 712.16063pt>
 File: oscillCL.PNG Graphic file (type png)
  <use oscillCL.PNG>
-Package pdftex.def Info: oscillCL.PNG used on input line 345.
+Package pdftex.def Info: oscillCL.PNG used on input line 350.
 (pdftex.def)             Requested size: 360.0pt x 177.37685pt.
-) [21 <./oscillCL.PNG (PNG copy)>]
+ [20 <./variazioneGainP.png (PNG copy)>]) [21 <./oscillOL.PNG (PNG copy)> <./os
+cillCL.PNG (PNG copy)>]
 \openout2 = `Conclusioni.aux'.
 
  (Conclusioni.tex [22
@@ -1546,10 +1554,10 @@ Robot.pdf
 [25] (tesi.aux (Introduzione.aux) (modelloMotore.aux) (pendoloModifica.aux)
 (Conclusioni.aux)) ) 
 Here is how much of TeX's memory you used:
- 15352 strings out of 493323
- 299619 string characters out of 3139055
- 360743 words of memory out of 3000000
- 18688 multiletter control sequences out of 15000+200000
+ 15371 strings out of 493323
+ 299931 string characters out of 3139055
+ 360764 words of memory out of 3000000
+ 18704 multiletter control sequences out of 15000+200000
  538613 words of font info for 52 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  40i,18n,43p,10378b,502s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1569,7 +1577,7 @@ iles/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiK
 TeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/f
 onts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
 e1/public/amsfonts/cm/cmtt10.pfb>
-Output written on tesi.pdf (35 pages, 11819417 bytes).
+Output written on tesi.pdf (35 pages, 11820893 bytes).
 PDF statistics:
  219 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
