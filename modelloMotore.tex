@@ -6,7 +6,7 @@
 	\caption{Schema a blocchi Motore}
 	\label{motoreSimulink}
 \end{figure}
-Il LEGO MINDSTORMS EV3 è dotato di un motore, l'EV3 Large Servo Motor, la cui velocità angolare, misurata in $rad/s$, è stata assunta come uscita del sistema.\\
+Il LEGO MINDSTORMS EV3 è dotato di un motore, l'EV3 Large Servo Motor, la cui velocità angolare, misurata in $deg/s$, è stata assunta come uscita del sistema.\\
 I valori di ingresso accettabili sono compresi tra -100 e +100, dove $\pm$100 indicano la massima potenza erogabile in entrambi i versi di rotazione.
 
 Al fine di riuscire a modellarlo, abbiamo applicato al motore un albero dotato di pesi posti a una certa distanza dallo stesso in modo tale da incrementarne il momento d'inerzia $I$. Questo poiché in assenza di un carico significativo la dinamica del motore risulta  troppo veloce per  essere identificata con gli strumenti a nostra disposizione. In particolare l'insufficiente precisione e la limitata frequenza massima di campionamento dell'encoder non permettono una corretta analisi del transitorio del motore. Al fine di ridurre il più possibile l'errore è stato scelto come tempo di campionamento dell'encoder il valore minimo supportato: 0.001$s$.\\
@@ -59,7 +59,7 @@ $$
 \tau=K\omega+I\alpha
 $$
 dove il primo termine indica appunto la coppia, mentre i restanti due sono rispettivamente l'attrito interno al motore e il momento torcente.
-Più nello specifico $K$ rappresenta il coefficiente di smorzamento viscoso misurato in $N\cdot m\cdot s/rad$, $\omega$ la velocità angolare, $I$ il momento d'inerzia del sistema e $\alpha$ l'accelerazione angolare.
+Più nello specifico $K$ rappresenta il coefficiente di smorzamento viscoso misurato in $N\cdot m\cdot s/deg$, $\omega$ la velocità angolare, $I$ il momento d'inerzia del sistema e $\alpha$ l'accelerazione angolare.
 
 Calcoliamo innanzi tutto 
 $$
@@ -115,8 +115,8 @@ Si può notare come nel blocco inferiore siano stati aggiunti il derivatore e il
 il discorso è analogo a quello trattato in precedenza:
 è stato aggiunto (scegliendo appositamente una frequenza di taglio abbastanza alta da non alterare la dinamica del sistema) siccome un derivatore puro sarebbe stato fisicamente irrealizzabile (funzione impropria).\\
 Inoltre si è resa necessaria anche l'aggiunta di un blocco di saturazione dell'ingresso dal momento che, come già reso noto in precedenza, l'EV3 Large Servo Motor accetta valori compresi tra -100 e +100 considerando quelli esterni a tale intervallo coincidenti con gli estremi.\\
-In ultimo il valore di $K$, unico parametro incognito rimasto, è stato invece ricavato sperimentalmente avendo nota dalle specifiche LEGO la coppia a regime dell'EV3 Large Servo Motor $\tau_{reg}=0.2N\cdot m$.\\
-Come mostrato in figura \ref{torque02} un valore di K pari a 0.000192 $Nm\cdot s/rad$ consente di rispettare appieno tale specifica.
+In ultimo il valore di $K$, unico parametro incognito rimasto, è stato invece ricavato sperimentalmente avendo nota dalle specifiche LEGO la coppia massima a regime dell'EV3 Large Servo Motor $\tau_{reg}=0.2N\cdot m$.\\
+Come mostrato in figura \ref{torque02} un valore di K pari a 0.000192 $Nm\cdot s/deg$ per un ingresso a gradino con valore finale 100 consente di rispettare appieno tale specifica.
 \begin{figure}[ht]
 	\centering
 	\includegraphics[width=\textwidth]{torque192.png}
