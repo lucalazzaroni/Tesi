@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.9.7)  21 OCT 2017 17:40
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.9.30)  21 OCT 2017 18:05
 entering extended mode
 **./tesi.tex
 (tesi.tex
@@ -1113,30 +1113,10 @@ Package pdftex.def Info: paginaIniziale.pdf, page1 used on input line 36.
 
  (Introduzione.tex
 Capitolo 1.
-
-Underfull \hbox (badness 10000) in paragraph at lines 5--6
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 7--9
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 10--11
-
- []
-
 [1
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 15--16
-
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 24--26
 
  []
@@ -1181,7 +1161,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 39--43
 
  []
 
-[5 <./motore50StepCamp1000Polo100.png> <./motore50StepCamp1000.png (PNG copy)>]
+[5 <./motore50StepCamp1000Polo100.png> <./motore50StepCamp1000.png>]
 <modMotorvsReale.png, id=86, 1445.4pt x 712.16063pt>
 File: modMotorvsReale.png Graphic file (type png)
  <use modMotorvsReale.png>
@@ -1534,34 +1514,16 @@ E-GO MIND-STORMS EV3,
 
 
 ]
-Overfull \hbox (7.70331pt too wide) in paragraph at lines 77--80
-\OT1/cmtt/m/n/10.95 https://digital.library.unt.edu/ark:/67531/metadc804943/m2/
-1/ 
- []
-
-
-Overfull \hbox (13.452pt too wide) in paragraph at lines 86--88
-\OT1/cmtt/m/n/10.95 http://eie.uonbi.ac.ke/sites/default/files/cae/engineering/
-eie 
- []
-
-
-Overfull \hbox (122.67706pt too wide) in paragraph at lines 90--92
-\OT1/cmtt/m/n/10.95 http://control.disp.uniroma2.it/carnevale/archivio/Tesi/ant
-enuccialessio/tesi.pdf 
- []
-
-
-Overfull \hbox (18.51083pt too wide) in paragraph at lines 94--96
-\OT1/cmtt/m/n/10.95 http://laurensvalk.com/files/Bos[]Valk[]SC4050[]Balancing[]
-Robot.pdf 
+Overfull \hbox (7.70331pt too wide) in paragraph at lines 85--88
+\OT1/cmtt/m/n/10.95 eie/DIGITAL%20CONTROL%20OF%20A%20LINE%20FOLLOWING%20ROBOT.p
+df 
  []
 
 [25] (tesi.aux (Introduzione.aux) (modelloMotore.aux) (pendoloModifica.aux)
 (Conclusioni.aux)) ) 
 Here is how much of TeX's memory you used:
  15371 strings out of 493323
- 299931 string characters out of 3139055
+ 299931 string characters out of 3139048
  360764 words of memory out of 3000000
  18704 multiletter control sequences out of 15000+200000
  538613 words of font info for 52 fonts, out of 3000000 for 9000
@@ -1583,7 +1545,7 @@ iles/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiK
 TeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/f
 onts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
 e1/public/amsfonts/cm/cmtt10.pfb>
-Output written on tesi.pdf (35 pages, 11821559 bytes).
+Output written on tesi.pdf (35 pages, 11816780 bytes).
 PDF statistics:
  219 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

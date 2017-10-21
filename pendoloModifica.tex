@@ -323,7 +323,7 @@ Per effettuare tale operazione è necessario inserire nello schema un convertito
 Sotto tali presupposti il motore, avendo ingresso nullo, non erogherà potenza fino quando il pendolo non verrà spostato dal suo stato iniziale.\\
 Al variare della posizione angolare, il motore reagirà muovendo il carrello nella stessa direzione per riportare il pendolo nel suo punto di equilibrio.
 
-Come accennato poco fa, ad ulteriore conferma della veridicità del luogo delle radici, abbiamo provato a controllare il sistema fisico al variare di $P$ durante una simulazione interattiva, nella quale è possibile modificare in tempo reale, da PC, il valore del guadagno del rFegolatore, e, come mostrato nelle figura \ref{variazioneGainP}, il sistema risulta effettivamente instabile per valori che si discostano dall'intervallo di stabilità trovato.\\
+Come accennato poco fa, ad ulteriore conferma della veridicità del luogo delle radici, abbiamo provato a controllare il sistema fisico al variare di $P$ durante una simulazione interattiva, nella quale è possibile modificare in tempo reale, da PC, il valore del guadagno del regolatore, e, come mostrato nelle figura \ref{variazioneGainP}, il sistema risulta effettivamente instabile per valori che si discostano dall'intervallo di stabilità trovato.\\
 L'esperimento è così costituito: avviato il programma nel Brick siamo noi ad innescare la prima oscillazione nel pendolo in modo da osservarne il comportamento. Nel caso in cui esso non riesca a ritornare nel punto di equilibrio autonomamente allora siamo noi a fermarlo.
 \begin{figure}[ht]
 	\centering
@@ -333,11 +333,11 @@ L'esperimento è così costituito: avviato il programma nel Brick siamo noi ad i
 \end{figure}
 \begin{itemize}
 	\item Nell'intervallo tra $10s$ e $15s$ ($P=-2$) è chiaro come il pendolo ritorni nel punto di equilibrio quasi immediatamente.
-	\item Tra $25s$ e $40s$ ($P=-6$), in seguito ad uno smorzamento iniziale non riesce a ritornare nel punto di equilibrio ma continua ad oscillare fino al nostro intervento.
+	\item Tra $25s$ e $40s$ ($P=-6$), in seguito ad uno smorzamento iniziale non riesce a ritornare nel punto di equilibrio, ma continua ad oscillare fino al nostro intervento.
 	\item Tra $70s$ e $80s$ ($P=-8$), non avviene nemmeno uno smorzamento iniziale ma anzi, l'oscillazione provocata viene amplificata dal sistema fino a giungere in una situazione nella quale le ipotesi del modello vengono violate: le ruote del carrello iniziano a slittare, inficiando dunque le equazioni trovate al paragrafo \ref{stabPend} che si basavano sul moto di puro rotolamento.
 \end{itemize}
 
-Assodato quindi come $P=-2$ porti ad una situazione più che accettabile, abbiamo cercato di quantificare il miglioramento raggiunto tra sistema in ciclo aperto e sistema in ciclo chiuso con retroazione unitaria.\\
+Assodato quindi come $P=-2$ porti ad una situazione più che accettabile, si è cercato di quantificare il miglioramento raggiunto tra sistema in ciclo aperto e sistema in ciclo chiuso con retroazione unitaria.\\
 Come si può vedere nel grafico in figura \ref{oscillOL}, posizionando il pendolo ad un'angolazione di $\theta=\ang{31}$ (massima raggiungibile per costruzione) e lasciandolo quindi libero di oscillare, in ciclo aperto
 \begin{figure}[ht]
 	\centering
