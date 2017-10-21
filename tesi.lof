@@ -4,8 +4,8 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {2.1}{\ignorespaces Schema a blocchi Motore}}{3}
 \contentsline {figure}{\numberline {2.2}{\ignorespaces Carico per aumentare Inerzia del motore}}{4}
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Risposta al gradino con $\omega _c=100\tmspace +\thickmuskip {.2777em}Hz$ }}{5}
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Risposta al gradino con $\omega _c=25\tmspace +\thickmuskip {.2777em}Hz$}}{5}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Risposta al gradino con $\omega _c=100Hz$ }}{5}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Risposta al gradino con $\omega _c=25Hz$}}{5}
 \contentsline {figure}{\numberline {2.5}{\ignorespaces Risposta al gradino del Motore reale e del suo modello}}{6}
 \contentsline {figure}{\numberline {2.6}{\ignorespaces Modello completo del Motore}}{7}
 \contentsline {figure}{\numberline {2.7}{\ignorespaces Risposta al gradino del modello completo}}{8}

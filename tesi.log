@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.9.7)  21 OCT 2017 12:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.9.7)  21 OCT 2017 17:32
 entering extended mode
 **./tesi.tex
 (tesi.tex
@@ -1203,7 +1203,7 @@ Package pdftex.def Info: modMotoreTorque.jpg used on input line 109.
 File: torque192.png Graphic file (type png)
 
 <use torque192.png>
-Package pdftex.def Info: torque192.png used on input line 120.
+Package pdftex.def Info: torque192.png used on input line 122.
 (pdftex.def)             Requested size: 360.0pt x 177.93105pt.
 ) [7 <./modMotoreTorque.jpg>] [8 <./torque192.png>]
 \openout2 = `pendoloModifica.aux'.
@@ -1301,117 +1301,117 @@ Underfull \hbox (badness 10000) in paragraph at lines 105--133
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 134--225
+Underfull \hbox (badness 10000) in paragraph at lines 134--226
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 134--225
+Underfull \hbox (badness 10000) in paragraph at lines 134--226
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 134--225
+Underfull \hbox (badness 10000) in paragraph at lines 134--226
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 134--225
+Underfull \hbox (badness 10000) in paragraph at lines 134--226
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 134--225
+Underfull \hbox (badness 10000) in paragraph at lines 134--226
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 134--225
+Underfull \hbox (badness 10000) in paragraph at lines 134--226
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 134--225
+Underfull \hbox (badness 10000) in paragraph at lines 134--226
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 134--225
+Underfull \hbox (badness 10000) in paragraph at lines 134--226
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 134--225
+Underfull \hbox (badness 10000) in paragraph at lines 134--226
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 134--225
+Underfull \hbox (badness 10000) in paragraph at lines 134--226
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 134--225
+Underfull \hbox (badness 10000) in paragraph at lines 134--226
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 134--225
+Underfull \hbox (badness 10000) in paragraph at lines 134--226
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 134--225
+Underfull \hbox (badness 10000) in paragraph at lines 134--226
 
  []
 
 
-Overfull \hbox (34.48709pt too wide) in paragraph at lines 134--225
+Overfull \hbox (34.48709pt too wide) in paragraph at lines 134--226
 []\OT1/cmr/m/n/10.95 +$
  []
 
 
-Overfull \hbox (46.04811pt too wide) in paragraph at lines 134--225
+Overfull \hbox (46.04811pt too wide) in paragraph at lines 134--226
 \OMS/cmsy/m/n/10.95  [][][] \OT1/cmr/m/n/10.95 =$
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 134--225
+Underfull \hbox (badness 10000) in paragraph at lines 134--226
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 134--225
+Underfull \hbox (badness 10000) in paragraph at lines 134--226
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 134--225
+Underfull \hbox (badness 10000) in paragraph at lines 134--226
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 134--225
+Underfull \hbox (badness 10000) in paragraph at lines 134--226
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 134--225
+Underfull \hbox (badness 10000) in paragraph at lines 134--226
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 134--225
+Underfull \hbox (badness 10000) in paragraph at lines 134--226
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 134--225
+Underfull \hbox (badness 10000) in paragraph at lines 134--226
 
  []
 
 
-Overfull \hbox (15.30449pt too wide) in paragraph at lines 134--225
+Overfull \hbox (15.30449pt too wide) in paragraph at lines 134--226
 \OML/cmm/m/it/10.95 T[]\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 s\OT1/cmr/m/n/10
 .95 ) = \OML/cmm/m/it/10.95 C\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 sI \OMS/cm
 sy/m/n/10.95   \OML/cmm/m/it/10.95 A\OT1/cmr/m/n/10.95 )[]\OML/cmm/m/it/10.95 B
@@ -1419,7 +1419,7 @@ sy/m/n/10.95   \OML/cmm/m/it/10.95 A\OT1/cmr/m/n/10.95 )[]\OML/cmm/m/it/10.95 B
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 134--225
+Underfull \hbox (badness 10000) in paragraph at lines 134--226
 
  []
 
@@ -1431,16 +1431,16 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 File: pendoloFisico.jpg Graphic file (type jpg)
 
 <use pendoloFisico.jpg>
-Package pdftex.def Info: pendoloFisico.jpg used on input line 255.
+Package pdftex.def Info: pendoloFisico.jpg used on input line 256.
 (pdftex.def)             Requested size: 242.83215pt x 242.83215pt.
  <SlewRate.PNG, id=123, 1440.88312pt x 712.16063pt>
 File: SlewRate.PNG Graphic file (type png)
 
 <use SlewRate.PNG>
-Package pdftex.def Info: SlewRate.PNG used on input line 264.
+Package pdftex.def Info: SlewRate.PNG used on input line 265.
 (pdftex.def)             Requested size: 360.0pt x 177.93105pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 251--269
+Underfull \hbox (badness 10000) in paragraph at lines 252--270
 
  []
 
@@ -1450,13 +1450,13 @@ File: SisComplessivoPendoloNormale.PNG Graphic file (type png)
 
 <use SisComplessivoPendoloNormale.PNG>
 Package pdftex.def Info: SisComplessivoPendoloNormale.PNG used on input line 27
-2.
+3.
 (pdftex.def)             Requested size: 360.0pt x 86.3588pt.
 
 <braccioForza.PNG, id=129, 334.24875pt x 290.58563pt>
 File: braccioForza.PNG Graphic file (type png)
  <use braccioForza.PNG>
-Package pdftex.def Info: braccioForza.PNG used on input line 279.
+Package pdftex.def Info: braccioForza.PNG used on input line 280.
 (pdftex.def)             Requested size: 183.83737pt x 159.82259pt.
 
 [16 <./SlewRate.PNG (PNG copy)> <./SisComplessivoPendoloNormale.PNG>] [17 <./br
@@ -1464,13 +1464,13 @@ accioForza.PNG>] <RLocusPendoloNormale.PNG, id=137, 1445.4pt x 669.2503pt>
 File: RLocusPendoloNormale.PNG Graphic file (type png)
 
 <use RLocusPendoloNormale.PNG>
-Package pdftex.def Info: RLocusPendoloNormale.PNG used on input line 295.
+Package pdftex.def Info: RLocusPendoloNormale.PNG used on input line 296.
 (pdftex.def)             Requested size: 360.0pt x 166.68924pt.
 
 <gainOttimaleft.PNG, id=138, 1445.4pt x 669.2503pt>
 File: gainOttimaleft.PNG Graphic file (type png)
  <use gainOttimaleft.PNG>
-Package pdftex.def Info: gainOttimaleft.PNG used on input line 302.
+Package pdftex.def Info: gainOttimaleft.PNG used on input line 303.
 (pdftex.def)             Requested size: 360.0pt x 166.68924pt.
 
 <SisComplessivoPNRetroazionato.PNG, id=139, 430.60875pt x 155.07938pt>
@@ -1478,13 +1478,13 @@ File: SisComplessivoPNRetroazionato.PNG Graphic file (type png)
 
 <use SisComplessivoPNRetroazionato.PNG>
 Package pdftex.def Info: SisComplessivoPNRetroazionato.PNG used on input line 3
-09.
+10.
 (pdftex.def)             Requested size: 360.0pt x 129.6529pt.
 
 <pendoloReale.jpg, id=140, 479.391pt x 206.57175pt>
 File: pendoloReale.jpg Graphic file (type jpg)
  <use pendoloReale.jpg>
-Package pdftex.def Info: pendoloReale.jpg used on input line 316.
+Package pdftex.def Info: pendoloReale.jpg used on input line 317.
 (pdftex.def)             Requested size: 360.0pt x 155.13014pt.
 
 [18 <./RLocusPendoloNormale.PNG> <./gainOttimaleft.PNG>]
@@ -1492,27 +1492,27 @@ Package pdftex.def Info: pendoloReale.jpg used on input line 316.
 File: variazioneGainP.png Graphic file (type png)
 
 <use variazioneGainP.png>
-Package pdftex.def Info: variazioneGainP.png used on input line 329.
+Package pdftex.def Info: variazioneGainP.png used on input line 330.
 (pdftex.def)             Requested size: 360.0pt x 177.37685pt.
  [19 <./SisComplessivoPNRetroazionato.PNG> <./pendoloReale.jpg>]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 334.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 335.
 
  ("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 334.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 335.
 
 <oscillOL.PNG, id=149, 1445.4pt x 712.16063pt>
 File: oscillOL.PNG Graphic file (type png)
  <use oscillOL.PNG>
-Package pdftex.def Info: oscillOL.PNG used on input line 343.
+Package pdftex.def Info: oscillOL.PNG used on input line 344.
 (pdftex.def)             Requested size: 360.0pt x 177.37685pt.
 
 <oscillCL.PNG, id=150, 1445.4pt x 712.16063pt>
 File: oscillCL.PNG Graphic file (type png)
  <use oscillCL.PNG>
-Package pdftex.def Info: oscillCL.PNG used on input line 350.
+Package pdftex.def Info: oscillCL.PNG used on input line 351.
 (pdftex.def)             Requested size: 360.0pt x 177.37685pt.
  [20 <./variazioneGainP.png (PNG copy)>]) [21 <./oscillOL.PNG (PNG copy)> <./os
 cillCL.PNG (PNG copy)>]
@@ -1577,7 +1577,7 @@ iles/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiK
 TeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/f
 onts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
 e1/public/amsfonts/cm/cmtt10.pfb>
-Output written on tesi.pdf (35 pages, 11820893 bytes).
+Output written on tesi.pdf (35 pages, 11821316 bytes).
 PDF statistics:
  219 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

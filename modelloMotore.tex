@@ -6,7 +6,7 @@
 	\caption{Schema a blocchi Motore}
 	\label{motoreSimulink}
 \end{figure}
-Il LEGO MINDSTORM EV3 è dotato di un motore, l'EV3 Large Servo Motor, la cui velocità angolare, misurata in $rad/s$, è stata assunta come uscita del sistema.\\
+Il LEGO MINDSTORMS EV3 è dotato di un motore, l'EV3 Large Servo Motor, la cui velocità angolare, misurata in $rad/s$, è stata assunta come uscita del sistema.\\
 I valori di ingresso accettabili sono compresi tra -100 e +100, dove $\pm$100 indicano la massima potenza erogabile in entrambi i versi di rotazione.
 
 Al fine di riuscire a modellarlo, abbiamo applicato al motore un albero dotato di pesi posti a una certa distanza dallo stesso in modo tale da incrementarne il momento d'inerzia $I$. Questo poiché in assenza di un carico significativo la dinamica del motore risulta  troppo veloce per  essere identificata con gli strumenti a nostra disposizione. In particolare l'insufficiente precisione e la limitata frequenza massima di campionamento dell'encoder non permettono una corretta analisi del transitorio del motore. Al fine di ridurre il più possibile l'errore è stato scelto come tempo di campionamento dell'encoder il valore minimo supportato: 0.001$s$.\\
@@ -19,21 +19,21 @@ Come conseguenza all'aggiunta del carico, si ha una diminuzione dell'accelerazio
 \end{figure}
 \\In questo modo il tempo di assestamento $t_a$ del sistema è sensibilmente più lungo ed è dunque possibile trovare una funzione di trasferimento assimilabile a quella dell'EV3 Large Servo Motor.
 
-All'interno del motore, come già accennato, è presente un'encoder che permette di misurare, in gradi, la posizione angolare $\theta$ dello stesso.
-Perciò, al fine di ottenere la velocità angolare $\omega$, è stato applicato in cascata un derivatore, ma anche un filtro passa basso con frequenza di taglio $\omega_c=100\;Hz$, necessario per attenuare le alte frequenze della risposta del sistema, dovute alla derivazione del segnale campionato, al fine di ottenere una funzione in uscita meno spezzata possibile e, di conseguenza, più facilmente identificabile.\\
-In prima analisi si è scelto un filtro con un $\omega_c$ elevata in modo che la costante di tempo non influenzasse la dinamica del motore stesso.
+All'interno del motore, come già accennato, è presente un encoder che permette di misurare, in gradi, la posizione angolare $\theta$ dello stesso.
+Perciò, al fine di ottenere la velocità angolare $\omega$, è stato applicato in cascata un derivatore, e per introdurre il polo necessario alla realizzabilità del blocco, un filtro passa basso con frequenza di taglio $\omega_c=25Hz$. \\Quest'ultimo è indispensabile per attenuare le alte frequenze della risposta del sistema dovute alla derivazione del segnale campionato, al fine di ottenere una funzione in uscita meno spezzata possibile e, di conseguenza, più facilmente identificabile.\\
+In prima analisi si è scelto un filtro con un $\omega_c$ più elevata, ovvero $100Hz$, in modo che la costante di tempo non influenzasse la dinamica del motore stesso.
 Il risultato che si ottiene sotto tali condizioni, utilizzando come ingresso una funzione gradino con valore finale pari a 50, è mostrato nella figura \ref{motore50StepCamp1000Polo100}.
 \begin{figure}[ht]
 	\centering
 	\includegraphics[width=\textwidth]{motore50StepCamp1000Polo100.png}
-	\caption{Risposta al gradino con $\omega_c=100\;Hz$ }
+	\caption{Risposta al gradino con $\omega_c=100Hz$ }
 	\label{motore50StepCamp1000Polo100}
 \end{figure}
 \\E' evidente come la frequenza di taglio scelta per il filtro non sia sufficiente ad eliminare le alte frequenze dell'uscita per cui, procedendo gradualmente siamo giunti a  scegliere una frequenza $\omega_c = 25Hz$ con la quale l'uscita del sistema diventa accettabile (figura \ref{motore50StepCamp1000}).
 \begin{figure}[ht]
 \centering
 \includegraphics[width=\textwidth]{motore50StepCamp1000.png}
-\caption{Risposta al gradino con $\omega_c=25\;Hz$}
+\caption{Risposta al gradino con $\omega_c=25Hz$}
 \label{motore50StepCamp1000}
 \end{figure}
 Prendendo quindi in esame quest'ultimo grafico è evidente che sia possibile approssimare la funzione di trasferimento del motore come una funzione del $\ang{1}$ ordine la cui `forma campione' è data dalla formula $$T(s)=\displaystyle\frac{k}{1+s\tau}$$. \\
@@ -65,7 +65,7 @@ Calcoliamo innanzi tutto
 $$
 I=3M_Rd_R^2+3M_rd_r^2+3I_a+3I_A+\displaystyle\frac{m_ar^2}{2}
 $$
-nella quale primi due termini indicano i momenti d'inerzia delle sei ruote (assunte come masse puntiformi per semplicità), il terzo e il quarto quelli delle sei aste che collegano le ruote all'albero, mentre l'ultimo termine rappresenta il momento d'inerzia dell'albero (asta centrale).\\
+nella quale primi due termini indicano i momenti d'inerzia delle sei ruote (assunte come masse puntiformi per semplicità), il terzo e il quarto quelli delle sei aste che collegano le ruote all'albero, mentre l'ultimo termine rappresenta il momento d'inerzia dell'albero (asta centrale). Nel calcolo dell'inerzia di ogni componente si sono ovviamente fatte le approssimazioni del caso: le aste sono state considerate omogenee e di sezione circolare, le ruote masse puntiformi con nel loro centro di massa.\\
 Per calcolare l'inerzia delle sei aste utilizziamo il teorema di Huygens-Steiner, o degli assi paralleli:
 $$
 I=I_{cdm}+m_{asta}d^2
@@ -111,7 +111,9 @@ Essendo $\tau=K\omega+I\alpha$ possiamo disegnare tramite Simulink il diagramma 
 	\label{modMotoreTorque}
 \end{figure}
 \\L'uscita del sistema è proprio la coppia $\tau$ desiderata.\\
-Si può notare come nel blocco inferiore siano stati aggiunti il derivatore e il filtro passa basso. Il primo è necessario dal momento che l'accelerazione angolare $\alpha$ è proprio la derivata della velocità angolare $\omega$. Per quanto riguarda il filtro, invece, è stato aggiunto (scegliendo appositamente una frequenza di taglio abbastanza alta da non alterare la dinamica del sistema) siccome un derivatore puro sarebbe stato fisicamente irrealizzabile (funzione impropria).\\
+Si può notare come nel blocco inferiore siano stati aggiunti il derivatore e il filtro passa basso già utilizzati in precedenza per ricavare la velocità dalla posizione. Il primo è necessario dal momento che l'accelerazione angolare $\alpha$ è proprio la derivata della velocità angolare $\omega$. Per quanto riguarda il filtro, invece,
+il discorso è analogo a quello trattato in precedenza:
+è stato aggiunto (scegliendo appositamente una frequenza di taglio abbastanza alta da non alterare la dinamica del sistema) siccome un derivatore puro sarebbe stato fisicamente irrealizzabile (funzione impropria).\\
 Inoltre si è resa necessaria anche l'aggiunta di un blocco di saturazione dell'ingresso dal momento che, come già reso noto in precedenza, l'EV3 Large Servo Motor accetta valori compresi tra -100 e +100 considerando quelli esterni a tale intervallo coincidenti con gli estremi.\\
 In ultimo il valore di $K$, unico parametro incognito rimasto, è stato invece ricavato sperimentalmente avendo nota dalle specifiche LEGO la coppia a regime dell'EV3 Large Servo Motor $\tau_{reg}=0.2N\cdot m$.\\
 Come mostrato in figura \ref{torque02} un valore di K pari a 0.000192 $Nm\cdot s/rad$ consente di rispettare appieno tale specifica.

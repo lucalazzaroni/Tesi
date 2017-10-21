@@ -6,8 +6,8 @@
 	\caption{Modello del pendolo su carrello}
 	\label{pendolo}
 \end{figure}
-\textbf{Bilanciamento forze sull'asta}\\
-Eseguiamo di seguito, sfruttando la Seconda Legge di Newton, il computo delle forze agenti sul pendolo lungo entrambi gli assi cartesiani.\\\\
+\noindent\textbf{Bilanciamento forze sull'asta}\\
+Eseguiamo di seguito, sfruttando la Seconda Legge di Newton, il computo delle forze agenti sulla massa $m$ del pendolo lungo entrambi gli assi cartesiani.\\\\
 Asse X:
 \begin{equation}\notag
 m\ddot{x}_m=H
@@ -16,7 +16,7 @@ Asse Y:
 \begin{equation}\notag
 m\ddot{y}_m=V-mg
 \end{equation}
-Dove $H$ e $V$ sono le reazioni vincolari (orizzontale e verticale) a cui è sottoposta la massa $m$ per il fatto di essere bloccata all'estremità dell'asta.\\ \\
+Dove $H$ e $V$ sono le reazioni vincolari (orizzontale e verticale) a cui è sottoposta la massa $m$ per il fatto di essere bloccata all'estremità dell'asta.\\\\
 Essendo poi:\\
 \begin{equation}\notag
 x_m = x_M+l_a\sin(\theta) \quad \Rightarrow \quad \ddot{x}_m=\ddot{x}_M-l_a\sin(\theta)\dot{\theta}^2+l_a\cos(\theta)\ddot{\theta}
@@ -30,7 +30,7 @@ H=m\ddot{x}_M-ml_a\sin(\theta)\dot{\theta}^2+ml_a\cos(\theta)\ddot{\theta}
 \end{equation}
 \begin{equation}\label{Vv}
 V=mg+ml_a\cos(\theta)\dot{\theta}^2+ml_a\sin(\theta)\ddot{\theta}
-\end{equation}
+\end{equation}\\
 \textbf{Bilanciamento forze sul carrello}\\
 Richiamando nuovamente la Legge sopracitata si ha:
 \begin{equation}\notag
@@ -42,7 +42,7 @@ M\ddot{x}_M=u-m\ddot{x}_M+ml_a\sin(\theta)\dot{\theta}^2-ml_a\cos(\theta)\ddot{\
 $$
 \begin{equation}\label{FCarr}
 (M+m)\ddot{x}_M+ml_a\cos(\theta)\ddot{\theta}=u+ml_a\dot{\theta}^2\sin(\theta)
-\end{equation} 
+\end{equation}\\
 \textbf{Bilanciamento momenti del sistema asta-massa}\\
 In questo caso utilizziamo la versione angolare della solita Legge:
 \begin{equation}
@@ -61,7 +61,7 @@ $$
 =ml_a(g\sin(\theta)+l_a\ddot{\theta}+\ddot{x}_M\cos(\theta))
 \end{equation}
 Essendo il momento d'inerzia dell'asta $$
-I_m=\displaystyle\frac{1}{12}m_al_a^2+m_a(\displaystyle\frac{l}{2})^2=\displaystyle\frac{1}{3}m_al_a^2=0.000045kg\cdot m^2$$molto inferiore (1 ordine di grandezza) rispetto a quello della massa $m$ attaccata al pendolo: $$
+I_a=\displaystyle\frac{1}{12}m_al_a^2+m_a(\displaystyle\frac{l}{2})^2=\displaystyle\frac{1}{3}m_al_a^2=0.000045kg\cdot m^2$$molto inferiore (1 ordine di grandezza) rispetto a quello della massa $m$ attaccata al pendolo: $$
 I_m=ml_a^2=0.00041kg\cdot m^2$$ possiamo per semplicità trascurarlo, per cui poniamo $I_m=0$.
 
 Il sistema che deriva dalla \ref{FCarr} e dalla \ref{momInThetaP} è dunque il seguente:
@@ -168,7 +168,8 @@ $\displaystyle\frac{\partial{f_1}}{\partial{u}}(\underline{x},u)=0$\\\\\\
 $\displaystyle\frac{\partial{f_2}}{\partial{x_1}}(\underline{x},u)=0$\qquad
 $\displaystyle\frac{\partial{f_2}}{\partial{x_2}}(\underline{x},u)=0$\\
 $\displaystyle\frac{\partial{f_2}}{\partial{x_3}}(\underline{x},u)=\displaystyle\frac{[ml_ax_4^2\cos(x_3)+mg(\cos^2(x_3)-\sin^2(x_3))](M+m\sin^2(x_3))}{(M+m\sin^2(x_3))^2}$\\
-$-\displaystyle\frac{[u+ml_ax_4^2\sin(x_3)+mg\sin(x_3)\cos(x_3)](2\sin(x_3)\cos(x_3))}{(M+m\sin^2(x_3))^2}\bigg|_{\underline{\tilde{x}},\tilde{u}}=\displaystyle\frac{mg}{M}$\\ $\displaystyle\frac{\partial{f_2}}{\partial{x_4}}(\underline{x},u)=\displaystyle\frac{2ml_a\sin(x_3)x_4}{M+m\sin^2(x_3)}\bigg|_{\underline{\tilde{x}},\tilde{u}}=0$\quad$\displaystyle\frac{\partial{f_2}}{\partial{u}}(\underline{x},u)=\displaystyle\frac{1}{M+m\sin^2(x_3)}\bigg|_{\underline{\tilde{x}},\tilde{u}}=\displaystyle\frac{1}{M}$\\\\\\
+$-\displaystyle\frac{[u+ml_ax_4^2\sin(x_3)+mg\sin(x_3)\cos(x_3)](2\sin(x_3)\cos(x_3))}{(M+m\sin^2(x_3))^2}\bigg|_{\underline{\tilde{x}},\tilde{u}}=\displaystyle\frac{mg}{M}$\\ $\displaystyle\frac{\partial{f_2}}{\partial{x_4}}(\underline{x},u)=\displaystyle\frac{2ml_a\sin(x_3)x_4}{M+m\sin^2(x_3)}\bigg|_{\underline{\tilde{x}},\tilde{u}}=0$\\
+$\displaystyle\frac{\partial{f_2}}{\partial{u}}(\underline{x},u)=\displaystyle\frac{1}{M+m\sin^2(x_3)}\bigg|_{\underline{\tilde{x}},\tilde{u}}=\displaystyle\frac{1}{M}$\\\\\\
 $\displaystyle\frac{\partial{f_3}}{\partial{\underline{x}}}(\underline x,u)=
 \begin{bmatrix}
 0&0&0&1
@@ -223,7 +224,7 @@ $T_{y_2,u}(s)=C(sI-A)^{-1}B=
 $\\\\
 in cui il segno meno è coerente col fatto che il semiperiodo iniziale dell'oscillazione del pendolo sia in direzione opposta rispetto al movimento del carrello.
 
-Inserendo ora i parametri del modello fisico del pendolo su  carrello realizzato con l'ausilio del LEGO MINDSTORM EV3 si può procedere all'identificazione della funzione di trasferimento.
+Inserendo ora i parametri del modello fisico del pendolo su  carrello realizzato con l'ausilio del LEGO MINDSTORMS EV3 si può procedere all'identificazione della funzione di trasferimento.
 \begin{table}[ht]
 	\begin{tabular}{|l|l|l|l|}
 		\hline
@@ -257,7 +258,7 @@ In figura \ref{pendoloFisico} si può vedere la realizzazione del pendolo su car
 	\label{pendoloFisico}
 \end{figure} 
 rispetto alla verticale.\\
-Da specifiche tale encoder è in grado di raggiungere un tempo di campionamento minimo di 0.001s (così come il motore) al quale valore non si riesce sempre a campionare in modo corretto. Per ovviare, almeno parzialmente, al problema abbiamo deciso di abbassare la frequenza di campionamento, in modo però da non perdere nessuna variazione dell'angolo del pendolo.\\
+Da specifiche tale encoder è in grado di raggiungere un tempo di campionamento minimo di 0.001s (così come il motore) col quale non si riesce sempre a campionare in modo corretto. Per ovviare, almeno parzialmente, al problema abbiamo deciso di abbassare la frequenza di campionamento, in modo però da non perdere nessuna variazione dell'angolo del pendolo.\\
 Per fare questo abbiamo calcolato la massima velocità raggiunta durante la sua oscillazione libera tra $[\ang{-31},\ang{+31}]$ (intervallo entro il quale il pendolo è vincolato per costruzione).
 \begin{figure}[ht]
 	\centering
@@ -273,7 +274,7 @@ Sfruttando il modello del motore LEGO da noi identificato al capitolo \ref{modMo
 	\caption{Schema a blocchi del sistema complessivo}
 	\label{SisComplessivoPendoloNormale}
 \end{figure}
-\\Siccome in uscita al modello del motore abbiamo la coppia erogata dallo stesso, per poterlo mettere in serie al modello del pendolo su carrello (il quale come ingresso riceve una spinta sotto forma di forza) occorre adattare il collegamento I/O. Poiché si assume un puro moto di rotolamento delle ruote del carrello, si tratta di trovare il giusto coefficiente $C$ di proporzionalità tra coppia e spinta.
+\\Siccome in uscita al modello del motore abbiamo la coppia erogata dallo stesso, per poterlo mettere in serie al modello del pendolo su carrello (il quale come ingresso riceve una spinta sotto forma di forza) occorre adattare il collegamento I/O. Poiché si assume un moto di puro rotolamento delle ruote del carrello, si tratta di trovare il giusto coefficiente $C$ di proporzionalità tra coppia e spinta.
 \begin{figure}[ht]
 	\centering
 	\includegraphics[scale=0.55]{braccioForza.PNG}
@@ -289,7 +290,7 @@ Per farlo ci siamo serviti del `Linear Analisys Tool' di Simulink che, tra le al
 $$T_{y_2,u}=-\displaystyle\frac{559.5s+78.3}{s^4+31.67s^3+227s^2+1910s+10050}$$\\
 Tra i principali modi per studiarne la stabilità in ciclo chiuso uno dei più noti è il luogo delle radici, il quale permette di verificare lo spostamento dei poli al variare del guadagno.
 \newpage
-Come si evince dal luogo delle radici del sistema, è possibile utilizzare un semplice Regolatore Proporzionale purché il suo guadagno rientri in un intervallo molto limitato, ovvero $P\in(-6,0)$.
+Come si evince dal luogo delle radici del sistema, è possibile utilizzare un semplice regolatore Proporzionale purché il suo guadagno rientri in un intervallo molto limitato, ovvero $P\in(-6,0)$.
 \begin{figure}[ht]
 	\centering
 	\includegraphics[width=\textwidth]{RLocusPendoloNormale.PNG}
@@ -310,7 +311,7 @@ Come si evince dal luogo delle radici del sistema, è possibile utilizzare un se
 	\caption{Sistema complessivo controllato proporzionalmente}
 	\label{SisComplessivoPNRetroazionato}
 \end{figure}
-\\Nella realizzazione dello schema a blocchi in Simulink, caricato nel Brick EV3 MINDSTORM per confermare la veridicità dei risultati ottenuti, abbiamo posto un ingresso costante a 0 poiché si assume il pendolo inizialmente a riposo nel punto di equilibrio $\theta=\ang{0}$.
+\\Nella realizzazione dello schema a blocchi in Simulink, caricato nel Brick EV3 MINDSTORMS per confermare la veridicità dei risultati ottenuti, abbiamo posto un ingresso costante a 0 poiché si assume il pendolo inizialmente a riposo nel punto di equilibrio $\theta=\ang{0}$.
 \begin{figure}[ht]
 	\centering
 	\includegraphics[width=\textwidth]{pendoloReale.jpg}
@@ -322,7 +323,7 @@ Per effettuare tale operazione è necessario inserire nello schema un convertito
 Sotto tali presupposti il motore, avendo ingresso nullo, non erogherà potenza fino quando il pendolo non verrà spostato dal suo stato iniziale.\\
 Al variare della posizione angolare, il motore reagirà muovendo il carrello nella stessa direzione per riportare il pendolo nel suo punto di equilibrio.
 
-Come accennato poco fa, ad ulteriore conferma della veridicità del luogo delle radici, abbiamo provato a controllare il sistema fisico al variare di $P$ durante una simulazione interattiva, nella quale è possibile modificare in tempo reale, da PC, il valore del guadagno del Regolatore, e, come mostrato nelle figura \ref{variazioneGainP}, il sistema risulta effettivamente instabile per valori che si discostano dall'intervallo di stabilità trovato.\\
+Come accennato poco fa, ad ulteriore conferma della veridicità del luogo delle radici, abbiamo provato a controllare il sistema fisico al variare di $P$ durante una simulazione interattiva, nella quale è possibile modificare in tempo reale, da PC, il valore del guadagno del rFegolatore, e, come mostrato nelle figura \ref{variazioneGainP}, il sistema risulta effettivamente instabile per valori che si discostano dall'intervallo di stabilità trovato.\\
 L'esperimento è così costituito: avviato il programma nel Brick siamo noi ad innescare la prima oscillazione nel pendolo in modo da osservarne il comportamento. Nel caso in cui esso non riesca a ritornare nel punto di equilibrio autonomamente allora siamo noi a fermarlo.
 \begin{figure}[ht]
 	\centering
