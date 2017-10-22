@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.9.30)  22 OCT 2017 16:45
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.9.7)  22 OCT 2017 18:43
 entering extended mode
 **./tesi.tex
 (tesi.tex
@@ -1196,9 +1196,19 @@ Capitolo 3.
 File: pendolo1.png Graphic file (type png)
  <use pendolo1.png>
 Package pdftex.def Info: pendolo1.png used on input line 5.
-(pdftex.def)             Requested size: 360.0pt x 225.64203pt.
+(pdftex.def)             Requested size: 340.46632pt x 213.39566pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 9--12
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18--21
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18--21
 
  []
 
@@ -1207,16 +1217,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 9--12
 
 
  <./pendolo1.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 18--21
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 18--21
-
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 67--76
 
  []
@@ -1445,20 +1445,20 @@ Package pdftex.def Info: braccioForza.PNG used on input line 282.
 (pdftex.def)             Requested size: 185.0079pt x 177.05835pt.
 
 [16 <./SlewRate.PNG (PNG copy)> <./SisComplessivoPendoloNormale.PNG>] [17 <./br
-accioForza.PNG>] <RLocusPendoloNormale.PNG, id=138, 1445.4pt x 669.2503pt>
+accioForza.PNG>] <RLocusPendoloNormale.PNG, id=139, 1445.4pt x 669.2503pt>
 File: RLocusPendoloNormale.PNG Graphic file (type png)
 
 <use RLocusPendoloNormale.PNG>
 Package pdftex.def Info: RLocusPendoloNormale.PNG used on input line 302.
 (pdftex.def)             Requested size: 360.0pt x 166.68924pt.
 
-<gainOttimaleft.PNG, id=139, 1445.4pt x 669.2503pt>
+<gainOttimaleft.PNG, id=140, 1445.4pt x 669.2503pt>
 File: gainOttimaleft.PNG Graphic file (type png)
  <use gainOttimaleft.PNG>
 Package pdftex.def Info: gainOttimaleft.PNG used on input line 309.
 (pdftex.def)             Requested size: 360.0pt x 166.68924pt.
 
-<SisComplessivoPNRetroazionato.PNG, id=140, 430.60875pt x 155.07938pt>
+<SisComplessivoPNRetroazionato.PNG, id=141, 430.60875pt x 155.07938pt>
 File: SisComplessivoPNRetroazionato.PNG Graphic file (type png)
 
 <use SisComplessivoPNRetroazionato.PNG>
@@ -1466,7 +1466,7 @@ Package pdftex.def Info: SisComplessivoPNRetroazionato.PNG used on input line 3
 16.
 (pdftex.def)             Requested size: 360.0pt x 129.6529pt.
 
-<pendoloReale.jpg, id=141, 479.391pt x 206.57175pt>
+<pendoloReale.jpg, id=142, 479.391pt x 206.57175pt>
 File: pendoloReale.jpg Graphic file (type jpg)
  <use pendoloReale.jpg>
 Package pdftex.def Info: pendoloReale.jpg used on input line 323.
@@ -1474,7 +1474,7 @@ Package pdftex.def Info: pendoloReale.jpg used on input line 323.
 
 [18 <./RLocusPendoloNormale.PNG> <./gainOttimaleft.PNG>] [19 <./SisComplessivoP
 NRetroazionato.PNG> <./pendoloReale.jpg>]
-<variazioneGainP.png, id=149, 1445.4pt x 712.16063pt>
+<variazioneGainP.png, id=150, 1445.4pt x 712.16063pt>
 File: variazioneGainP.png Graphic file (type png)
 
 <use variazioneGainP.png>
@@ -1487,13 +1487,13 @@ File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 341.
- <oscillOL.PNG, id=150, 1445.4pt x 712.16063pt>
+ <oscillOL.PNG, id=151, 1445.4pt x 712.16063pt>
 File: oscillOL.PNG Graphic file (type png)
  <use oscillOL.PNG>
 Package pdftex.def Info: oscillOL.PNG used on input line 350.
 (pdftex.def)             Requested size: 360.0pt x 177.37685pt.
 
-<oscillCL.PNG, id=151, 1445.4pt x 712.16063pt>
+<oscillCL.PNG, id=152, 1445.4pt x 712.16063pt>
 File: oscillCL.PNG Graphic file (type png)
  <use oscillCL.PNG>
 Package pdftex.def Info: oscillCL.PNG used on input line 357.
@@ -1526,11 +1526,11 @@ df
 [25] (tesi.aux (Introduzione.aux) (modelloMotore.aux) (pendoloModifica.aux)
 (Conclusioni.aux)) ) 
 Here is how much of TeX's memory you used:
- 15373 strings out of 493323
- 299970 string characters out of 3139048
+ 15389 strings out of 493323
+ 300138 string characters out of 3139055
  360772 words of memory out of 3000000
- 18706 multiletter control sequences out of 15000+200000
- 538613 words of font info for 52 fonts, out of 3000000 for 9000
+ 18714 multiletter control sequences out of 15000+200000
+ 541075 words of font info for 60 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  40i,18n,43p,10378b,502s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
@@ -1540,18 +1540,19 @@ pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:
  Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/M
 iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Program Files/MiKTeX 2.9
 /fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
-pe1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publi
-c/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfont
-s/cm/cmr17.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6
-.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/P
-rogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsl10.pfb><C:/Program F
-iles/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiK
-TeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/f
-onts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
-e1/public/amsfonts/cm/cmtt10.pfb>
-Output written on tesi.pdf (35 pages, 11836046 bytes).
+pe1/public/amsfonts/cm/cmmib10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pub
+lic/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfo
+nts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cm
+r17.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C
+:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program 
+Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsl10.pfb><C:/Program Files/Mi
+KTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9
+/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
+pe1/public/amsfonts/cm/cmti10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publ
+ic/amsfonts/cm/cmtt10.pfb>
+Output written on tesi.pdf (35 pages, 11844591 bytes).
 PDF statistics:
- 220 PDF objects out of 1000 (max. 8388607)
+ 224 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  116 words of extra memory for PDF output out of 10000 (max. 10000000)
 

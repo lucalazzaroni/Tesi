@@ -2,7 +2,7 @@
 \section{Modello e relative equazioni}\label{equazioni}
 \begin{figure}[ht]
 	\centering
-	\includegraphics[width=\textwidth]{pendolo1.png}\\
+	\includegraphics[height=75mm]{pendolo1.png}\\
 	\caption{Modello del pendolo su carrello}
 	\label{pendolo}
 \end{figure}
@@ -74,13 +74,13 @@ $
 \\\\
 Dalla prima equazione del sistema: 
 $$
-(M+m)(\frac{-g\sin(\theta)-l_a\ddot{\theta}}{\cos(\theta)})+ml_a\cos(\theta)\ddot{\theta}=u+ml_a\dot{\theta}^2\sin(\theta)
+(M+m)\frac{-g\sin(\theta)-l_a\ddot{\theta}}{\cos(\theta)}+ml_a\cos(\theta)\ddot{\theta}=u+ml_a\dot{\theta}^2\sin(\theta)
 $$
 $$
-\ddot{\theta}(ml_a\cos(\theta)-\frac{l_a(M+m)}{\cos(\theta)}=u+ml_a\dot{\theta}^2\sin(\theta)+\frac{g\sin(\theta)(M+m)}{\cos(\theta)}
+\ddot{\theta}\bigg[ml_a\cos(\theta)-\frac{l_a(M+m)}{\cos(\theta)}\bigg]=u+ml_a\dot{\theta}^2\sin(\theta)+\frac{g\sin(\theta)(M+m)}{\cos(\theta)}
 $$
 $$
-\ddot{\theta}=\frac{[u+ml_a\dot{\theta}^2\sin(\theta)+\displaystyle\frac{g\sin(\theta)(M+m)}{\cos(\theta)}]\cos(\theta)}{ml_a\cos^2(\theta)-l_a(M+m)} \Rightarrow$$\\
+\ddot{\theta}=\frac{\bigg[u+ml_a\dot{\theta}^2\sin(\theta)+\displaystyle\frac{g\sin(\theta)(M+m)}{\cos(\theta)}\bigg]\cos(\theta)}{ml_a\cos^2(\theta)-l_a(M+m)} \Rightarrow$$\\
 \begin{equation}\label{theta2punti}
 \ddot{\theta}=\frac{u\cos(\theta)+ml_a\dot{\theta}^2\sin(\theta)\cos(\theta)+g\sin(\theta)(M+m)}{-l_a(m\sin^2(\theta)+M)}
 \end{equation}\\
@@ -140,7 +140,7 @@ $$x_4=0$$\\
 $$\displaystyle\frac{u\cos(x_3)+ml_ax_4^2\sin(x_3)\cos(x_3)+g(M+m)\sin(x_3)}{l_a(m\sin^2(x_3)+M)}=0$$
 \end{cases}
 $\\\\\\
-Dal precedente sistema si può notare che punti di equilibrio del pendolo su carrello sono due, uno instabile per \\
+Dal precedente sistema si può notare che i punti di equilibrio del pendolo su carrello sono due, uno instabile per \\
 $\begin{cases}
 $$x_1=\forall$$ \\
 $$x_2=0$$\\
@@ -267,7 +267,7 @@ Per fare questo abbiamo calcolato la massima velocità raggiunta durante la sua 
 	\caption{Massima velocità di oscillazione libera}
 	\label{slewRate}
 \end{figure}
-\\Da tale esperimento è risultato che durante la prima oscillazione (in figura \ref{slewRate}), il pendolo, raggiunge per $\theta=\ang{0}$ la velocità $\omega=250\deg/s$ (calcolata con un semplice rapporto incrementale) per cui il tempo di campionamento necessario a non perdere nessuna variazione dell'angolo sarebbe stato $t_c=\displaystyle\frac{1}{250}=0.004s$.\\
+\\Da tale esperimento è risultato che durante la prima oscillazione (in figura \ref{slewRate}), il pendolo, raggiunge per $\theta=\ang{0}$ la velocità $\omega=250\deg/s$ (calcolata con un semplice rapporto incrementale e approssimata per eccesso per garantire un certo margine) per cui il tempo di campionamento necessario a non perdere nessuna variazione dell'angolo sarebbe stato $t_c=\displaystyle\frac{1}{250}=0.004s$.\\
 
 Sfruttando il modello del motore LEGO da noi identificato al capitolo \ref{modMotor} si può quindi ricavare la funzione di trasferimento del sistema complessivo (avente come ingresso la potenza richiesta al motore e come uscita la posizione angolare del pendolo).\begin{figure}[ht]
 	\centering
@@ -284,7 +284,7 @@ Siccome in uscita al modello del motore abbiamo la coppia erogata dallo stesso, 
 	\label{braccioForza}
 \end{figure}
 \\La relazione tra queste ultime è data dalla formula fisica del momento della forza:
-$$\tau=r\times F=(r\sin(\phi))F=r_{\bot}F$$
+$$\boldsymbol{\tau}=\boldsymbol{r}\times \boldsymbol{F}\quad \Rightarrow\quad\tau=(r\sin(\phi))F=r_{\bot}F$$
 ove $r_{\bot}$ rappresenta il braccio della forza F.
 Poiché nel nostro caso $r$ risulta essere il raggio della ruota ed F la forza tangente alla ruota abbiamo ricavato, sostituendo il suo valore dalla tabella \ref{carrPend}: $$F=\displaystyle\frac{\tau}{r}\Rightarrow$$$$\Rightarrow C=\displaystyle\frac{1}{r}=29.41$$
 
@@ -317,7 +317,7 @@ Come si evince dal luogo delle radici del sistema, è possibile utilizzare un se
 	\caption{Sistema complessivo controllato proporzionalmente}
 	\label{SisComplessivoPNRetroazionato}
 \end{figure}
-\\Nella realizzazione dello schema a blocchi in Simulink, caricato nel Brick EV3 MINDSTORMS per confermare la veridicità dei risultati ottenuti, abbiamo posto un ingresso costante a 0 poiché si assume il pendolo inizialmente a riposo nel punto di equilibrio $\theta=\ang{0}$.
+\\Nella realizzazione dello schema a blocchi in Simulink, caricato nel Brick EV3 MINDSTORMS per confermare la veridicità dei risultati ottenuti, abbiamo posto un ingresso costante a 0 poiché si assume il pendolo inizialmente a riposo nel punto di equilibrio $\theta=\ang{0}$ e perché si vuole mantenerlo in tale posizione.
 \begin{figure}[ht]
 	\centering
 	\includegraphics[width=\textwidth]{pendoloReale.jpg}
