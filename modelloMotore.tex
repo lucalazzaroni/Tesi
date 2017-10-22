@@ -6,8 +6,8 @@
 	\caption{Schema a blocchi Motore}
 	\label{motoreSimulink}
 \end{figure}
-Il LEGO MINDSTORMS EV3 è dotato di un motore, l'EV3 Large Servo Motor, la cui velocità angolare, misurata in $deg/s$, è stata assunta come uscita del sistema.\\
-I valori di ingresso accettabili sono compresi tra -100 e +100, dove $\pm$100 indicano la massima potenza erogabile in entrambi i versi di rotazione.
+\noindent Il LEGO MINDSTORMS EV3 è dotato di un motore, l'EV3 Large Servo Motor, la cui velocità angolare, misurata in $deg/s$, è stata assunta come uscita del sistema.\\
+I valori di ingresso accettabili sono compresi tra -100 e +100, dove $\pm$100 corrispondono alla massima potenza erogabile in entrambi i versi di rotazione.
 
 Al fine di riuscire a modellarlo, abbiamo applicato al motore un albero dotato di pesi posti a una certa distanza dallo stesso in modo tale da incrementarne il momento d'inerzia $I$. Questo poiché in assenza di un carico significativo la dinamica del motore risulta  troppo veloce per  essere identificata con gli strumenti a nostra disposizione. In particolare l'insufficiente precisione e la limitata frequenza massima di campionamento dell'encoder non permettono una corretta analisi del transitorio del motore. Al fine di ridurre il più possibile l'errore è stato scelto come tempo di campionamento dell'encoder il valore minimo supportato: 0.001$s$.\\
 Come conseguenza all'aggiunta del carico, si ha una diminuzione dell'accelerazione angolare massima $\alpha$ in accordo con la seconda legge di Newton (in forma angolare) $\tau = I\alpha$, dove $\tau$ è il momento della forza o, più semplicemente, la coppia massima erogata, valore caratteristico del motore.
@@ -20,7 +20,7 @@ Come conseguenza all'aggiunta del carico, si ha una diminuzione dell'accelerazio
 \\In questo modo il tempo di assestamento $t_a$ del sistema è sensibilmente più lungo ed è dunque possibile trovare una funzione di trasferimento assimilabile a quella dell'EV3 Large Servo Motor.
 
 All'interno del motore, come già accennato, è presente un encoder che permette di misurare, in gradi, la posizione angolare $\theta$ dello stesso.
-Perciò, al fine di ottenere la velocità angolare $\omega$, è stato applicato in cascata un derivatore, e per introdurre il polo necessario alla realizzabilità del blocco, un filtro passa basso con frequenza di taglio $\omega_c=25Hz$. \\Quest'ultimo è indispensabile per attenuare le alte frequenze della risposta del sistema dovute alla derivazione del segnale campionato, al fine di ottenere una funzione in uscita meno spezzata possibile e, di conseguenza, più facilmente identificabile.\\
+Perciò, al fine di ottenere la velocità angolare $\omega$, è stato applicato in cascata un derivatore, e per introdurre il polo necessario alla realizzabilità del blocco, un filtro passa basso con frequenza di taglio $\omega_c=25Hz$. \\Quest'ultimo è indispensabile per attenuare le alte frequenze della risposta del sistema, dovute alla derivazione del segnale campionato, affinché la funzione in uscita sia meno spezzata possibile e, di conseguenza, più facilmente identificabile.\\
 In prima analisi si è scelto un filtro con un $\omega_c$ più elevata, ovvero $100Hz$, in modo che la costante di tempo non influenzasse la dinamica del motore stesso.
 Il risultato che si ottiene sotto tali condizioni, utilizzando come ingresso una funzione gradino con valore finale pari a 50, è mostrato nella figura \ref{motore50StepCamp1000Polo100}.
 \begin{figure}[ht]
@@ -65,7 +65,7 @@ Calcoliamo innanzi tutto
 $$
 I=3M_Rd_R^2+3M_rd_r^2+3I_a+3I_A+\displaystyle\frac{m_ar^2}{2}
 $$
-nella quale primi due termini indicano i momenti d'inerzia delle sei ruote (assunte come masse puntiformi per semplicità), il terzo e il quarto quelli delle sei aste che collegano le ruote all'albero, mentre l'ultimo termine rappresenta il momento d'inerzia dell'albero (asta centrale). Nel calcolo dell'inerzia di ogni componente si sono ovviamente fatte le approssimazioni del caso: le aste sono state considerate omogenee e di sezione circolare, le ruote masse puntiformi con nel loro centro di massa.\\
+nella quale primi due termini indicano i momenti d'inerzia delle sei ruote (assunte come masse puntiformi per semplicità), il terzo e il quarto quelli delle sei aste che collegano le ruote all'albero, mentre l'ultimo termine rappresenta il momento d'inerzia dell'albero (asta centrale). Nel calcolo dell'inerzia di ogni componente si sono ovviamente fatte le approssimazioni del caso: le aste sono state considerate omogenee e di sezione circolare, le ruote, masse puntiformi concentrate nel loro centro di massa.\\
 Per calcolare l'inerzia delle sei aste utilizziamo il teorema di Huygens-Steiner, o degli assi paralleli:
 $$
 I=I_{cdm}+m_{asta}d^2

@@ -258,7 +258,8 @@ In figura \ref{pendoloFisico} si può vedere la realizzazione del pendolo su car
 	\label{pendoloFisico}
 \end{figure} 
 rispetto alla verticale.\\
-Da specifiche tale encoder è in grado di raggiungere un tempo di campionamento minimo di 0.001s (così come il motore) col quale non si riesce sempre a campionare in modo corretto. Per ovviare, almeno parzialmente, al problema abbiamo deciso di abbassare la frequenza di campionamento, in modo però da non perdere nessuna variazione dell'angolo del pendolo.\\
+
+Da specifiche tale encoder è in grado di raggiungere un tempo di campionamento minimo di $0.001s$ (così come il motore) col quale non si riesce sempre a campionare in modo corretto. Per ovviare, almeno parzialmente, al problema abbiamo deciso di abbassare la frequenza di campionamento, in modo però da non perdere nessuna variazione dell'angolo del pendolo.\\
 Per fare questo abbiamo calcolato la massima velocità raggiunta durante la sua oscillazione libera tra $[\ang{-31},\ang{+31}]$ (intervallo entro il quale il pendolo è vincolato per costruzione).
 \begin{figure}[ht]
 	\centering
@@ -274,7 +275,8 @@ Sfruttando il modello del motore LEGO da noi identificato al capitolo \ref{modMo
 	\caption{Schema a blocchi del sistema complessivo}
 	\label{SisComplessivoPendoloNormale}
 \end{figure}
-\\Siccome in uscita al modello del motore abbiamo la coppia erogata dallo stesso, per poterlo mettere in serie al modello del pendolo su carrello (il quale come ingresso riceve una spinta sotto forma di forza) occorre adattare il collegamento I/O. Poiché si assume un moto di puro rotolamento delle ruote del carrello, si tratta di trovare il giusto coefficiente $C$ di proporzionalità tra coppia e spinta.
+
+Siccome in uscita al modello del motore abbiamo la coppia erogata dallo stesso, per poterlo mettere in serie al modello del pendolo su carrello (il quale come ingresso riceve una spinta sotto forma di forza) occorre adattare il collegamento I/O. Poiché si assume un moto di puro rotolamento delle ruote del carrello, si tratta di trovare il giusto coefficiente $C$ di proporzionalità tra coppia e spinta.
 \begin{figure}[ht]
 	\centering
 	\includegraphics[scale=0.55]{braccioForza.PNG}
@@ -285,11 +287,15 @@ Sfruttando il modello del motore LEGO da noi identificato al capitolo \ref{modMo
 $$\tau=r\times F=(r\sin(\phi))F=r_{\bot}F$$
 ove $r_{\bot}$ rappresenta il braccio della forza F.
 Poiché nel nostro caso $r$ risulta essere il raggio della ruota ed F la forza tangente alla ruota abbiamo ricavato, sostituendo il suo valore dalla tabella \ref{carrPend}: $$F=\displaystyle\frac{\tau}{r}\Rightarrow$$$$\Rightarrow C=\displaystyle\frac{1}{r}=29.41$$
+
 Per realizzare ora una retroazione algebrica sull'uscita che ci permetta di controllare il pendolo in ciclo chiuso, possiamo riassumere in un'unica funzione di trasferimento il sistema complessivo.\\
 Per farlo ci siamo serviti del `Linear Analisys Tool' di Simulink che, tra le altre cose, può essere utilizzato per ricostruire la funzione di trasferimento tra due punti specificati di un sistema (nel nostro caso tra l'ingresso del motore e l'uscita $\theta$).
-$$T_{y_2,u}=-\displaystyle\frac{559.5s+78.3}{s^4+31.67s^3+227s^2+1910s+10050}$$\\
-Tra i principali modi per studiarne la stabilità in ciclo chiuso uno dei più noti è il luogo delle radici, il quale permette di verificare lo spostamento dei poli al variare del guadagno.
-\newpage
+$$T_{y_2,u}=-\displaystyle\frac{559.5s+78.3}{s^4+31.67s^3+227s^2+1910s+10050}$$
+
+Tra i principali modi per studiarne la stabilità in ciclo chiuso uno dei più noti è il luogo delle radici, il quale permette di verificare lo spostamento dei poli al variare del guadagno.\\
+Quello che si prova a fare è spostare tutti i poli in ciclo chiuso nel semipiano destro, mantenendoli possibilmente vicini all'asse Reale.
+Questo perché se nei poli predomina la parte Immaginaria essi introdurranno maggiore oscillazione nell'assestamento della risposta del sistema. 
+
 Come si evince dal luogo delle radici del sistema, è possibile utilizzare un semplice regolatore Proporzionale purché il suo guadagno rientri in un intervallo molto limitato, ovvero $P\in(-6,0)$.
 \begin{figure}[ht]
 	\centering
@@ -297,7 +303,7 @@ Come si evince dal luogo delle radici del sistema, è possibile utilizzare un se
 	\caption{Luogo delle Radici di $-T_{y_2,u}$}
 	\label{RLocusPendoloNormale}
 \end{figure}
-\\Attraverso l'utilizzo dello strumento MATLAB chiamato `rlocus', il quale consente di ottenere data una funzione il luogo delle radici, siamo arrivati a definirne il guadagno $P=-2$ (vedi figura \ref{gainOttimaleft}) come ottimale, dato il massimo rapporto possibile tra parte reale e parte immaginaria, in ciclo chiuso, dei due poli complessi coniugati .
+\\Attraverso l'utilizzo dello strumento MATLAB chiamato `rlocus', il quale consente di ottenere data una funzione il luogo delle radici, siamo arrivati a definirne il guadagno $P=-2$ (vedi figura \ref{gainOttimaleft}) come ottimale, dato il massimo rapporto possibile tra parte Reale e parte Immaginaria, in ciclo chiuso, dei due poli complessi coniugati .
 \begin{figure}[ht]
 	\centering
 	\includegraphics[width=\textwidth]{gainOttimaleft.PNG}
@@ -323,7 +329,7 @@ Per effettuare tale operazione è necessario inserire nello schema un convertito
 Sotto tali presupposti il motore, avendo ingresso nullo, non erogherà potenza fino quando il pendolo non verrà spostato dal suo stato iniziale.\\
 Al variare della posizione angolare, il motore reagirà muovendo il carrello nella stessa direzione per riportare il pendolo nel suo punto di equilibrio.
 
-Come accennato poco fa, ad ulteriore conferma della veridicità del luogo delle radici, abbiamo provato a controllare il sistema fisico al variare di $P$ durante una simulazione interattiva, nella quale è possibile modificare in tempo reale, da PC, il valore del guadagno del regolatore, e, come mostrato nelle figura \ref{variazioneGainP}, il sistema risulta effettivamente instabile per valori che si discostano dall'intervallo di stabilità trovato.\\
+Come accennato poco fa, ad ulteriore conferma della veridicità del luogo delle radici, abbiamo provato a controllare il sistema fisico al variare di $P$ durante una simulazione interattiva, nella quale è possibile modificare in tempo reale, da PC, il valore del guadagno del regolatore, e, come mostrato nella figura \ref{variazioneGainP}, il sistema risulta effettivamente instabile per valori che si discostano dall'intervallo di stabilità trovato.\\
 L'esperimento è così costituito: avviato il programma nel Brick siamo noi ad innescare la prima oscillazione nel pendolo in modo da osservarne il comportamento. Nel caso in cui esso non riesca a ritornare nel punto di equilibrio autonomamente allora siamo noi a fermarlo.
 \begin{figure}[ht]
 	\centering
