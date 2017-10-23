@@ -276,16 +276,51 @@ Sfruttando il modello del motore LEGO da noi identificato al capitolo \ref{modMo
 	\label{SisComplessivoPendoloNormale}
 \end{figure}
 
-Siccome in uscita al modello del motore abbiamo la coppia erogata dallo stesso, per poterlo mettere in serie al modello del pendolo su carrello (il quale come ingresso riceve una spinta sotto forma di forza) occorre adattare il collegamento I/O. Poiché si assume un moto di puro rotolamento delle ruote del carrello, si tratta di trovare il giusto coefficiente $C$ di proporzionalità tra coppia e spinta.
+Siccome in uscita al modello del motore abbiamo la coppia erogata dallo stesso, per poterlo mettere in serie al modello del pendolo su carrello (il quale come ingresso riceve una spinta sotto forma di forza) occorre adattare il collegamento I/O. Poiché si assume un moto di puro rotolamento delle ruote del carrello, si tratta di trovare il giusto coefficiente $C$ di proporzionalità tra coppia e spinta.\\
+Per trovare la relazione tra queste ultime si procede con il calcolo dell'energia cinetica del carrello, introducendo il concetto di massa equivalente $M_e=(1+\beta)M_c$ (dove $M_c$ è la massa totale del carrello) per tenere conto delle
+masse rotanti, ossia delle ruote. Il concetto alla base della massa equivalente è la conservazione dell'energia cinetica. Si impone che
+l’energia cinetica complessiva della vettura traslante alla velocità $v$ più quella delle varie masse
+rotanti, ciascuna con la propria velocità di rotazione, sia uguale a quella della massa totale equivalente
+in moto puramente traslatorio alla velocità $v$.
+Allora si ha che:
+\begin{equation*}
+E_c=\frac{1}{2}M_ev^2=\frac{1}{2}M_cv^2+4\frac{1}{2}I\omega^2
+\end{equation*}
+dove, a terzo membro, il primo termine tiene conto dell'energia cinetica traslazionale mentre il secondo di quella rotazionale, e operando le seguenti sostituzioni
+\begin{equation*}
+\omega^2=\bigg(\frac{v}{r}\bigg)^2
+\end{equation*}
+\begin{equation*}
+I=\frac{1}{2}M_Rr^2
+\end{equation*}
+dove si è considerata la ruota come un cilindro omogeneo di raggio r, si ha che:
+\begin{equation*}
+\frac{1}{2}M_ev^2=\frac{1}{2}M_cv^2+\frac{1}{2}2M_Rv^2
+\end{equation*}
+da cui è immediato
+\begin{equation*}
+M_e=M_c+2M_R
+\end{equation*}
+Siccome dalla tabella \ref{carrPend} si ha $M_c=M+m=0.7695kg$ e dalla tabella \ref{Inerzia}
+si ha $M_R=0.0395kg$, si può trascurare la $M_R$ considerando $M_e=M_c$.
+Perciò si approssima
+\begin{equation*}
+E_c=\frac{1}{2}M_cv^2
+\end{equation*}
+Sotto tali condizioni l'energia erogata dal motore viene dissipata unicamente nel moto traslazionale del carrello.\\
+In tutto questo le ruote, in virtù della coppia del motore, applicano nel punto di appoggio col terreno una forza diretta nel verso opposto allo spostamento del carrello e, per la terza legge di Newton,  esse ne ricevono una uguale e contraria (almeno finché l 'attrito statico non viene vinto).\\
+A partire da questa considerazione e dalle approssimazioni fatte, la forza impressa dal terreno alle ruote non è altro che la spinta applicata al carrello.\\
+Dunque la relazione tra la spinta e la coppia è data dalla formula fisica del momento della forza
+\begin{equation*}
+ \boldsymbol{\tau}=\boldsymbol{r}\times \boldsymbol{F}\quad\Rightarrow\quad \tau=(r\sin(\phi))F=r_{\bot}F
+\end{equation*}
+ove $r_{\bot}$ rappresenta il braccio della forza F.
 \begin{figure}[ht]
 	\centering
-	\includegraphics[scale=0.4]{braccioForza.PNG}
+	\includegraphics[scale=0.3]{braccioForza.PNG}
 	\caption{Momento della forza applicato alla ruota}
 	\label{braccioForza}
 \end{figure}
-\\La relazione tra queste ultime è data dalla formula fisica del momento della forza:
-$$\boldsymbol{\tau}=\boldsymbol{r}\times \boldsymbol{F}\quad \Rightarrow\quad\tau=(r\sin(\phi))F=r_{\bot}F$$
-ove $r_{\bot}$ rappresenta il braccio della forza F.
 Poiché nel nostro caso $r$ risulta essere il raggio della ruota ed F la forza tangente alla ruota abbiamo ricavato, sostituendo il suo valore dalla tabella \ref{carrPend}: $$F=\displaystyle\frac{\tau}{r}\Rightarrow$$$$\Rightarrow C=\displaystyle\frac{1}{r}=29.41$$
 
 Per realizzare ora una retroazione algebrica sull'uscita che ci permetta di controllare il pendolo in ciclo chiuso, possiamo riassumere in un'unica funzione di trasferimento il sistema complessivo.\\
