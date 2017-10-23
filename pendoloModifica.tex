@@ -6,7 +6,11 @@
 	\caption{Modello del pendolo su carrello}
 	\label{pendolo}
 \end{figure}
-\noindent\textbf{Bilanciamento forze sull'asta}\\
+\noindent\textbf{Premessa}\\
+Per quel che riguarda quanto trattato nel seguito, per ovvi motivi di semplicità si terrà conto di una situazione ideale.\\
+Verranno dunque trascurati l'attrito volvente, causato dal contatto delle ruote del carrello con il suolo, ma anche la resistenza del mezzo per quanto concerne il pendolo.\\
+Sarà poi verificato in seguito che tali approssimazioni introducono un errore trascurabile ai fini del controllo del sistema reale, anche se, per un'analisi più accurata, sarebbe stato probabilmente più corretto tenerne conto.\\
+\textbf{Bilanciamento forze sull'asta}\\
 Eseguiamo di seguito, sfruttando la Seconda Legge di Newton, il computo delle forze agenti sulla massa $m$ del pendolo lungo entrambi gli assi cartesiani.\\\\
 Asse X:
 \begin{equation}\notag
@@ -101,7 +105,6 @@ $$
 $$
 =\frac{u+ml_a\dot{\theta}^2\sin(\theta)+gm\cos(\theta)\sin(\theta)}{m\sin^2(\theta)+M}
 $$
-\newpage
 Assegniamo le variabili di stato e definiamo le uscite desiderate:\\\\
 $\begin{cases}
 $$x_1 \stackrel{\Delta}{=} x_M$$ \\
@@ -177,7 +180,7 @@ $\displaystyle\frac{\partial{f_3}}{\partial{\underline{x}}}(\underline x,u)=
 $\displaystyle\frac{\partial{f_4}}{\partial{x_1}}(\underline{x},u)=0$\qquad
 $\displaystyle\frac{\partial{f_4}}{\partial{x_2}}(\underline{x},u)=0$\\
 $\displaystyle\frac{\partial{f_4}}{\partial{x_3}}(\underline{x},u)=$\\$\displaystyle\frac{[u\sin(x_3)-ml_ax_4^2(\cos^2(x_3)-\sin^2(x_3))-g\cos(x_3)(M+m)][l_a(m\sin^2(x_3)+M)]}{l_a^2(m\sin^2(x_3)+M)^2}+$ $-\displaystyle\frac{[-u\cos(x_3)-ml_ax^2_4\sin(x_3)\cos(x_3)-g\sin(x_3)(m+M)][2ml_a\sin(x_3)\cos(x_3)]}{l_a^2(m\sin^2(x_3)+M)^2}\bigg|_{\underline{\tilde{x}},\tilde{u}}=$
-$=-\displaystyle\frac{(M+m)g}{Ml}$\qquad$\displaystyle\frac{\partial{f_4}}{\partial{x_4}}(\underline{x},u)=\displaystyle\frac{-2ml_ax_4\sin(x_3)\cos(x_3)}{l_a(m\sin^2(x_3)+M)}\bigg|_{\underline{\tilde{x}},\tilde{u}}=0$\\$\displaystyle\frac{\partial{f_4}}{\partial{u}}(\underline{x},u)=\displaystyle\frac{-\cos(x_3)}{l_a(m\sin^2(x_3)+M)}\bigg|_{\underline{\tilde{x}},\tilde{u}}=-\displaystyle\frac{1}{ml_a}$\\\\\\
+$=-\displaystyle\frac{(M+m)g}{Ml_a}$\qquad$\displaystyle\frac{\partial{f_4}}{\partial{x_4}}(\underline{x},u)=\displaystyle\frac{-2ml_ax_4\sin(x_3)\cos(x_3)}{l_a(m\sin^2(x_3)+M)}\bigg|_{\underline{\tilde{x}},\tilde{u}}=0$\\$\displaystyle\frac{\partial{f_4}}{\partial{u}}(\underline{x},u)=\displaystyle\frac{-\cos(x_3)}{l_a(m\sin^2(x_3)+M)}\bigg|_{\underline{\tilde{x}},\tilde{u}}=-\displaystyle\frac{1}{ml_a}$\\\\\\
 Le equazioni di stato linearizzate sono dunque:\\\\
 $\underline{\delta\dot{x}}=
 \begin{bmatrix}
@@ -310,7 +313,7 @@ E_c=\frac{1}{2}M_cv^2
 Sotto tali condizioni l'energia erogata dal motore viene dissipata unicamente nel moto traslazionale del carrello.\\
 In tutto questo le ruote, in virtù della coppia del motore, applicano nel punto di appoggio col terreno una forza diretta nel verso opposto allo spostamento del carrello e, per la terza legge di Newton,  esse ne ricevono una uguale e contraria (almeno finché l 'attrito statico non viene vinto).\\
 A partire da questa considerazione e dalle approssimazioni fatte, la forza impressa dal terreno alle ruote non è altro che la spinta applicata al carrello.\\
-Dunque la relazione tra la spinta e la coppia è data dalla formula fisica del momento della forza
+Dunque la relazione tra la spinta e la coppia è data dalla formula fisica del momento della forza$^{[1]}$
 \begin{equation*}
  \boldsymbol{\tau}=\boldsymbol{r}\times \boldsymbol{F}\quad\Rightarrow\quad \tau=(r\sin(\phi))F=r_{\bot}F
 \end{equation*}
@@ -327,70 +330,83 @@ Per realizzare ora una retroazione algebrica sull'uscita che ci permetta di cont
 Per farlo ci siamo serviti del `Linear Analisys Tool' di Simulink che, tra le altre cose, può essere utilizzato per ricostruire la funzione di trasferimento tra due punti specificati di un sistema (nel nostro caso tra l'ingresso del motore e l'uscita $\theta$).
 $$T_{y_2,u}=-\displaystyle\frac{559.5s+78.3}{s^4+31.67s^3+227s^2+1910s+10050}$$
 
-Tra i principali modi per studiarne la stabilità in ciclo chiuso uno dei più noti è il luogo delle radici, il quale permette di verificare lo spostamento dei poli al variare del guadagno.\\
-Quello che si prova a fare è spostare tutti i poli in ciclo chiuso nel semipiano destro, mantenendoli possibilmente vicini all'asse Reale.
-Questo perché se nei poli predomina la parte Immaginaria essi introdurranno maggiore oscillazione nell'assestamento della risposta del sistema. 
-
-Come si evince dal luogo delle radici del sistema, è possibile utilizzare un semplice regolatore Proporzionale purché il suo guadagno rientri in un intervallo molto limitato, ovvero $P\in(-6,0)$.
+Tra i principali modi per studiarne la stabilità in ciclo chiuso uno dei più noti è il luogo delle radici$^{[2][3]}$, il quale permette di verificare lo spostamento dei poli al variare del guadagno.
 \begin{figure}[ht]
 	\centering
-	\includegraphics[width=\textwidth]{RLocusPendoloNormale.PNG}
+	\includegraphics[scale=0.26]{RLocusPendoloNormale.PNG}
 	\caption{Luogo delle Radici di $-T_{y_2,u}$}
 	\label{RLocusPendoloNormale}
 \end{figure}
-\\Attraverso l'utilizzo dello strumento MATLAB chiamato `rlocus', il quale consente di ottenere data una funzione il luogo delle radici, siamo arrivati a definirne il guadagno $P=-2$ (vedi figura \ref{gainOttimaleft}) come ottimale, dato il massimo rapporto possibile tra parte Reale e parte Immaginaria, in ciclo chiuso, dei due poli complessi coniugati .
+\\Quello che si prova a fare è spostare tutti i poli in ciclo chiuso nel semipiano destro, mantenendoli possibilmente vicini all'asse Reale.
+Questo perché se nei poli predomina la parte Immaginaria essi introdurranno maggiore oscillazione nell'assestamento della risposta del sistema. 
+
+Come si evince dal luogo delle radici del sistema, è possibile utilizzare un semplice regolatore Proporzionale purché il suo guadagno rientri in un intervallo molto limitato, ovvero $P\in(-5.75,0)$.
 \begin{figure}[ht]
 	\centering
-	\includegraphics[width=\textwidth]{gainOttimaleft.PNG}
+	\includegraphics[scale=0.3]{gain268.PNG}
 	\caption{Particolare del Luogo delle Radici di $-T_{y_2,u}$}
 	\label{gainOttimaleft}
 \end{figure}
-\\Tale valore è stato in seguito validato dall'analisi della risposta del sistema  durante la simulazione attraverso diversi esperimenti, i cui risultati saranno mostrati nel seguito.
+\\Attraverso l'utilizzo dello strumento MATLAB chiamato `rlocus', il quale consente di ottenere data una funzione il luogo delle radici, siamo arrivati a definirne il guadagno $P=-1.95$ (vedi figura \ref{gainOttimaleft}) come ottimale, dato il massimo rapporto possibile tra parte Reale e parte Immaginaria, in ciclo chiuso, dei due poli complessi coniugati.
+
 \begin{figure}[ht]
 	\centering
 	\includegraphics[width=\textwidth]{SisComplessivoPNRetroazionato.PNG}
 	\caption{Sistema complessivo controllato proporzionalmente}
 	\label{SisComplessivoPNRetroazionato}
 \end{figure}
-\\Nella realizzazione dello schema a blocchi in Simulink, caricato nel Brick EV3 MINDSTORMS per confermare la veridicità dei risultati ottenuti, abbiamo posto un ingresso costante a 0 poiché si assume il pendolo inizialmente a riposo nel punto di equilibrio $\theta=\ang{0}$ e perché si vuole mantenerlo in tale posizione.
+
+Tale valore è stato in seguito validato dall'analisi della risposta del sistema  durante la simulazione attraverso diversi esperimenti, i cui risultati saranno mostrati nel seguito.
 \begin{figure}[ht]
 	\centering
 	\includegraphics[width=\textwidth]{pendoloReale.png}
 	\caption{Sistema reale controllato proporzionalmente}
 	\label{pendoloReale}
 \end{figure}
+\\Nella realizzazione dello schema a blocchi in Simulink, caricato nel Brick EV3 MINDSTORMS per confermare la veridicità dei risultati ottenuti, abbiamo posto un ingresso costante a 0 poiché si assume il pendolo inizialmente a riposo nel punto di equilibrio $\theta=\ang{0}$ e perché si vuole mantenerlo in tale posizione.
+
 \\L'encoder, invece, è settato a $0$ tramite un segnale di reset dopo un tempo pari a $0.001s$ dall'inizializzazione poiché, all'avvio del programma caricato nel Brick, viene considerato come angolo $\theta=\ang{0}$ di riferimento il primo valore misurato.
 Per effettuare tale operazione è necessario inserire nello schema un convertitore dal momento che il GlideWheel-M richiede in ingresso unicamente un segnale di tipo `int8' (interi a 8 bit), mentre il blocco di reset ne genera uno `double' a 64 bit in accordo con lo standard IEEE 754.\\
 Sotto tali presupposti il motore, avendo ingresso nullo, non erogherà potenza fino quando il pendolo non verrà spostato dal suo stato iniziale.\\
 Al variare della posizione angolare, il motore reagirà muovendo il carrello nella stessa direzione per riportare il pendolo nel suo punto di equilibrio.
 
-Come accennato poco fa, ad ulteriore conferma della veridicità del luogo delle radici, abbiamo provato a controllare il sistema fisico al variare di $P$ durante una simulazione interattiva, nella quale è possibile modificare in tempo reale, da PC, il valore del guadagno del regolatore, e, come mostrato nella figura \ref{variazioneGainP}, il sistema risulta effettivamente instabile per valori che si discostano dall'intervallo di stabilità trovato.\\
+Come accennato poco fa, ad ulteriore conferma della veridicità del luogo delle radici, abbiamo provato a controllare il sistema fisico al variare di $P$ durante una simulazione interattiva, nella quale è possibile modificare in tempo reale, da PC, il valore del guadagno del regolatore, e, come mostrato nella figura \ref{oscGain8}, il sistema risulta effettivamente instabile per valori che si discostano dall'intervallo di stabilità trovato.\\
 L'esperimento è così costituito: avviato il programma nel Brick siamo noi ad innescare la prima oscillazione nel pendolo in modo da osservarne il comportamento. Nel caso in cui esso non riesca a ritornare nel punto di equilibrio autonomamente allora siamo noi a fermarlo.
+L'esperimento viene ripetuto tre volte nei casi più significativi del guadagno del regolatore $P$.
 \begin{figure}[ht]
 	\centering
-	\includegraphics[width=\linewidth]{variazioneGainP.png}
-	\caption{Uscita $\theta$ del sistema per valori di $P=-2,-6,-8$}
+	\includegraphics[scale=0.27]{oscGain1_95.png}
+	\caption{Uscita $\theta$ del sistema per  $P=-1.95$}
 	\label{variazioneGainP}
 \end{figure}
-\begin{itemize}
-	\item Nell'intervallo tra $10s$ e $15s$ ($P=-2$) è chiaro come il pendolo ritorni nel punto di equilibrio quasi immediatamente.
-	\item Tra $25s$ e $40s$ ($P=-6$), in seguito ad uno smorzamento iniziale non riesce a ritornare nel punto di equilibrio, ma continua ad oscillare fino al nostro intervento.
-	\item Tra $70s$ e $80s$ ($P=-8$), non avviene nemmeno uno smorzamento iniziale ma anzi, l'oscillazione provocata viene amplificata dal sistema fino a giungere in una situazione nella quale le ipotesi del modello vengono violate: le ruote del carrello iniziano a slittare, inficiando dunque le equazioni trovate al paragrafo \ref{stabPend} che si basavano sul moto di puro rotolamento.
-\end{itemize}
+\\Nel primo caso  ($P=-1.95$) è chiaro come il pendolo ritorni nel punto di equilibrio quasi immediatamente (asintoticamente stabile).
+\begin{figure}[ht]
+	\centering
+	\includegraphics[scale=0.27]{oscGain5_75.png}
+	\caption{Uscita $\theta$ del sistema per $P=-5.75$}
+	\label{oscGain5_75}
+\end{figure}
+\\Nel secondo caso ($P=-5.75$), in seguito ad uno smorzamento iniziale non riesce a ritornare nel punto di equilibrio, ma continua ad oscillare fino al nostro intervento, evidente conseguenza della posizione dei poli in ciclo chiuso sull'asse immaginario (semplicemente stabile). 
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=\linewidth]{oscGain8.png}
+	\caption{Uscita $\theta$ del sistema per $P=-8$}
+	\label{oscGain8}
+\end{figure}
+\\ Nel terzo e ed ultimo caso ($P=-8$), non avviene nemmeno uno smorzamento iniziale ma anzi, l'oscillazione provocata viene amplificata dal sistema fino a giungere in una situazione nella quale le ipotesi del modello vengono violate: le ruote del carrello iniziano a slittare, inficiando dunque le equazioni trovate al paragrafo \ref{stabPend} che si basavano sul moto di puro rotolamento (instabile).
 
-Assodato quindi come $P=-2$ porti ad una situazione più che accettabile, si è cercato di quantificare il miglioramento raggiunto tra sistema in ciclo aperto e sistema in ciclo chiuso con retroazione unitaria.\\
-Come si può vedere nel grafico in figura \ref{oscillOL}, posizionando il pendolo ad un'angolazione di $\theta=\ang{31}$ (massima raggiungibile per costruzione) e lasciandolo quindi libero di oscillare, in ciclo aperto
+Assodato quindi come $P=-1.95$ porti ad una situazione più che accettabile, si è cercato di quantificare il miglioramento raggiunto tra sistema in ciclo aperto e sistema in ciclo chiuso con retroazione unitaria.
 \begin{figure}[ht]
 	\centering
 	\includegraphics[width=\linewidth]{oscillOL.PNG}
 	\caption{Sistema in ciclo aperto}
 	\label{oscillOL}
 \end{figure}
- (ovvero senza controllo sul motore) si raggiunge il punto di stabilità $\theta=\ang{0}$ in poco più di $30$ secondi, mentre risulta un tempo di appena $1.4$ secondi per quanto riguarda il sistema in ciclo chiuso.
+\\Come si può vedere nel grafico in figura \ref{oscillOL}, posizionando il pendolo ad un'angolazione di $\theta=\ang{31}$ (massima raggiungibile per costruzione) e lasciandolo quindi libero di oscillare, in ciclo aperto(ovvero senza controllo sul motore) si raggiunge il punto di stabilità $\theta=\ang{0}$ in poco più di $30$ secondi, mentre risulta un tempo di appena $1.4$ secondi per quanto riguarda il sistema in ciclo chiuso.
 \begin{figure}[ht]
 	\centering
 	\includegraphics[width=\linewidth]{oscillCL.PNG}
-	\caption{Sistema in ciclo chiuso con Regolatore P}
+	\caption{Sistema in ciclo chiuso con regolatore P}
 	\label{oscillCL}
 \end{figure} 
 

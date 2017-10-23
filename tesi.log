@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.9.30)  23 OCT 2017 22:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.9.7)  23 OCT 2017 23:45
 entering extended mode
 **./tesi.tex
 (tesi.tex
@@ -1177,6 +1177,11 @@ File: modMotorvsReale.png Graphic file (type png)
 Package pdftex.def Info: modMotorvsReale.png used on input line 50.
 (pdftex.def)             Requested size: 360.0pt x 177.37685pt.
 
+Overfull \hbox (9.18027pt too wide) in paragraph at lines 67--70
+\OT1/cmr/m/n/10.95 Per cal-co-la-re l'i-ner-zia del-le sei aste uti-liz-zia-mo 
+il teo-re-ma di Huygens-Steiner$[]$,
+ []
+
 [6 <./modMotorvsReale.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 72--74
 
@@ -1206,17 +1211,7 @@ File: pendolo1.png Graphic file (type png)
 Package pdftex.def Info: pendolo1.png used on input line 5.
 (pdftex.def)             Requested size: 340.46632pt x 213.39566pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 9--12
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 18--21
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 18--21
+Underfull \hbox (badness 10000) in paragraph at lines 9--16
 
  []
 
@@ -1225,182 +1220,192 @@ Underfull \hbox (badness 10000) in paragraph at lines 18--21
 
 
  <./pendolo1.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 67--76
+Underfull \hbox (badness 10000) in paragraph at lines 22--25
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 67--76
+Underfull \hbox (badness 10000) in paragraph at lines 22--25
 
  []
 
 [10]
-Underfull \hbox (badness 10000) in paragraph at lines 83--84
+Underfull \hbox (badness 10000) in paragraph at lines 71--80
 
  []
 
 
-Overfull \hbox (59.93166pt too wide) detected at line 97
+Underfull \hbox (badness 10000) in paragraph at lines 71--80
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 87--88
+
+ []
+
+
+Overfull \hbox (59.93166pt too wide) detected at line 101
 \OT1/cmr/m/n/10.95 = [] =
  []
 
 
-Overfull \hbox (40.87196pt too wide) detected at line 100
+Overfull \hbox (40.87196pt too wide) detected at line 104
 \OT1/cmr/m/n/10.95 = []
  []
 
 [11]
-Underfull \hbox (badness 10000) in paragraph at lines 105--133
+Underfull \hbox (badness 10000) in paragraph at lines 107--136
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 105--133
+Underfull \hbox (badness 10000) in paragraph at lines 107--136
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 105--133
+Underfull \hbox (badness 10000) in paragraph at lines 107--136
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 105--133
+Underfull \hbox (badness 10000) in paragraph at lines 107--136
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 105--133
+Underfull \hbox (badness 10000) in paragraph at lines 107--136
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 105--133
+Underfull \hbox (badness 10000) in paragraph at lines 107--136
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 105--133
+Underfull \hbox (badness 10000) in paragraph at lines 107--136
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 105--133
+Underfull \hbox (badness 10000) in paragraph at lines 107--136
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 134--226
+Underfull \hbox (badness 10000) in paragraph at lines 137--229
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 134--226
+Underfull \hbox (badness 10000) in paragraph at lines 137--229
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 134--226
+Underfull \hbox (badness 10000) in paragraph at lines 137--229
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 134--226
+Underfull \hbox (badness 10000) in paragraph at lines 137--229
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 134--226
+Underfull \hbox (badness 10000) in paragraph at lines 137--229
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 134--226
+Underfull \hbox (badness 10000) in paragraph at lines 137--229
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 134--226
+Underfull \hbox (badness 10000) in paragraph at lines 137--229
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 134--226
+Underfull \hbox (badness 10000) in paragraph at lines 137--229
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 134--226
+Underfull \hbox (badness 10000) in paragraph at lines 137--229
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 134--226
+Underfull \hbox (badness 10000) in paragraph at lines 137--229
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 134--226
+Underfull \hbox (badness 10000) in paragraph at lines 137--229
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 134--226
+Underfull \hbox (badness 10000) in paragraph at lines 137--229
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 134--226
+Underfull \hbox (badness 10000) in paragraph at lines 137--229
 
  []
 
 
-Overfull \hbox (34.48709pt too wide) in paragraph at lines 134--226
+Overfull \hbox (34.48709pt too wide) in paragraph at lines 137--229
 []\OT1/cmr/m/n/10.95 +$
  []
 
 
-Overfull \hbox (46.04811pt too wide) in paragraph at lines 134--226
+Overfull \hbox (46.04811pt too wide) in paragraph at lines 137--229
 \OMS/cmsy/m/n/10.95  [][][] \OT1/cmr/m/n/10.95 =$
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 134--226
+Underfull \hbox (badness 10000) in paragraph at lines 137--229
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 134--226
+Underfull \hbox (badness 10000) in paragraph at lines 137--229
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 134--226
+Underfull \hbox (badness 10000) in paragraph at lines 137--229
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 134--226
+Underfull \hbox (badness 10000) in paragraph at lines 137--229
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 134--226
+Underfull \hbox (badness 10000) in paragraph at lines 137--229
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 134--226
+Underfull \hbox (badness 10000) in paragraph at lines 137--229
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 134--226
+Underfull \hbox (badness 10000) in paragraph at lines 137--229
 
  []
 
 
-Overfull \hbox (15.30449pt too wide) in paragraph at lines 134--226
+Overfull \hbox (15.30449pt too wide) in paragraph at lines 137--229
 \OML/cmm/m/it/10.95 T[]\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 s\OT1/cmr/m/n/10
 .95 ) = \OML/cmm/m/it/10.95 C\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 sI \OMS/cm
 sy/m/n/10.95   \OML/cmm/m/it/10.95 A\OT1/cmr/m/n/10.95 )[]\OML/cmm/m/it/10.95 B
@@ -1408,7 +1413,7 @@ sy/m/n/10.95   \OML/cmm/m/it/10.95 A\OT1/cmr/m/n/10.95 )[]\OML/cmm/m/it/10.95 B
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 134--226
+Underfull \hbox (badness 10000) in paragraph at lines 137--229
 
  []
 
@@ -1416,102 +1421,134 @@ Underfull \hbox (badness 10000) in paragraph at lines 134--226
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [13]
-[14] <pendoloFisico.jpg, id=122, 3035.34pt x 3035.34pt>
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [14]
+[15] <pendoloFisico.jpg, id=126, 3035.34pt x 3035.34pt>
 File: pendoloFisico.jpg Graphic file (type jpg)
 
 <use pendoloFisico.jpg>
-Package pdftex.def Info: pendoloFisico.jpg used on input line 256.
+Package pdftex.def Info: pendoloFisico.jpg used on input line 259.
 (pdftex.def)             Requested size: 242.83215pt x 242.83215pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 252--261
+Underfull \hbox (badness 10000) in paragraph at lines 255--264
 
  []
 
-<SlewRate.PNG, id=123, 1440.88312pt x 712.16063pt>
+<SlewRate.PNG, id=127, 1440.88312pt x 712.16063pt>
 File: SlewRate.PNG Graphic file (type png)
  <use SlewRate.PNG>
-Package pdftex.def Info: SlewRate.PNG used on input line 266.
+Package pdftex.def Info: SlewRate.PNG used on input line 269.
 (pdftex.def)             Requested size: 360.0pt x 177.93105pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 262--271
+Underfull \hbox (badness 10000) in paragraph at lines 265--274
 
  []
 
-[15 <./pendoloFisico.jpg>]
-<SisComplessivoPendoloNormale.PNG, id=128, 520.94624pt x 124.96687pt>
+[16 <./pendoloFisico.jpg>]
+<SisComplessivoPendoloNormale.PNG, id=131, 520.94624pt x 124.96687pt>
 File: SisComplessivoPendoloNormale.PNG Graphic file (type png)
 
 <use SisComplessivoPendoloNormale.PNG>
 Package pdftex.def Info: SisComplessivoPendoloNormale.PNG used on input line 27
-4.
+7.
 (pdftex.def)             Requested size: 360.0pt x 86.3588pt.
- [16 <./SlewRate.PNG (PNG copy)> <./SisComplessivoPendoloNormale.PNG>]
-<braccioForza.PNG, id=133, 578.16pt x 553.31718pt>
+ [17 <./SlewRate.PNG (PNG copy)> <./SisComplessivoPendoloNormale.PNG>]
+<braccioForza.PNG, id=136, 578.16pt x 553.31718pt>
 File: braccioForza.PNG Graphic file (type png)
  <use braccioForza.PNG>
-Package pdftex.def Info: braccioForza.PNG used on input line 320.
+Package pdftex.def Info: braccioForza.PNG used on input line 323.
 (pdftex.def)             Requested size: 173.44933pt x 165.99643pt.
 
-[17] <RLocusPendoloNormale.PNG, id=138, 1445.4pt x 669.2503pt>
+[18] <RLocusPendoloNormale.PNG, id=141, 1200.73593pt x 627.09282pt>
 File: RLocusPendoloNormale.PNG Graphic file (type png)
 
 <use RLocusPendoloNormale.PNG>
-Package pdftex.def Info: RLocusPendoloNormale.PNG used on input line 337.
-(pdftex.def)             Requested size: 360.0pt x 166.68924pt.
+Package pdftex.def Info: RLocusPendoloNormale.PNG used on input line 336.
+(pdftex.def)             Requested size: 312.18398pt x 163.04028pt.
+ [19 <./braccioForza.PNG> <./RLocusPendoloNormale.PNG>] <gain268.PNG, id=146, 1
+218.05063pt x 668.4975pt>
+File: gain268.PNG Graphic file (type png)
+ <use gain268.PNG>
+Package pdftex.def Info: gain268.PNG used on input line 346.
+(pdftex.def)             Requested size: 365.41801pt x 200.5508pt.
 
-<gainOttimaleft.PNG, id=139, 1445.4pt x 669.2503pt>
-File: gainOttimaleft.PNG Graphic file (type png)
- <use gainOttimaleft.PNG>
-Package pdftex.def Info: gainOttimaleft.PNG used on input line 344.
-(pdftex.def)             Requested size: 360.0pt x 166.68924pt.
+Overfull \hbox (5.41801pt too wide) in paragraph at lines 346--347
+ [][] 
+ []
 
-<SisComplessivoPNRetroazionato.PNG, id=140, 430.60875pt x 155.07938pt>
+<SisComplessivoPNRetroazionato.PNG, id=147, 430.60875pt x 155.07938pt>
 File: SisComplessivoPNRetroazionato.PNG Graphic file (type png)
 
 <use SisComplessivoPNRetroazionato.PNG>
 Package pdftex.def Info: SisComplessivoPNRetroazionato.PNG used on input line 3
-51.
+54.
 (pdftex.def)             Requested size: 360.0pt x 129.6529pt.
 
-<pendoloReale.png, id=141, 599.23875pt x 258.21469pt>
+<pendoloReale.png, id=148, 599.23875pt x 258.21469pt>
 File: pendoloReale.png Graphic file (type png)
  <use pendoloReale.png>
-Package pdftex.def Info: pendoloReale.png used on input line 358.
+Package pdftex.def Info: pendoloReale.png used on input line 362.
 (pdftex.def)             Requested size: 360.0pt x 155.127pt.
 
-[18 <./braccioForza.PNG>] [19 <./RLocusPendoloNormale.PNG> <./gainOttimaleft.PN
-G>] <variazioneGainP.png, id=148, 1445.4pt x 712.16063pt>
-File: variazioneGainP.png Graphic file (type png)
+[20 <./gain268.PNG> <./SisComplessivoPNRetroazionato.PNG>]
 
-<use variazioneGainP.png>
-Package pdftex.def Info: variazioneGainP.png used on input line 371.
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.368 \\L
+         'encoder, invece, è settato a $0$ tramite un segnale di reset dopo...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+<oscGain1_95.png, id=153, 1445.4pt x 712.16063pt>
+File: oscGain1_95.png Graphic file (type png)
+ <use oscGain1_95.png>
+Package pdftex.def Info: oscGain1_95.png used on input line 378.
+(pdftex.def)             Requested size: 390.26321pt x 192.28593pt.
+
+Overfull \hbox (30.26321pt too wide) in paragraph at lines 378--379
+ [][] 
+ []
+
+<oscGain5_75.png, id=154, 1445.4pt x 712.16063pt>
+File: oscGain5_75.png Graphic file (type png)
+ <use oscGain5_75.png>
+Package pdftex.def Info: oscGain5_75.png used on input line 385.
+(pdftex.def)             Requested size: 390.26321pt x 192.28593pt.
+
+Overfull \hbox (30.26321pt too wide) in paragraph at lines 385--386
+ [][] 
+ []
+
+<oscGain8.png, id=155, 1445.4pt x 712.16063pt>
+File: oscGain8.png Graphic file (type png)
+ <use oscGain8.png>
+Package pdftex.def Info: oscGain8.png used on input line 392.
 (pdftex.def)             Requested size: 360.0pt x 177.37685pt.
- [20 <./SisComplessivoPNRetroazionato.PNG> <./pendoloReale.png>]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 376.
-
- ("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
-File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 376.
-
-<oscillOL.PNG, id=152, 1445.4pt x 712.16063pt>
+ [21 <./pendoloReale.png>] [22 <./oscGain1_95.png> <./oscGain5_75.png (PNG copy
+)>]
+<oscillOL.PNG, id=163, 1445.4pt x 712.16063pt>
 File: oscillOL.PNG Graphic file (type png)
  <use oscillOL.PNG>
-Package pdftex.def Info: oscillOL.PNG used on input line 385.
+Package pdftex.def Info: oscillOL.PNG used on input line 401.
 (pdftex.def)             Requested size: 360.0pt x 177.37685pt.
 
-<oscillCL.PNG, id=153, 1445.4pt x 712.16063pt>
+<oscillCL.PNG, id=164, 1445.4pt x 712.16063pt>
 File: oscillCL.PNG Graphic file (type png)
  <use oscillCL.PNG>
-Package pdftex.def Info: oscillCL.PNG used on input line 392.
+Package pdftex.def Info: oscillCL.PNG used on input line 408.
 (pdftex.def)             Requested size: 360.0pt x 177.37685pt.
- [21 <./variazioneGainP.png (PNG copy)>]) [22 <./oscillOL.PNG (PNG copy)> <./os
-cillCL.PNG>]
+ [23 <./oscGain8.png (PNG copy)> <./oscillOL.PNG (PNG copy)>]) [24 <./oscillCL.
+PNG (PNG copy)>]
 \openout2 = `Conclusioni.aux'.
 
-
-(Conclusioni.tex
+ (Conclusioni.tex
 Capitolo 4.
 
 Overfull \hbox (0.14665pt too wide) in paragraph at lines 2--3
@@ -1519,11 +1556,11 @@ Overfull \hbox (0.14665pt too wide) in paragraph at lines 2--3
 E-GO MIND-STORMS EV3,
  []
 
-) [23
+) [25
 
 
 
-] [24
+] [26
 
 
 ]
@@ -1532,13 +1569,13 @@ Overfull \hbox (7.70331pt too wide) in paragraph at lines 96--99
 df 
  []
 
-[25] (tesi.aux (Introduzione.aux) (modelloMotore.aux) (pendoloModifica.aux)
+[27] (tesi.aux (Introduzione.aux) (modelloMotore.aux) (pendoloModifica.aux)
 (Conclusioni.aux)) ) 
 Here is how much of TeX's memory you used:
- 15389 strings out of 493323
- 300138 string characters out of 3139048
- 360772 words of memory out of 3000000
- 18714 multiletter control sequences out of 15000+200000
+ 15384 strings out of 493323
+ 299988 string characters out of 3139055
+ 361796 words of memory out of 3000000
+ 18710 multiletter control sequences out of 15000+200000
  541075 words of font info for 60 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  40i,18n,43p,10378b,502s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1559,9 +1596,9 @@ KTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9
 /fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
 pe1/public/amsfonts/cm/cmti10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publ
 ic/amsfonts/cm/cmtt10.pfb>
-Output written on tesi.pdf (35 pages, 11858263 bytes).
+Output written on tesi.pdf (37 pages, 11998439 bytes).
 PDF statistics:
- 222 PDF objects out of 1000 (max. 8388607)
+ 235 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 116 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 126 words of extra memory for PDF output out of 10000 (max. 10000000)
 
