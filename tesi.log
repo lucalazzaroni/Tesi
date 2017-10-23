@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.9.7)  23 OCT 2017 23:45
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.9.30)  24 OCT 2017 01:06
 entering extended mode
 **./tesi.tex
 (tesi.tex
@@ -1492,60 +1492,51 @@ Package pdftex.def Info: pendoloReale.png used on input line 362.
 (pdftex.def)             Requested size: 360.0pt x 155.127pt.
 
 [20 <./gain268.PNG> <./SisComplessivoPNRetroazionato.PNG>]
-
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.368 \\L
-         'encoder, invece, è settato a $0$ tramite un segnale di reset dopo...
-
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
 <oscGain1_95.png, id=153, 1445.4pt x 712.16063pt>
 File: oscGain1_95.png Graphic file (type png)
  <use oscGain1_95.png>
-Package pdftex.def Info: oscGain1_95.png used on input line 378.
+Package pdftex.def Info: oscGain1_95.png used on input line 377.
 (pdftex.def)             Requested size: 390.26321pt x 192.28593pt.
 
-Overfull \hbox (30.26321pt too wide) in paragraph at lines 378--379
+Overfull \hbox (30.26321pt too wide) in paragraph at lines 377--378
  [][] 
  []
 
 <oscGain5_75.png, id=154, 1445.4pt x 712.16063pt>
 File: oscGain5_75.png Graphic file (type png)
  <use oscGain5_75.png>
-Package pdftex.def Info: oscGain5_75.png used on input line 385.
+Package pdftex.def Info: oscGain5_75.png used on input line 384.
 (pdftex.def)             Requested size: 390.26321pt x 192.28593pt.
 
-Overfull \hbox (30.26321pt too wide) in paragraph at lines 385--386
+Overfull \hbox (30.26321pt too wide) in paragraph at lines 384--385
  [][] 
  []
 
 <oscGain8.png, id=155, 1445.4pt x 712.16063pt>
 File: oscGain8.png Graphic file (type png)
  <use oscGain8.png>
-Package pdftex.def Info: oscGain8.png used on input line 392.
+Package pdftex.def Info: oscGain8.png used on input line 391.
 (pdftex.def)             Requested size: 360.0pt x 177.37685pt.
  [21 <./pendoloReale.png>] [22 <./oscGain1_95.png> <./oscGain5_75.png (PNG copy
 )>]
 <oscillOL.PNG, id=163, 1445.4pt x 712.16063pt>
 File: oscillOL.PNG Graphic file (type png)
  <use oscillOL.PNG>
-Package pdftex.def Info: oscillOL.PNG used on input line 401.
+Package pdftex.def Info: oscillOL.PNG used on input line 400.
 (pdftex.def)             Requested size: 360.0pt x 177.37685pt.
 
 <oscillCL.PNG, id=164, 1445.4pt x 712.16063pt>
 File: oscillCL.PNG Graphic file (type png)
  <use oscillCL.PNG>
-Package pdftex.def Info: oscillCL.PNG used on input line 408.
+Package pdftex.def Info: oscillCL.PNG used on input line 407.
 (pdftex.def)             Requested size: 360.0pt x 177.37685pt.
- [23 <./oscGain8.png (PNG copy)> <./oscillOL.PNG (PNG copy)>]) [24 <./oscillCL.
-PNG (PNG copy)>]
+
+Underfull \hbox (badness 10000) in paragraph at lines 397--414
+
+ []
+
+[23 <./oscGain8.png (PNG copy)> <./oscillOL.PNG (PNG copy)>]) [24 <./oscillCL.P
+NG (PNG copy)>]
 \openout2 = `Conclusioni.aux'.
 
  (Conclusioni.tex
@@ -1573,7 +1564,7 @@ df
 (Conclusioni.aux)) ) 
 Here is how much of TeX's memory you used:
  15384 strings out of 493323
- 299988 string characters out of 3139055
+ 299988 string characters out of 3139048
  361796 words of memory out of 3000000
  18710 multiletter control sequences out of 15000+200000
  541075 words of font info for 60 fonts, out of 3000000 for 9000
@@ -1596,7 +1587,7 @@ KTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9
 /fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
 pe1/public/amsfonts/cm/cmti10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publ
 ic/amsfonts/cm/cmtt10.pfb>
-Output written on tesi.pdf (37 pages, 11998439 bytes).
+Output written on tesi.pdf (37 pages, 11999190 bytes).
 PDF statistics:
  235 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

@@ -6,7 +6,7 @@
 	\caption{Schema a blocchi Motore}
 	\label{motoreSimulink}
 \end{figure}
-\noindent Il LEGO MINDSTORMS EV3 è dotato di un motore, l'EV3 Large Servo Motor, la cui velocità angolare, misurata in $deg/s$, è stata assunta come uscita del sistema.\\
+\noindent Il LEGO MINDSTORMS EV3 è dotato di un motore, l'EV3 Large Servo Motor, la cui velocità angolare, misurata in $deg/s$, è stata assunta come uscita del sistema mostrato in figura \ref{motoreSimulink}.\\
 I valori di ingresso accettabili sono compresi tra -100 e +100, dove $\pm$100 corrispondono alla massima potenza erogabile in entrambi i versi di rotazione.
 
 Al fine di riuscire a modellarlo, abbiamo applicato al motore un albero dotato di pesi posti a una certa distanza dallo stesso in modo tale da incrementarne il momento d'inerzia $I$. Questo poiché in assenza di un carico significativo la dinamica del motore risulta  troppo veloce per  essere identificata con gli strumenti a nostra disposizione. In particolare l'insufficiente precisione e la limitata frequenza massima di campionamento dell'encoder non permettono una corretta analisi del transitorio del motore. Al fine di ridurre il più possibile l'errore è stato scelto come tempo di campionamento dell'encoder il valore minimo supportato: 0.001$s$.\\
