@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.9.7)  24 OCT 2017 15:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.9.30)  24 OCT 2017 19:32
 entering extended mode
 **./tesi.tex
 (tesi.tex
@@ -1416,11 +1416,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 270--279
 
  []
 
-<SlewRate.PNG, id=127, 1440.88312pt x 712.16063pt>
+<SlewRate.PNG, id=127, 1445.4pt x 712.16063pt>
 File: SlewRate.PNG Graphic file (type png)
  <use SlewRate.PNG>
 Package pdftex.def Info: SlewRate.PNG used on input line 284.
-(pdftex.def)             Requested size: 360.0pt x 177.93105pt.
+(pdftex.def)             Requested size: 360.0pt x 177.37685pt.
  [16 <./pendoloFisico.jpg>]
 <SisComplessivoPendoloNormale.PNG, id=131, 520.94624pt x 124.96687pt>
 File: SisComplessivoPendoloNormale.PNG Graphic file (type png)
@@ -1536,7 +1536,7 @@ df
 (Conclusioni.aux)) ) 
 Here is how much of TeX's memory you used:
  15378 strings out of 493323
- 299875 string characters out of 3139055
+ 299875 string characters out of 3139048
  353784 words of memory out of 3000000
  18705 multiletter control sequences out of 15000+200000
  541075 words of font info for 60 fonts, out of 3000000 for 9000
@@ -1559,7 +1559,7 @@ KTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9
 /fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
 pe1/public/amsfonts/cm/cmti10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publ
 ic/amsfonts/cm/cmtt10.pfb>
-Output written on tesi.pdf (37 pages, 11988977 bytes).
+Output written on tesi.pdf (37 pages, 11992118 bytes).
 PDF statistics:
  234 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

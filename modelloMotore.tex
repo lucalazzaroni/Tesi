@@ -22,7 +22,7 @@ Come conseguenza all'aggiunta del carico, si ha una diminuzione dell'accelerazio
 All'interno del motore, come già accennato, è presente un encoder che permette di misurare, in gradi, la posizione angolare $\theta$ dello stesso.
 Perciò, al fine di ottenere la velocità angolare $\omega$, è stato applicato in cascata un derivatore, e per introdurre il polo necessario alla realizzabilità del blocco, un filtro passa basso con frequenza di taglio $\omega_c=25rad/s$. \\Quest'ultimo è indispensabile per attenuare le alte frequenze della risposta del sistema, dovute alla derivazione del segnale campionato, affinché la funzione in uscita sia meno spezzata possibile e, di conseguenza, più facilmente identificabile.\\
 In prima analisi si è scelto un filtro con un $\omega_c$ più elevata, ovvero $100rad/s$, in modo che la costante di tempo non influenzasse la dinamica del motore stesso.
-Il risultato che si ottiene sotto tali condizioni, utilizzando come ingresso una funzione gradino con valore finale pari a 50, è mostrato nella figura \ref{motore50StepCamp1000Polo100}.
+Il risultato che si ottiene sotto tali condizioni, utilizzando come ingresso una funzione gradino con valore finale pari a 40, è mostrato nella figura \ref{motore50StepCamp1000Polo100}.
 \begin{figure}[ht]
 	\centering
 	\includegraphics[width=\textwidth]{motore50StepCamp1000Polo100.png}
