@@ -252,7 +252,7 @@ Inserendo ora i parametri del modello fisico del pendolo su  carrello realizzato
 $$T_{y_2,u}(s)=-\displaystyle\frac{1}{0.125s^2+7.541}$$
 \newpage
 \section{Stabilizzazione del pendolo}\label{stabPend}
-Il pendolo reale è un sistema già stabile; lo scopo della realizzazione su carrello consiste nello smorzarne l'oscillazione riducendo la costante di tempo e quindi il transitorio del sistema grazie all'impiego di due ruote motrici.\\
+Il pendolo reale di per sè è un sistema già stabile; lo scopo della realizzazione su carrello consiste nello smorzarne l'oscillazione riducendo la costante di tempo e quindi il transitorio del sistema grazie all'impiego di due ruote motrici.\\
 In figura \ref{pendoloFisico} si può vedere la realizzazione del pendolo su carrello utilizzando un motore EV3 Large Servo Motor come trazione e un encoder GlideWheel-M per misurare l'angolo del pendolo 
 \begin{figure}[ht]
 	\centering
@@ -270,7 +270,7 @@ Per fare questo abbiamo calcolato la massima velocità raggiunta durante la sua 
 	\caption{Massima velocità di oscillazione libera}
 	\label{slewRate}
 \end{figure}
-\\Da tale esperimento è risultato che durante la prima oscillazione (in figura \ref{slewRate}), il pendolo, raggiunge per $\theta=\ang{0}$ la velocità $\omega=250\deg/s$ (calcolata con un semplice rapporto incrementale e approssimata per eccesso per garantire un certo margine) per cui il tempo di campionamento necessario a non perdere nessuna variazione dell'angolo sarebbe stato $t_c=\displaystyle\frac{1}{250}=0.004s$.\\
+\\Da tale esperimento è risultato che durante la prima oscillazione (in figura \ref{slewRate}), il pendolo, raggiunge per $\theta=\ang{0}$ la velocità $\omega=250\deg/s$ (calcolata con un semplice rapporto incrementale e approssimata per eccesso per garantire un certo margine) per cui il tempo di campionamento necessario a non perdere nessuna variazione dell'angolo sarebbe stato $t_c=\displaystyle\frac{1}{250}=0.004s$.
 
 Sfruttando il modello del motore LEGO da noi identificato al capitolo \ref{modMotor} si può quindi ricavare la funzione di trasferimento del sistema complessivo (avente come ingresso la potenza richiesta al motore e come uscita la posizione angolare del pendolo).\begin{figure}[ht]
 	\centering
@@ -311,43 +311,38 @@ Perciò si approssima
 E_c=\frac{1}{2}M_cv^2
 \end{equation*}
 Sotto tali condizioni l'energia erogata dal motore viene dissipata unicamente nel moto traslazionale del carrello.\\
-In tutto questo le ruote, in virtù della coppia del motore, applicano nel punto di appoggio col terreno una forza diretta nel verso opposto allo spostamento del carrello e, per la terza legge di Newton,  esse ne ricevono una uguale e contraria (almeno finché l 'attrito statico non viene vinto).\\
+In tutto questo le ruote, in virtù della coppia del motore, applicano nel punto di appoggio col terreno una forza diretta nel verso opposto allo spostamento del carrello e, per la terza legge di Newton,  esse ne ricevono una uguale e contraria (almeno finché l'attrito statico non viene vinto e le ruote iniziano a slittare).\\
 A partire da questa considerazione e dalle approssimazioni fatte, la forza impressa dal terreno alle ruote non è altro che la spinta applicata al carrello.\\
 Dunque la relazione tra la spinta e la coppia è data dalla formula fisica del momento della forza$^{[1]}$
 \begin{equation*}
- \boldsymbol{\tau}=\boldsymbol{r}\times \boldsymbol{F}\quad\Rightarrow\quad \tau=(r\sin(\phi))F=r_{\bot}F
+ \boldsymbol{\tau}=\boldsymbol{r}\times \boldsymbol{F}\quad\Rightarrow\quad \tau=r_{\bot}F
 \end{equation*}
 ove $r_{\bot}$ rappresenta il braccio della forza F.
-\begin{figure}[ht]
-	\centering
-	\includegraphics[scale=0.3]{braccioForza.PNG}
-	\caption{Momento della forza applicato alla ruota}
-	\label{braccioForza}
-\end{figure}
-Poiché nel nostro caso $r$ risulta essere il raggio della ruota ed F la forza tangente alla ruota abbiamo ricavato, sostituendo il suo valore dalla tabella \ref{carrPend}: $$F=\displaystyle\frac{\tau}{r}\Rightarrow$$$$\Rightarrow C=\displaystyle\frac{1}{r}=29.41$$
+\\Poiché nel nostro caso $r$ risulta essere il raggio delle ruote ed F la forza tangente alle stesse abbiamo ricavato, sostituendo il suo valore dalla tabella \ref{carrPend}: $$F=\displaystyle\frac{\tau}{r}\quad\Rightarrow\quad C=\displaystyle\frac{1}{r}=29.41$$
 
 Per realizzare ora una retroazione algebrica sull'uscita che ci permetta di controllare il pendolo in ciclo chiuso, possiamo riassumere in un'unica funzione di trasferimento il sistema complessivo.\\
-Per farlo ci siamo serviti del `Linear Analisys Tool' di Simulink che, tra le altre cose, può essere utilizzato per ricostruire la funzione di trasferimento tra due punti specificati di un sistema (nel nostro caso tra l'ingresso del motore e l'uscita $\theta$).
-$$T_{y_2,u}=-\displaystyle\frac{559.5s+78.3}{s^4+31.67s^3+227s^2+1910s+10050}$$
-
-Tra i principali modi per studiarne la stabilità in ciclo chiuso uno dei più noti è il luogo delle radici$^{[2][3]}$, il quale permette di verificare lo spostamento dei poli al variare del guadagno.
+$$T_{y_2,u}=-\displaystyle\frac{559.5s+78.3}{s^4+31.67s^3+227s^2+1910s+10050}$$\\
+Per farlo ci siamo serviti del `Linear Analisys Tool' di Simulink che, tra le altre cose, può essere utilizzato per ricostruire la funzione di trasferimento tra due punti specificati di un sistema (nel nostro caso tra l'ingresso del motore e l'uscita $\theta$).\\\\
+\textbf{Studio della stabilità}
 \begin{figure}[ht]
 	\centering
-	\includegraphics[scale=0.26]{RLocusPendoloNormale.PNG}
+	\includegraphics[scale=0.235]{RLocusPendoloNormale.PNG}
 	\caption{Luogo delle Radici di $-T_{y_2,u}$}
 	\label{RLocusPendoloNormale}
+\end{figure}
+\\Tra i principali modi per studiarne la stabilità in ciclo chiuso uno dei più noti è il luogo delle radici$^{[2][3]}$, il quale permette di verificare lo spostamento dei poli al variare del guadagno.
+\begin{figure}[ht]
+	\centering
+	\includegraphics[scale=0.26]{gain268.PNG}
+	\caption{Particolare del Luogo delle Radici di $-T_{y_2,u}$}
+	\label{gainOttimaleft}
 \end{figure}
 \\Quello che si prova a fare è spostare tutti i poli in ciclo chiuso nel semipiano destro, mantenendoli possibilmente vicini all'asse Reale.
 Questo perché se nei poli predomina la parte Immaginaria essi introdurranno maggiore oscillazione nell'assestamento della risposta del sistema. 
 
 Come si evince dal luogo delle radici del sistema, è possibile utilizzare un semplice regolatore proporzionale purché il suo guadagno rientri in un intervallo molto limitato, ovvero $P\in(-5.75,0)$.
-\begin{figure}[ht]
-	\centering
-	\includegraphics[scale=0.3]{gain268.PNG}
-	\caption{Particolare del Luogo delle Radici di $-T_{y_2,u}$}
-	\label{gainOttimaleft}
-\end{figure}
-\\Attraverso l'utilizzo dello strumento MATLAB chiamato `rlocus', il quale consente di ottenere data una funzione il luogo delle radici, siamo arrivati a definirne il guadagno $P=-1.95$ (vedi figura \ref{gainOttimaleft}) come ottimale, dato il massimo rapporto possibile tra parte Reale e parte Immaginaria, in ciclo chiuso, dei due poli complessi coniugati.
+
+Attraverso l'utilizzo dello strumento MATLAB chiamato `rlocus', il quale consente di ottenere data una funzione il luogo delle radici, siamo arrivati a definirne il guadagno $P=-1.95$ (vedi figura \ref{gainOttimaleft}) come ottimale, dato il massimo rapporto possibile tra parte Reale e parte Immaginaria, in ciclo chiuso, dei due poli complessi coniugati.
 
 \begin{figure}[ht]
 	\centering
@@ -385,7 +380,7 @@ L'esperimento viene ripetuto tre volte nei casi più significativi del guadagno 
 	\caption{Uscita $\theta$ del sistema per $P=-5.75$}
 	\label{oscGain5_75}
 \end{figure}
-\\Nel secondo caso ($P=-5.75$), in seguito ad uno smorzamento iniziale non riesce a ritornare nel punto di equilibrio, ma continua ad oscillare fino al nostro intervento, evidente conseguenza della posizione dei poli in ciclo chiuso sull'asse immaginario (semplicemente stabile). 
+\\Nel secondo caso ($P=-5.75$), in seguito ad uno smorzamento iniziale non riesce a ritornare nel punto di equilibrio, ma continua ad oscillare fino al nostro intervento, evidente conseguenza della posizione dei poli in ciclo chiuso sull'asse immaginario. 
 \begin{figure}[ht]
 	\centering
 	\includegraphics[width=\linewidth]{oscGain8.png}
@@ -401,15 +396,17 @@ Assodato quindi come $P=-1.95$ porti ad una situazione più che accettabile, si 
 	\caption{Sistema in ciclo aperto}
 	\label{oscillOL}
 \end{figure}
-\\Come si può vedere nel grafico in figura \ref{oscillOL}, posizionando il pendolo ad un'angolazione di $\theta=\ang{31}$ (massima raggiungibile per costruzione) e lasciandolo quindi libero di oscillare, in ciclo aperto (ovvero senza controllo sul motore) si raggiunge il punto di stabilità $\theta=\ang{0}$ in poco più di $30$ secondi, mentre risulta un tempo di appena $1.4$ secondi per quanto riguarda il sistema in ciclo chiuso.
+\\Come si può vedere nel grafico in figura \ref{oscillOL}, posizionando il pendolo ad un'angolazione di $\theta=\ang{31}$ (massima raggiungibile per costruzione) e lasciandolo quindi libero di oscillare, in ciclo aperto (ovvero senza controllo sul motore) si raggiunge il valore $\theta=\ang{0}$ in poco più di $30$ secondi, mentre risulta un tempo di appena $1.4$ secondi per quanto riguarda il sistema in ciclo chiuso.
 \begin{figure}[ht]
 	\centering
 	\includegraphics[width=\linewidth]{oscillCL.PNG}
 	\caption{Sistema in ciclo chiuso con regolatore P}
 	\label{oscillCL}
 \end{figure} 
-\\Sarebbe stato anche interessante provare ad utilizzare un regolatore dinamico avente due zeri complessi coniugati a parte reale negativa e due poli sul semiasse reale negativo sufficientemente distanti dall'origine in modo da non modificare la dinamica del sistema.\\
-Utilizzando lo strumento `sisotool' di MATLAB è possibile graficare il luogo delle radici della funzione di trasferimento del sistema in oggetto aggiungendo poli e zeri a piacere, anche spostandoli una volta inseriti, e verificando in tempo reale il cambiamento del luogo delle radici fino ad ottenere quello desiderato.
-Ovviamente poli e zeri aggiunti andranno a costituire il regolatore dinamico.\\
+\\Lo smorzamento osservabile dal grafico in ciclo aperto è dovuto agli attriti presenti sul pendolo, da noi trascurati nella modellazione data la bassa influenza nel suo moto oscillatorio. 
+
+Sarebbe stato anche interessante provare ad utilizzare un regolatore dinamico avente due zeri complessi coniugati a parte reale negativa e due poli sul semiasse reale negativo sufficientemente distanti dall'origine in modo da non modificare la dinamica del sistema.\\
+Utilizzando lo strumento `sisotool' di MATLAB è possibile tracciare il grafico del luogo delle radici della funzione di trasferimento del sistema in oggetto aggiungendo poli e zeri a piacere, anche spostandoli una volta inseriti, e verificando il cambiamento del luogo delle radici fino ad ottenere quello desiderato.
+Ovviamente poli e zeri aggiunti andranno a costituire il regolatore dinamico.
 
 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.9.30)  24 OCT 2017 01:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.9.7)  24 OCT 2017 14:48
 entering extended mode
 **./tesi.tex
 (tesi.tex
@@ -1114,11 +1114,6 @@ Package pdftex.def Info: paginaIniziale.pdf, page1 used on input line 36.
  (Introduzione.tex
 Capitolo 1.
 
-Underfull \hbox (badness 10000) in paragraph at lines 7--8
-
- []
-
-
 Underfull \vbox (badness 3189) has occurred while \output is active []
 
  [1
@@ -1440,12 +1435,7 @@ File: SlewRate.PNG Graphic file (type png)
  <use SlewRate.PNG>
 Package pdftex.def Info: SlewRate.PNG used on input line 269.
 (pdftex.def)             Requested size: 360.0pt x 177.93105pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 265--274
-
- []
-
-[16 <./pendoloFisico.jpg>]
+ [16 <./pendoloFisico.jpg>]
 <SisComplessivoPendoloNormale.PNG, id=131, 520.94624pt x 124.96687pt>
 File: SisComplessivoPendoloNormale.PNG Graphic file (type png)
 
@@ -1454,89 +1444,85 @@ Package pdftex.def Info: SisComplessivoPendoloNormale.PNG used on input line 27
 7.
 (pdftex.def)             Requested size: 360.0pt x 86.3588pt.
  [17 <./SlewRate.PNG (PNG copy)> <./SisComplessivoPendoloNormale.PNG>]
-<braccioForza.PNG, id=136, 578.16pt x 553.31718pt>
-File: braccioForza.PNG Graphic file (type png)
- <use braccioForza.PNG>
-Package pdftex.def Info: braccioForza.PNG used on input line 323.
-(pdftex.def)             Requested size: 173.44933pt x 165.99643pt.
+Underfull \hbox (badness 10000) in paragraph at lines 323--324
 
-[18] <RLocusPendoloNormale.PNG, id=141, 1200.73593pt x 627.09282pt>
+ []
+
+[18] <RLocusPendoloNormale.PNG, id=140, 1270.7475pt x 626.34pt>
 File: RLocusPendoloNormale.PNG Graphic file (type png)
 
 <use RLocusPendoloNormale.PNG>
-Package pdftex.def Info: RLocusPendoloNormale.PNG used on input line 336.
-(pdftex.def)             Requested size: 312.18398pt x 163.04028pt.
- [19 <./braccioForza.PNG> <./RLocusPendoloNormale.PNG>] <gain268.PNG, id=146, 1
-218.05063pt x 668.4975pt>
+Package pdftex.def Info: RLocusPendoloNormale.PNG used on input line 329.
+(pdftex.def)             Requested size: 298.6257pt x 147.18991pt.
+
+<gain268.PNG, id=141, 1218.05063pt x 668.4975pt>
 File: gain268.PNG Graphic file (type png)
  <use gain268.PNG>
-Package pdftex.def Info: gain268.PNG used on input line 346.
-(pdftex.def)             Requested size: 365.41801pt x 200.5508pt.
+Package pdftex.def Info: gain268.PNG used on input line 336.
+(pdftex.def)             Requested size: 316.6857pt x 173.80525pt.
 
-Overfull \hbox (5.41801pt too wide) in paragraph at lines 346--347
- [][] 
+Underfull \hbox (badness 10000) in paragraph at lines 324--342
+
  []
 
+[19 <./RLocusPendoloNormale.PNG> <./gain268.PNG>]
 <SisComplessivoPNRetroazionato.PNG, id=147, 430.60875pt x 155.07938pt>
 File: SisComplessivoPNRetroazionato.PNG Graphic file (type png)
 
 <use SisComplessivoPNRetroazionato.PNG>
 Package pdftex.def Info: SisComplessivoPNRetroazionato.PNG used on input line 3
-54.
+49.
 (pdftex.def)             Requested size: 360.0pt x 129.6529pt.
 
 <pendoloReale.png, id=148, 599.23875pt x 258.21469pt>
 File: pendoloReale.png Graphic file (type png)
  <use pendoloReale.png>
-Package pdftex.def Info: pendoloReale.png used on input line 362.
+Package pdftex.def Info: pendoloReale.png used on input line 357.
 (pdftex.def)             Requested size: 360.0pt x 155.127pt.
 
-[20 <./gain268.PNG> <./SisComplessivoPNRetroazionato.PNG>]
-<oscGain1_95.png, id=153, 1445.4pt x 712.16063pt>
+[20 <./SisComplessivoPNRetroazionato.PNG> <./pendoloReale.png>]
+<oscGain1_95.png, id=152, 1445.4pt x 712.16063pt>
 File: oscGain1_95.png Graphic file (type png)
  <use oscGain1_95.png>
-Package pdftex.def Info: oscGain1_95.png used on input line 377.
+Package pdftex.def Info: oscGain1_95.png used on input line 372.
 (pdftex.def)             Requested size: 390.26321pt x 192.28593pt.
 
-Overfull \hbox (30.26321pt too wide) in paragraph at lines 377--378
+Overfull \hbox (30.26321pt too wide) in paragraph at lines 372--373
  [][] 
  []
 
-<oscGain5_75.png, id=154, 1445.4pt x 712.16063pt>
+<oscGain5_75.png, id=153, 1445.4pt x 712.16063pt>
 File: oscGain5_75.png Graphic file (type png)
  <use oscGain5_75.png>
-Package pdftex.def Info: oscGain5_75.png used on input line 384.
+Package pdftex.def Info: oscGain5_75.png used on input line 379.
 (pdftex.def)             Requested size: 390.26321pt x 192.28593pt.
 
-Overfull \hbox (30.26321pt too wide) in paragraph at lines 384--385
+Overfull \hbox (30.26321pt too wide) in paragraph at lines 379--380
  [][] 
  []
 
-<oscGain8.png, id=155, 1445.4pt x 712.16063pt>
+<oscGain8.png, id=154, 1445.4pt x 712.16063pt>
 File: oscGain8.png Graphic file (type png)
  <use oscGain8.png>
-Package pdftex.def Info: oscGain8.png used on input line 391.
+Package pdftex.def Info: oscGain8.png used on input line 386.
 (pdftex.def)             Requested size: 360.0pt x 177.37685pt.
- [21 <./pendoloReale.png>] [22 <./oscGain1_95.png> <./oscGain5_75.png (PNG copy
-)>]
-<oscillOL.PNG, id=163, 1445.4pt x 712.16063pt>
+
+Underfull \vbox (badness 7486) has occurred while \output is active []
+
+ [21 <./oscGain1_95.png>] [22 <./oscGain5_75.png (PNG copy)> <./oscGain8.png (P
+NG copy)>]
+<oscillOL.PNG, id=162, 1445.4pt x 712.16063pt>
 File: oscillOL.PNG Graphic file (type png)
  <use oscillOL.PNG>
-Package pdftex.def Info: oscillOL.PNG used on input line 400.
+Package pdftex.def Info: oscillOL.PNG used on input line 395.
 (pdftex.def)             Requested size: 360.0pt x 177.37685pt.
 
-<oscillCL.PNG, id=164, 1445.4pt x 712.16063pt>
+<oscillCL.PNG, id=163, 1445.4pt x 712.16063pt>
 File: oscillCL.PNG Graphic file (type png)
  <use oscillCL.PNG>
-Package pdftex.def Info: oscillCL.PNG used on input line 407.
+Package pdftex.def Info: oscillCL.PNG used on input line 402.
 (pdftex.def)             Requested size: 360.0pt x 177.37685pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 397--414
-
- []
-
-[23 <./oscGain8.png (PNG copy)> <./oscillOL.PNG (PNG copy)>]) [24 <./oscillCL.P
-NG (PNG copy)>]
+ [23 <./oscillOL.PNG (PNG copy)> <./oscillCL.PNG (PNG copy)>]) [24]
 \openout2 = `Conclusioni.aux'.
 
  (Conclusioni.tex
@@ -1563,10 +1549,10 @@ df
 [27] (tesi.aux (Introduzione.aux) (modelloMotore.aux) (pendoloModifica.aux)
 (Conclusioni.aux)) ) 
 Here is how much of TeX's memory you used:
- 15384 strings out of 493323
- 299988 string characters out of 3139048
- 361796 words of memory out of 3000000
- 18710 multiletter control sequences out of 15000+200000
+ 15378 strings out of 493323
+ 299875 string characters out of 3139055
+ 361784 words of memory out of 3000000
+ 18705 multiletter control sequences out of 15000+200000
  541075 words of font info for 60 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  40i,18n,43p,10378b,502s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1587,9 +1573,9 @@ KTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9
 /fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
 pe1/public/amsfonts/cm/cmti10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publ
 ic/amsfonts/cm/cmtt10.pfb>
-Output written on tesi.pdf (37 pages, 11999190 bytes).
+Output written on tesi.pdf (37 pages, 11988845 bytes).
 PDF statistics:
- 235 PDF objects out of 1000 (max. 8388607)
+ 234 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 126 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 121 words of extra memory for PDF output out of 10000 (max. 10000000)
 

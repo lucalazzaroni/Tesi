@@ -14,14 +14,13 @@
 \contentsline {figure}{\numberline {3.2}{\ignorespaces Realizzazione fisica del pendolo su carrello}}{16}
 \contentsline {figure}{\numberline {3.3}{\ignorespaces Massima velocit\IeC {\`a} di oscillazione libera}}{17}
 \contentsline {figure}{\numberline {3.4}{\ignorespaces Schema a blocchi del sistema complessivo}}{17}
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Momento della forza applicato alla ruota}}{19}
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Luogo delle Radici di $-T_{y_2,u}$}}{19}
-\contentsline {figure}{\numberline {3.7}{\ignorespaces Particolare del Luogo delle Radici di $-T_{y_2,u}$}}{20}
-\contentsline {figure}{\numberline {3.8}{\ignorespaces Sistema complessivo controllato proporzionalmente}}{20}
-\contentsline {figure}{\numberline {3.9}{\ignorespaces Sistema reale controllato proporzionalmente}}{21}
-\contentsline {figure}{\numberline {3.10}{\ignorespaces Uscita $\theta $ del sistema per $P=-1.95$}}{22}
-\contentsline {figure}{\numberline {3.11}{\ignorespaces Uscita $\theta $ del sistema per $P=-5.75$}}{22}
-\contentsline {figure}{\numberline {3.12}{\ignorespaces Uscita $\theta $ del sistema per $P=-8$}}{23}
-\contentsline {figure}{\numberline {3.13}{\ignorespaces Sistema in ciclo aperto}}{23}
-\contentsline {figure}{\numberline {3.14}{\ignorespaces Sistema in ciclo chiuso con regolatore P}}{24}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Luogo delle Radici di $-T_{y_2,u}$}}{19}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Particolare del Luogo delle Radici di $-T_{y_2,u}$}}{19}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Sistema complessivo controllato proporzionalmente}}{20}
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Sistema reale controllato proporzionalmente}}{20}
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Uscita $\theta $ del sistema per $P=-1.95$}}{21}
+\contentsline {figure}{\numberline {3.10}{\ignorespaces Uscita $\theta $ del sistema per $P=-5.75$}}{22}
+\contentsline {figure}{\numberline {3.11}{\ignorespaces Uscita $\theta $ del sistema per $P=-8$}}{22}
+\contentsline {figure}{\numberline {3.12}{\ignorespaces Sistema in ciclo aperto}}{23}
+\contentsline {figure}{\numberline {3.13}{\ignorespaces Sistema in ciclo chiuso con regolatore P}}{23}
 \addvspace {10\p@ }
