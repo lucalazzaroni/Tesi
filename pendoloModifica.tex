@@ -97,10 +97,18 @@ $$
 \ddot{x}_M=\frac{-g\sin(\theta)-\displaystyle\frac{ul_a\cos(\theta)+ml^2_a\dot{\theta}^2\sin(\theta)\cos(\theta)+gl_a\sin(\theta)(M+m)}{-l_a(m\sin^2(\theta)+M)}}{\cos(\theta)}=
 $$
 $$
-=\frac{g\sin(\theta)[-l_a(m\sin^2(\theta)+M)]+ul_a\cos(\theta)+ml^2_a\dot{\theta}^2\sin(\theta)\cos(\theta)+gl_a\sin(\theta)(M+m)}{l_a\cos(\theta)(m\sin^2(\theta)+M)}=
+=\frac{g\sin(\theta)[-l_a(m\sin^2(\theta)+M)]+ul_a\cos(\theta)}{l_a\cos(\theta)(m\sin^2(\theta)+M)}+
 $$
+
+$$+\frac{ml^2_a\dot{\theta}^2\sin(\theta)\cos(\theta)+gl_a\sin(\theta)(M+m)}{l_a\cos(\theta)(m\sin^2(\theta)+M)}=
 $$
-=\frac{-gm\sin^3(\theta)-gM\sin(\theta)+u\cos(\theta)+ml_a\dot{\theta}^2\sin(\theta)\cos(\theta)+gM\sin(\theta)+gm\sin(\theta)}{\cos(\theta)(m\sin^2(\theta)+M)}
+
+$$
+=\frac{-gm\sin^3(\theta)-gM\sin(\theta)+u\cos(\theta)}{\cos(\theta)(m\sin^2(\theta)+M)}
+$$
+
+$$
++\frac{ml_a\dot{\theta}^2\sin(\theta)\cos(\theta)+gM\sin(\theta)+gm\sin(\theta)}{\cos(\theta)(m\sin^2(\theta)+M)}=
 $$
 $$
 =\frac{u+ml_a\dot{\theta}^2\sin(\theta)+gm\cos(\theta)\sin(\theta)}{m\sin^2(\theta)+M}
@@ -179,8 +187,15 @@ $\displaystyle\frac{\partial{f_3}}{\partial{\underline{x}}}(\underline x,u)=
 \end{bmatrix}$\qquad$\displaystyle\frac{\partial{f_3}}{\partial{u}}(\underline{x},u)=0$\\\\\\
 $\displaystyle\frac{\partial{f_4}}{\partial{x_1}}(\underline{x},u)=0$\qquad
 $\displaystyle\frac{\partial{f_4}}{\partial{x_2}}(\underline{x},u)=0$\\
-$\displaystyle\frac{\partial{f_4}}{\partial{x_3}}(\underline{x},u)=$\\$\displaystyle\frac{[u\sin(x_3)-ml_ax_4^2(\cos^2(x_3)-\sin^2(x_3))-g\cos(x_3)(M+m)][l_a(m\sin^2(x_3)+M)]}{l_a^2(m\sin^2(x_3)+M)^2}+$ $-\displaystyle\frac{[-u\cos(x_3)-ml_ax^2_4\sin(x_3)\cos(x_3)-g\sin(x_3)(m+M)][2ml_a\sin(x_3)\cos(x_3)]}{l_a^2(m\sin^2(x_3)+M)^2}\bigg|_{\underline{\tilde{x}},\tilde{u}}=$
-$=-\displaystyle\frac{(M+m)g}{Ml_a}$\qquad$\displaystyle\frac{\partial{f_4}}{\partial{x_4}}(\underline{x},u)=\displaystyle\frac{-2ml_ax_4\sin(x_3)\cos(x_3)}{l_a(m\sin^2(x_3)+M)}\bigg|_{\underline{\tilde{x}},\tilde{u}}=0$\\$\displaystyle\frac{\partial{f_4}}{\partial{u}}(\underline{x},u)=\displaystyle\frac{-\cos(x_3)}{l_a(m\sin^2(x_3)+M)}\bigg|_{\underline{\tilde{x}},\tilde{u}}=-\displaystyle\frac{1}{ml_a}$\\\\\\
+$\displaystyle\frac{\partial{f_4}}{\partial{x_3}}(\underline{x},u)=\displaystyle\frac{[u\sin(x_3)-ml_ax_4^2(\cos^2(x_3)-\sin^2(x_3))][l_a(m\sin^2(x_3)+M)]}{l_a^2(m\sin^2(x_3)+M)^2}+$\\
+
+$+\displaystyle\frac{[-g\cos(x_3)(M+m)][l_a(m\sin^2(x_3)+M)]}{l_a^2(m\sin^2(x_3)+M)^2}+$
+
+$-\displaystyle\frac{[-u\cos(x_3)][2ml_a\sin(x_3)\cos(x_3)]}{l_a^2(m\sin^2(x_3)+M)^2}+$
+
+$-\displaystyle\frac{[-ml_ax^2_4\sin(x_3)\cos(x_3)-g\sin(x_3)(m+M)][2ml_a\sin(x_3)\cos(x_3)]}{l_a^2(m\sin^2(x_3)+M)^2}\bigg|_{\underline{\tilde{x}},\tilde{u}}=$
+
+$=-\displaystyle\frac{(M+m)g}{Ml_a}$\qquad\qquad$\displaystyle\frac{\partial{f_4}}{\partial{x_4}}(\underline{x},u)=\displaystyle\frac{-2ml_ax_4\sin(x_3)\cos(x_3)}{l_a(m\sin^2(x_3)+M)}\bigg|_{\underline{\tilde{x}},\tilde{u}}=0$\\$\displaystyle\frac{\partial{f_4}}{\partial{u}}(\underline{x},u)=\displaystyle\frac{-\cos(x_3)}{l_a(m\sin^2(x_3)+M)}\bigg|_{\underline{\tilde{x}},\tilde{u}}=-\displaystyle\frac{1}{ml_a}$\\\\\\
 Le equazioni di stato linearizzate sono dunque:\\\\
 $\underline{\delta\dot{x}}=
 \begin{bmatrix}
